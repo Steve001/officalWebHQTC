@@ -2,13 +2,13 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <meta name="format-detection" content="telephone=no" />
-    <title></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
 
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/public.css" />
@@ -20,12 +20,14 @@
   <section class="page" id="app">
     <video src="img/触摸灯.mp4" muted autoplay loop class="homeVideo"></video>
     <div class="ani-box" ref="aniBox"></div>
+    <video src="img/触摸灯.mp4" muted autoplay loop class="homeVideo"></video>
   </section>
   <section class="footer"></section>
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/public.css" />
   <script type="text/javascript" src="js/public.js"></script>
-</head>
+  </head>
+</body>
 
 </html>
 <script type="text/javascript" src="js/vue.js"></script>
@@ -53,33 +55,7 @@
         // let threeHeight = this.$refs.scrollThree.offsetHeight + twoHeight;
 
         console.log(scrollTop)
-        if (scrollTop > 0) {
-          //滚动大于0的时候要做的操作
-        }
-        if (scrollTop > 1105) {
-          // document.body.addEventListener('touchmove', this.bodyScroll(), { passive: false });
-          // $('.ani-box')[0].style.position = 'fixed';
-          // $('.ani-box')[0].style.top = '0';
-          // $('body')[0].style.overflow = 'hidden';
-          // this.oneHeight = oneHeight
-        }
-        // if (scrollTop > 2089 || scrollTop < 100) {
-        //   $('.ani-box')[0].style.position = 'relative';
-        //   $('.ani-box')[0].style.top = '0'
-        // }
-        // if (scrollTop > oneHeight) {
-        //   //这是滑动到scrollTwo的距离要做的操作
-
-        // } else {
-
-        // }
-        // if (scrollTop > twoHeight) {
-        //   //这是滑动到scrollThree要做的操作
-
-        //   this.twoHeight = twoHeight;
-        // }
       },
-
     },
     destroyed() {
       document.removeEventListener('scroll', this.handleScroll)
@@ -95,7 +71,9 @@
     $(".header").load("/components/header.html");
     $(".footer").load("/components/fooder.html");
   });
-  (function () {
+  ; (function () {
+
+
     //1.创建要加载的图片
     var imgs = function () {
       var fileList = [
@@ -182,7 +160,7 @@
 
     //3.配置参数
     var config = {
-      fps: 220, //帧率
+      fps: 200, //帧率
       parentBox: document.querySelectorAll('.ani-box')[0]
     }
 
@@ -191,9 +169,8 @@
       var canvas = document.createElement('canvas');
       config.parentBox.appendChild(canvas);
       var { offsetWidth, offsetHeight } = canvas.parentNode;
-      canvas.width = document.documentElement.clientWidth;
-      // canvas.width = '100%';
-      canvas.height = document.documentElement.clientHeight;
+      canvas.width = document.documentElement.clientWidth;;
+      canvas.height = document.documentElement.clientHeight;;
 
       return canvas;
     }
@@ -211,6 +188,23 @@
 
       var timer = null
 
+      function preventDefault(e) {
+        e.preventDefault();
+      }
+
+      const wheelOpt = { passive: false };
+      const wheelEvent = "onwheel" in document.createElement("div") ? "wheel" : "mousewheel";
+
+      function disableScroll() {
+        window.addEventListener("DOMMouseScroll", preventDefault, false); // older FF
+        window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+        window.addEventListener("touchmove", preventDefault, wheelOpt); // mobile
+      }
+      function enableScroll() {
+        window.removeEventListener("DOMMouseScroll", preventDefault, false);
+        window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
+        window.removeEventListener("touchmove", preventDefault, wheelOpt);
+      }
 
       drawImage()
       function drawImage() {
@@ -232,13 +226,18 @@
         }
         if (value > 0) {
           if (n == imgsArr.length - 1) {
-            // 收起画面操作代码写在这
-            // alert()
-            // $('.ani-box')[0].style.position = 'relative';
-            // $('.ani-box')[0].style.top = '0'
+            enableScroll()
+          } else {
+            disableScroll()
           }
           n < imgsArr.length - 1 && n++;
         } else {
+          if (n == 0) {
+            enableScroll()
+          } else {
+            disableScroll()
+          }
+
           n > 0 && n--;
         }
 
@@ -247,13 +246,16 @@
         }
         drawImage()
       }
-      aniBox.addEventListener('mousewheel', scrollFunc, false);
-      // aniBox.onmouseover = function () {
-      //   document.addEventListener('mousewheel', scrollFunc, false);
-      // }
-      // aniBox.onmouseout = function () {
-      //   document.removeEventListener("mousewheel", scrollFunc, false);
-      // }
+      // aniBox.addEventListener('mousewheel',scrollFunc,false);
+      aniBox.onmouseover = function () {
+        document.addEventListener('mousewheel', scrollFunc, false);
+        disableScroll()
+      }
+      aniBox.onmouseout = function () {
+        document.removeEventListener("mousewheel", scrollFunc, false);
+        enableScroll()
+      }
+
       // setInterval(function() {
       //     //清屏
       //     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -286,6 +288,5 @@
     }
 
     init();
-
   })();
 </script>

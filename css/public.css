@@ -4,7 +4,6 @@ html {
     background: #fff;
     height: auto;
 }
-
 .one {
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -24,8 +23,11 @@ html {
 .page {
     padding-top: 60px;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch
+    -webkit-overflow-scrolling: touch;
 }
+.page::-webkit-scrollbar {
+    display: none;
+} 
 
 .homeVideo {
     display: flex;
