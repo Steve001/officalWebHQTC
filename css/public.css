@@ -27,7 +27,9 @@ body,html{
 .homeVideo{
     display: flex;
 }
-
+.ani-box{
+    transition: all;
+}
 
 
 
