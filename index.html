@@ -12,20 +12,21 @@
 
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/public.css" />
-  <script type="text/javascript" src="https://vncdn.mobi88.cn/public/jquery-2.1.3.min.js"></script>
   <script type="text/javascript" src="js/public.js"></script>
 </head>
 
 <body>
+  <section class="header"></section>
   <section class="page" id="app">
-    <video src="img/触摸灯.mp4" muted autoplay loop class="homeVideo" id="video"></video>
+    <video src="img/触摸灯.mp4" muted autoplay loop class="homeVideo"></video>
     <div class="ani-box" ref="aniBox"></div>
-    <video src="img/触摸灯.mp4" muted autoplay loop class="homeVideo" id="video"></video>
   </section>
+  <section class="footer"></section>
 </body>
 
 </html>
 <script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="https://vncdn.mobi88.cn/public/jquery-2.1.3.min.js"></script>
 <script type="text/javascript">
   var app = new Vue({
     el: "#app",
@@ -41,9 +42,6 @@
       window.addEventListener("scroll", this.handleScroll, false);
     },
     methods: {
-      bodyScroll(event) {
-        event.preventDefault();
-      },
       handleScroll() {
         //获取滚动时的高度
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
@@ -89,9 +87,12 @@
 
 
 <script type="text/javascript">
-  ; (function () {
-
-
+  // 引入头部尾部
+  $(function () {
+    $(".header").load("/components/header.html");
+    $(".footer").load("/components/fooder.html");
+  });
+  (function () {
     //1.创建要加载的图片
     var imgs = function () {
       var fileList = [
@@ -243,7 +244,7 @@
         }
         drawImage()
       }
-      aniBox.addEventListener('mousewheel',scrollFunc,false);
+      aniBox.addEventListener('mousewheel', scrollFunc, false);
       // aniBox.onmouseover = function () {
       //   document.addEventListener('mousewheel', scrollFunc, false);
       // }
