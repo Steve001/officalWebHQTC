@@ -30,9 +30,11 @@ html {
 .homeVideo {
     display: flex;
 }
-.ani-box{
+
+.ani-box {
     transition: all;
 }
+
 
 /* 首页 */
 
