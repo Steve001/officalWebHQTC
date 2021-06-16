@@ -9,31 +9,27 @@
     <meta http-equiv="Expires" content="0" />
     <meta name="format-detection" content="telephone=no" />
     <title></title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/public.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/public.css" />
+    <link rel="stylesheet" href="./css/common.css">
     <script type="text/javascript" src="js/public.js"></script>
-    <script src="./js/pxloader-all.min.js"></script>
-    <script src="./js/PxLoaderImage.js"></script>
 </head>
 
 <body>
     <section class="header"></section>
     <section class="page" id="app">
         <video src="img/触摸灯.mp4" muted autoplay loop class="homeVideo"></video>
-        <!-- <div id="sticky">
-            <canvas id="iphone-se" width="432" height="976"></canvas>
-            <p class="left">
-                Durable glass and<br>aluminum design
-            </p>
-            <p class="right">
-                Brilliant 4.7<br>aluminum design
-            </p>
-        </div> -->
+        <div class="ani-box" ref="aniBox"></div>
     </section>
     <section class="frame">
         <section class="in-img">
-            <img src="../hqtc_pc/img/vnwka9rl21la3lms0qx4xw67qnroip6h.png" alt="">
+            <img src="../img/vnwka9rl21la3lms0qx4xw67qnroip6h.png" alt="">
         </section>
+        <section class="p-out">
+            <p class="po-p">打开</p>
+            <p class="po-p"> ></p>
+        </section>
+
     </section>
     <section class="footer"></section>
 </body>
@@ -59,13 +55,38 @@
             handleScroll() {
                 //获取滚动时的高度
                 let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+                // let oneHeight = this.$refs.scrollOne.offsetHeight;
+                // let twoHeight = this.$refs.scrollTwo.offsetHeight + oneHeight;
+                // let threeHeight = this.$refs.scrollThree.offsetHeight + twoHeight;
+
+                console.log(scrollTop)
                 if (scrollTop > 0) {
                     //滚动大于0的时候要做的操作
                 }
                 if (scrollTop > 1105) {
-                    
+                    // document.body.addEventListener('touchmove', this.bodyScroll(), { passive: false });
+                    // $('.ani-box')[0].style.position = 'fixed';
+                    // $('.ani-box')[0].style.top = '0';
+                    // $('body')[0].style.overflow = 'hidden';
+                    // this.oneHeight = oneHeight
                 }
+                // if (scrollTop > 2089 || scrollTop < 100) {
+                //   $('.ani-box')[0].style.position = 'relative';
+                //   $('.ani-box')[0].style.top = '0'
+                // }
+                // if (scrollTop > oneHeight) {
+                //   //这是滑动到scrollTwo的距离要做的操作
+
+                // } else {
+
+                // }
+                // if (scrollTop > twoHeight) {
+                //   //这是滑动到scrollThree要做的操作
+
+                //   this.twoHeight = twoHeight;
+                // }
             },
+
         },
         destroyed() {
             document.removeEventListener('scroll', this.handleScroll)
@@ -78,9 +99,8 @@
 <script type="text/javascript">
     // 引入头部尾部
     $(function() {
-        $(".header").load("./common/header.html");
-        $(".footer").load("./common/fooder.html");
-        $('#iphone-se').height($(window).height())
+        $(".header").load("../common/header.html");
+        $(".footer").load("../common/fooder.html");
     });
     // 图像框文字移入移出
     $('.frame').mouseenter(function() {
@@ -90,103 +110,202 @@
         $('.po-p').css('margin-right', '0px')
     });
 
-    if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) { //移动端
-        $('.header')[0].style.display = 'none';
-        $('#app')[0].style.paddingTop = '0'
-    }
 
-    // $(window).on('scroll', function () {
-    //     console.log(document.documentElement.scrollTop)
-    //     console.log(document.getElementById('sticky').offsetTop)
+    (function() {
+        //1.创建要加载的图片
+        var imgs = function() {
+            var fileList = [
 
-    //     if (document.documentElement.scrollTop >= 1080 && document.documentElement.scrollTop < 1200) {
-    //         $('#sticky')[0].style.position = 'fixed';
-    //         $('#sticky')[0].style.top = '0';
-    //     }
-    //     let scrolled = document.documentElement.scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight)
-    //     let Dome =  $('#sticky')[0];
-    //     console.log(isElementInViewport(Dome))
-    //     if(isElementInViewport(Dome)){
-    //         let frame = Math.ceil(scrolled * 84)
-    //         changeFrame(frame)
-    //     }
-    //     // moveDevice($('#iphone-se'), scrolled, 0.3, 0.6, 0.6, 1)
-    //     showHideText($('.left'), scrolled, 0.45, 0.52, 0.58, 0.65)
-    //     showHideText($('.right'), scrolled, 0.9, 1)
-    // })
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/c4edd146ecdf09c566cf6a66caad92f6.jpg",
 
-    // const loader = new PxLoader()
-    // const images = [];
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/d533ff3299980bc5694c2facae101923.jpg",
 
-    // for (let i = 0; i < 85; i++) {
-    //     images[i] = loader.addImage(`https://s3-us-west-2.amazonaws.com/s.cdpn.io/2002878/iphone-se.${('0' + (i + 1)).slice(-2)}.png`)
-    // }
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/b2faaf152464107cf7c06be3b422c756.jpg",
 
-    // loader.addCompletionListener(function () {
-    //     let context = $('#iphone-se')[0].getContext('2d')
-    //     context.drawImage(images[0], 0, 0, 432, 976)
-    // })
-    // loader.start();
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/8dd1b0748220f1ed51d491ff20764b0f.jpg",
 
-    // function changeFrame(frame) {
-    //     let index = frame - 1;
-    //     console.log(index)
-    //     if (index < 0) {
-    //         index = 0;
-    //         $('#sticky')[0].style.position = 'inherit';
-    //     }
-    //     if (index > 84) {
-    //         index = 84;
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/a265eb140f3d6079b1e8d54190b8128d.jpg",
 
-    //     }
-    //     if (index >= 83) {
-    //         $('#sticky')[0].style.position = 'inherit';
-    //     }
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/579988a624c35ae5f977e0a885a38b53.jpg",
 
-    //     let context = $('#iphone-se')[0].getContext('2d')
-    //     context.drawImage(images[index], 0, 0, 432, 976)
-    // }
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/e7d6545529733a127be4ce811b547510.jpg",
 
-    // function moveDevice(el, current, toLeftFrom, toLeftTo, toRightFrom, toRightTo) {
-    //     if (current <= toLeftTo) {
-    //         if (current >= toLeftFrom) {
-    //             let offsetRatio = (current - toLeftFrom) / (toLeftTo - toLeftFrom)
-    //             $('#iphone-se').css('left', $('#iphone-se').width() / 2 * -1 * offsetRatio)
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/58187d2dd2c4dd2da1b2bac94f6eaa08.jpg",
 
-    //         }
-    //     } else {
-    //         let offsetRatio = (current - toRightFrom) / (toRightTo - toRightFrom)
-    //         $('#iphone-se').css('left', $('#iphone-se').width() / 2 * -1 + $('#iphone-se').width() * offsetRatio)
-    //     }
-    // }
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/1378938444b3fec6d36ea8ad6f5535c0.jpg",
 
-    // function showHideText(el, current, showFrom, showTo, hideFrom, hideTo) {
-    //     if (current < showFrom) {
-    //         $(el).css('opacity', 0)
-    //     }
-    //     if (current >= showFrom && current <= showTo) {
-    //         $(el).css('opacity', (current - showFrom) / (showTo - showFrom))
-    //     }
-    //     if (typeof hideFrom !== 'undefined' && typeof hideTo !== 'undefined') {
-    //         if (current > hideFrom && current <= hideTo) {
-    //             $(el).css('opacity', (hideTo - current) / (hideTo - hideFrom))
-    //         }
-    //         if (current > hideTo) {
-    //             $(el).css('opacity', 0)
-    //         }
-    //     }
-    // }
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/63c9436be9bdf2de46e05244219fea64.jpg",
 
-    // function isElementInViewport(el) {
-    //     //获取元素是否在可视区域
-    //     var rect = el.getBoundingClientRect();
-    //     return (
-    //         rect.top >= 0 &&
-    //         rect.left >= 0 &&
-    //         rect.bottom <=
-    //         (window.innerHeight || document.documentElement.clientHeight) &&
-    //         rect.right <=
-    //         (window.innerWidth || document.documentElement.clientWidth)
-    //     );
-    // }
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/e8e0d794076f5d417958cb3c88203acd.jpg",
+
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/20db6fd49a5b23a03fa902f276230767.jpg",
+
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/df428d0869a2cd1ed9db3eb48676a740.jpg",
+
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/fe3af58c052a6c3379235091a444a108.jpg",
+
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/0ac42aa3304089232eb05dd081a36b3a.jpg",
+
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/4fe3134b488540f65d75fe75f728b1a5.jpg",
+
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/96054bdc218ddd90bba745552aab6544.jpg",
+
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/980758fd3b9f3183889469e9cc49d6c9.jpg",
+
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/8ff22ae7df6540d4543b185ca785e2d8.jpg",
+
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/c309d9e003298815737922e434256bd1.jpg",
+
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/d2b21ad88b1e84a11349fc7f4b2ffbc2.jpg",
+
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/cd003118abfc285882dfc0a53d40f79f.jpg",
+
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/a423ca728ad26642bd74edce34236dad.jpg",
+
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/741df7fe770f494373b9d97eb7dde377.jpg",
+
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/7cae71b7eed1430b02a8b2c84d4bec7d.jpg",
+
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/36ff380ea79b6e5d8caa763a9fceb63c.jpg",
+
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/90bb2e676d37fe28d54ba600f612956a.jpg",
+
+                "https://res.wx.qq.com/wechatgame/tmt/dora/312/uploads/e3624761005081cf5cc44656f096e855.jpg",
+
+            ];
+            return fileList;
+        }
+
+        //2.加载图片
+        var loadImgs = function(fn) {
+            var loaded = 0; //记录已经加载图片的个数
+            var loadedImgsArr = []; //用来存放加载的图片
+            var imgsArr = imgs();
+            var imgObj = null;
+            imgsArr.forEach(function(value, index, arr) {
+                imgObj = new Image();
+                imgObj.onload = function() {
+                    loaded++;
+                    //这里所有的图片加载完成
+                    if (loaded == imgsArr.length) {
+                        fn && fn(loadedImgsArr);
+                    }
+                }
+                imgObj.src = imgsArr[index];
+                loadedImgsArr.push(imgObj);
+            });
+        }
+
+        //3.配置参数
+        var config = {
+            fps: 220, //帧率
+            parentBox: document.querySelectorAll('.ani-box')[0]
+        }
+
+        //4.创建canvas
+        var createCanvas = function() {
+            var canvas = document.createElement('canvas');
+            config.parentBox.appendChild(canvas);
+            var {
+                offsetWidth,
+                offsetHeight
+            } = canvas.parentNode;
+            canvas.width = document.documentElement.clientWidth;
+            // canvas.width = '100%';
+            canvas.height = document.documentElement.clientHeight;
+
+            return canvas;
+        }
+
+        //5.有了图片和canvas对象，创建动画函数
+        var ani = function(imgsArr, cb) {
+            var canvas = createCanvas();
+            //图片的宽高
+            var offsetWidth = imgsArr[0].width;
+            var offsetHeight = imgsArr[0].height;
+            var ctx = canvas.getContext('2d');
+            var aniBox = document.getElementsByClassName('ani-box')[0].getElementsByTagName('canvas')[0]
+
+            var n = imgsArr.length - 1;
+
+            var timer = null
+
+
+            drawImage()
+
+            function drawImage() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                //绘制图片     
+                imgsArr[n] && ctx.drawImage(
+                    imgsArr[n],
+                    0, 0, offsetWidth, offsetHeight,
+                    0, 0, canvas.width, canvas.height
+                );
+            }
+            var scrollFunc = (e) => {
+                var value = 0
+
+                if (e.wheelDelta) { //IE/Opera/Chrome
+                    value = e.wheelDelta;
+                } else if (e.detail) { //Firefox
+                    value = e.detail;
+                }
+                if (value > 0) {
+                    if (n == imgsArr.length - 1) {
+                        // 收起画面操作代码写在这
+                        // alert()
+                        // $('.ani-box')[0].style.position = 'relative';
+                        // $('.ani-box')[0].style.top = '0'
+                    }
+                    n < imgsArr.length - 1 && n++;
+                } else {
+                    n > 0 && n--;
+                }
+
+                if (n == imgsArr.length) {
+                    n = imgsArr.length;
+                }
+                drawImage()
+            }
+            aniBox.addEventListener('mousewheel', scrollFunc, false);
+            // aniBox.onmouseover = function () {
+            //   document.addEventListener('mousewheel', scrollFunc, false);
+            // }
+            // aniBox.onmouseout = function () {
+            //   document.removeEventListener("mousewheel", scrollFunc, false);
+            // }
+            // setInterval(function() {
+            //     //清屏
+            //     ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+
+            //     //绘制图片        
+            //     ctx.drawImage(
+            //         imgsArr[n],
+            //         0, 0, offsetWidth, offsetHeight,
+            //         0, 0, canvas.width, canvas.height
+            //     );
+            //     n++;
+            //     //播放到最后一张图片
+            //     if (n == imgsArr.length) {
+            //         n = 0;
+            //         cb && cb(timer);
+            //     }
+
+            // }, 1000 / config.fps);
+        }
+
+        var init = function() {
+            //加载图片，执行动画
+            loadImgs(function(imgs) {
+                ani(imgs, function(timer) {
+                    //播放完停留在最后一张
+                    //clearInterval(timer);
+                });
+            });
+        }
+
+        init();
+
+    })();
 </script>
