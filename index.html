@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="format-detection" content="telephone=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/public.css" />
+    <script type="text/javascript" src="js/public.js"></script>
+    <script src="./js/pxloader-all.min.js"></script>
+    <script src="./js/PxLoaderImage.js"></script>
+</head>
+
+<body>
+    <section class="header"></section>
+    <section class="page" id="app">
+        <video src="img/触摸灯.mp4" muted autoplay loop class="homeVideo"></video>
+        <!-- <div id="sticky">
+            <canvas id="iphone-se" width="432" height="976"></canvas>
+            <p class="left">
+                Durable glass and<br>aluminum design
+            </p>
+            <p class="right">
+                Brilliant 4.7<br>aluminum design
+            </p>
+        </div> -->
+    </section>
+    <section class="frame">
+        <section class="in-img">
+            <img src="../hqtc_pc/img/vnwka9rl21la3lms0qx4xw67qnroip6h.png" alt="">
+        </section>
+    </section>
+    <section class="footer"></section>
+</body>
+
+</html>
+<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="https://vncdn.mobi88.cn/public/jquery-2.1.3.min.js"></script>
+<script type="text/javascript">
+    var app = new Vue({
+        el: "#app",
+        data: {
+            oneHeight: 0,
+            twoHeight: 0,
+        },
+        created() {
+            let that = this;
+        },
+        mounted() {
+            window.scrollTo(0, 0)
+            window.addEventListener("scroll", this.handleScroll, false);
+        },
+        methods: {
+            handleScroll() {
+                //获取滚动时的高度
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+                if (scrollTop > 0) {
+                    //滚动大于0的时候要做的操作
+                }
+                if (scrollTop > 1105) {
+                    
+                }
+            },
+        },
+        destroyed() {
+            document.removeEventListener('scroll', this.handleScroll)
+        },
+    });
+</script>
+
+
+
+<script type="text/javascript">
+    // 引入头部尾部
+    $(function() {
+        $(".header").load("./common/header.html");
+        $(".footer").load("./common/fooder.html");
+        $('#iphone-se').height($(window).height())
+    });
+    // 图像框文字移入移出
+    $('.frame').mouseenter(function() {
+        $('.po-p').css('margin-right', '10px')
+    })
+    $('.frame').mouseleave(function() {
+        $('.po-p').css('margin-right', '0px')
+    });
+
+    if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) { //移动端
+        $('.header')[0].style.display = 'none';
+        $('#app')[0].style.paddingTop = '0'
+    }
+
+    // $(window).on('scroll', function () {
+    //     console.log(document.documentElement.scrollTop)
+    //     console.log(document.getElementById('sticky').offsetTop)
+
+    //     if (document.documentElement.scrollTop >= 1080 && document.documentElement.scrollTop < 1200) {
+    //         $('#sticky')[0].style.position = 'fixed';
+    //         $('#sticky')[0].style.top = '0';
+    //     }
+    //     let scrolled = document.documentElement.scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight)
+    //     let Dome =  $('#sticky')[0];
+    //     console.log(isElementInViewport(Dome))
+    //     if(isElementInViewport(Dome)){
+    //         let frame = Math.ceil(scrolled * 84)
+    //         changeFrame(frame)
+    //     }
+    //     // moveDevice($('#iphone-se'), scrolled, 0.3, 0.6, 0.6, 1)
+    //     showHideText($('.left'), scrolled, 0.45, 0.52, 0.58, 0.65)
+    //     showHideText($('.right'), scrolled, 0.9, 1)
+    // })
+
+    // const loader = new PxLoader()
+    // const images = [];
+
+    // for (let i = 0; i < 85; i++) {
+    //     images[i] = loader.addImage(`https://s3-us-west-2.amazonaws.com/s.cdpn.io/2002878/iphone-se.${('0' + (i + 1)).slice(-2)}.png`)
+    // }
+
+    // loader.addCompletionListener(function () {
+    //     let context = $('#iphone-se')[0].getContext('2d')
+    //     context.drawImage(images[0], 0, 0, 432, 976)
+    // })
+    // loader.start();
+
+    // function changeFrame(frame) {
+    //     let index = frame - 1;
+    //     console.log(index)
+    //     if (index < 0) {
+    //         index = 0;
+    //         $('#sticky')[0].style.position = 'inherit';
+    //     }
+    //     if (index > 84) {
+    //         index = 84;
+
+    //     }
+    //     if (index >= 83) {
+    //         $('#sticky')[0].style.position = 'inherit';
+    //     }
+
+    //     let context = $('#iphone-se')[0].getContext('2d')
+    //     context.drawImage(images[index], 0, 0, 432, 976)
+    // }
+
+    // function moveDevice(el, current, toLeftFrom, toLeftTo, toRightFrom, toRightTo) {
+    //     if (current <= toLeftTo) {
+    //         if (current >= toLeftFrom) {
+    //             let offsetRatio = (current - toLeftFrom) / (toLeftTo - toLeftFrom)
+    //             $('#iphone-se').css('left', $('#iphone-se').width() / 2 * -1 * offsetRatio)
+
+    //         }
+    //     } else {
+    //         let offsetRatio = (current - toRightFrom) / (toRightTo - toRightFrom)
+    //         $('#iphone-se').css('left', $('#iphone-se').width() / 2 * -1 + $('#iphone-se').width() * offsetRatio)
+    //     }
+    // }
+
+    // function showHideText(el, current, showFrom, showTo, hideFrom, hideTo) {
+    //     if (current < showFrom) {
+    //         $(el).css('opacity', 0)
+    //     }
+    //     if (current >= showFrom && current <= showTo) {
+    //         $(el).css('opacity', (current - showFrom) / (showTo - showFrom))
+    //     }
+    //     if (typeof hideFrom !== 'undefined' && typeof hideTo !== 'undefined') {
+    //         if (current > hideFrom && current <= hideTo) {
+    //             $(el).css('opacity', (hideTo - current) / (hideTo - hideFrom))
+    //         }
+    //         if (current > hideTo) {
+    //             $(el).css('opacity', 0)
+    //         }
+    //     }
+    // }
+
+    // function isElementInViewport(el) {
+    //     //获取元素是否在可视区域
+    //     var rect = el.getBoundingClientRect();
+    //     return (
+    //         rect.top >= 0 &&
+    //         rect.left >= 0 &&
+    //         rect.bottom <=
+    //         (window.innerHeight || document.documentElement.clientHeight) &&
+    //         rect.right <=
+    //         (window.innerWidth || document.documentElement.clientWidth)
+    //     );
+    // }
+</script>
