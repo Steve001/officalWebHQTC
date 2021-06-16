@@ -1,0 +1,32 @@
+.banner{
+    width: 100%;
+    padding-top: 1rem;
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    display: block;
+}
+.banner-text{
+    position: absolute;
+    top: 1.5rem;
+    left: 10%;
+    /* background-color: red; */
+}
+.banner-text h1{
+    font-size: 0.625rem;
+    color: white;
+}
+.banner-text p{
+
+    color: white;
+}
+.contain{
+    background-color: #f7f7f7;
+}
+.text-p{
+    float: right;
+}
+.contain-form{
+    background-color: #ffffff;
+}

@@ -1,0 +1,74 @@
+        .contain {
+            padding-top: 1rem;
+        }
+        
+        .banner {
+            width: 100%;
+        }
+        
+        .banner img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        
+        .p-text {
+            height: 3.75rem;
+            text-align: center;
+            font-size: .5rem;
+            padding-top: 0.875rem;
+            box-sizing: border-box;
+        }
+        
+        .banner-t {
+            width: 100%;
+        }
+        
+        .banner-t img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        
+        .development {
+            height: 5rem;
+            background-color: green;
+            text-align: center;
+            font-size: 1.25rem;
+        }
+        
+        .core {
+            text-align: center;
+            background-color: blue;
+        }
+        .wrap-contain{
+            display: flex;
+            justify-content: space-around;
+        }
+        .wrap{
+            width: 5.35rem;
+            background-color: red;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .wrap .wrap-p{
+            position: absolute;
+            top: -2.0625rem;
+            left: .0625rem;
+            transition: all 1.5s;
+        }
+        .core span{
+            font-size: 1.25rem;
+        }
+        .wrap img{
+            display: block;
+        }
+        .wrap:hover .wrap-p{
+            transform: translate(0,3.0625rem);
+            color: white;
+            font-size: .0.625rem;
+        }
+        .wrap:hover{
+            opacity: 0.6;
+        }
