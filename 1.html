@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:100px">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function resetFontSize() {
+            var baseFontSize = 100
+            var designWidth = 750
+            var width = window.innerWidth
+            var currentFontSize = (width / designWidth) * baseFontSize
+            document.getElementsByTagName('html')[0].style.fontSize = currentFontSize + 'px'
+        }
+        window.onresize = function() {
+            resetFontSize()
+        };
+        resetFontSize()
+    </script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            overflow: auto;
+            font-size: .28rem;
+        }
+        
+        .box {
+            width: 7.5rem;
+            height: 1rem;
+            background: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <p>42341</p>
+
+
+</body>
+
+</html>

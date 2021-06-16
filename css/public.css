@@ -22,15 +22,18 @@ html {
 }
 
 .page {
-    padding-top: 60px;
+    padding-top: 1rem;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch
 }
 
 .homeVideo {
     display: flex;
+    width: 100%;
 }
 
 .ani-box {
     transition: all;
 }
+
+
