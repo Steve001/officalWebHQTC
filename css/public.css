@@ -86,15 +86,6 @@ html {
     margin-bottom: 200px;
 }
 
-.frame img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    background-color: #dedede;
-}
-
 .frame img {
     width: 100%;
     -webkit-transition: all 0.5s;
@@ -104,7 +95,7 @@ html {
 }
 
 .p-out {
-    width: 100px;
+    width: 200px;
     /* 每个字体一个块，如果需要变化 */
     position: absolute;
     top: 0;
