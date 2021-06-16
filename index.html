@@ -12,15 +12,22 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/public.css" />
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/vivify.min.css" />
     <script type="text/javascript" src="js/public.js"></script>
-    <script src="./js/pxloader-all.min.js"></script>
-    <script src="./js/PxLoaderImage.js"></script>
+    <!-- <script src="./js/pxloader-all.min.js"></script>
+    <script src="./js/PxLoaderImage.js"></script> -->
 </head>
 
 <body>
     <section class="header"></section>
     <section class="page" id="app">
-        <video src="img/触摸灯.mp4" muted autoplay loop class="homeVideo"></video>
+        <!-- 首页视频模块 -->
+        <section class="Home_VideoBox"></section>
+        <!-- 首页智慧农业产品线模块 -->
+        <section class="Home_Theproductline"></section>
+        <!-- 首页合作伙伴模块 -->
+        <section class="Home_Partners"></section>
         <!-- <div id="sticky">
             <canvas id="iphone-se" width="432" height="976"></canvas>
             <p class="left">
@@ -30,11 +37,6 @@
                 Brilliant 4.7<br>aluminum design
             </p>
         </div> -->
-    </section>
-    <section class="frame">
-        <section class="in-img">
-            <img src="../img/vnwka9rl21la3lms0qx4xw67qnroip6h.png" alt="">
-        </section>
     </section>
     <section class="footer"></section>
 </body>
@@ -74,27 +76,42 @@
     });
 </script>
 
-
-
 <script type="text/javascript">
     // 引入头部尾部
     $(function() {
         $(".header").load("./common/header.html");
         $(".footer").load("./common/fooder.html");
+        $(".Home_Theproductline").load("./common/Home_Theproductline.html");
+        $(".Home_VideoBox").load("./common/Home_VideoBox.html");
+        $(".Home_Partners").load("./common/Home_Partners.html");
         $('#iphone-se').height($(window).height())
     });
     // 图像框文字移入移出
-    $('.frame').mouseenter(function() {
-        $('.po-p').css('margin-right', '10px')
-    })
-    $('.frame').mouseleave(function() {
-        $('.po-p').css('margin-right', '0px')
-    });
+    // $('.partnersChildren').mouseenter(function() {
+    //     console.log('1')
+    //     $('.partnersChildrenDivOne').style.display = 'flex';
+    //     $('.po-p').css('margin-left', '10px')
+    // })
+    // $('.partnersChildren').mouseleave(function() {
+    //     $('.partnersChildrenDivOne').style.display = 'none';
+    //     $('.po-p').css('margin-left', '0px')
+    // });
 
-    if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) { //移动端
-        $('.header')[0].style.display = 'none';
-        $('#app')[0].style.paddingTop = '0'
-    }
+    //鼠标移入移出监测
+	// var oDiv2 = document.getElementsByClassName(".partnersChildren");
+	// oDiv2[0].onmouseover = function(){
+	// 	$('.partnersChildrenDivOne').style.display = 'flex';
+    //     $('.po-p').css('margin-left', '10px')
+	// }
+	// oDiv2[0].onmouseout = function(){
+	// 	$('.partnersChildrenDivOne').style.display = 'none';
+    //     $('.po-p').css('margin-left', '0px')
+	// }
+
+    // if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) { //移动端
+    //     $('.header')[0].style.display = 'none';
+    //     $('#app')[0].style.paddingTop = '0'
+    // }
 
     // $(window).on('scroll', function () {
     //     console.log(document.documentElement.scrollTop)
