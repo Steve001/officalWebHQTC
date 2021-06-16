@@ -86,12 +86,14 @@ html {
     margin-bottom: 200px;
 }
 
+.frame img:hover {
+    transform: scale(1.2);
+    background-color: #dedede;
+}
+
 .frame img {
     width: 100%;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -ms-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .p-out {
