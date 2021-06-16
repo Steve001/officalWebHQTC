@@ -18,18 +18,20 @@
 }
 
 .header .img-style {
-    width: 60px;
-    height: 30px;
+    width: 1rem;
+    height: .5rem;
     display: inline-block;
+    position: absolute;
+    left: .4rem;
+    top: .25rem;
 }
 
 .header-r {
-    width: 660px;
+    width: 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: .3rem;
-    font-size: .3rem;
+    font-size: .25rem;
     font-weight: bolder;
 }
 
@@ -101,35 +103,4 @@ p.right {
 
 .fooder {
     height: 600px;
-}
-
-.frame {
-    width: 5rem;
-    height: 5rem;
-    /* position: relative; */
-    border: solid 1px black;
-    background-color: #f7f7f7;
-    overflow: hidden;
-    z-index: 2;
-    margin-bottom: 200px;
-}
-
-.frame img:hover {
-    transform: scale(1.2);
-    background-color: #dedede;
-}
-
-.frame img {
-    width: 100%;
-    transition: all 0.5s;
-}
-
-.p-out {
-    width: 200px;
-    /* 每个字体一个块，如果需要变化 */
-    position: absolute;
-    top: 0;
-    left: 30%;
-    font-size: 30px;
-    display: flex;
 }

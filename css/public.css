@@ -27,11 +27,6 @@ html {
     -webkit-overflow-scrolling: touch
 }
 
-.homeVideo {
-    display: flex;
-    width: 100%;
-}
-
 .ani-box {
     transition: all;
 }
