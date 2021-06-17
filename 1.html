@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>仿百度新闻效果</title>
+        <link rel="stylesheet" type="text/css" href="./css/reset.css"/>
+        <style type="text/css">
+            li{
+                float: left;
+                padding: 0 10px;
+                height: 100%;
+                color: #FFF;
+                line-height: 40px;
+                cursor: pointer;
+            }
+
+            .back_red{
+                background: rgb(204,0,0);
+            }
+            #big_box{
+                width: 100%;
+                height: 40px;
+                background: rgb(1,32,79);
+                position: relative;
+            }
+            ul{
+                margin: 0 auto;
+                height: 40px;
+                z-index: 10;
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: block;
+            }
+            #box{
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 40px;
+                width: 52px;
+                background: rgb(204,0,0);
+                z-index: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="big_box">
+            <div id="box">
+
+            </div>
+            <ul class="clearfix">
+                <li class="back_red">首页</li>
+                <li>国内</li>
+                <li>国际</li>
+                <li>军事</li>
+                <li>生活</li>
+                <li>社会</li>
+                <li>娱乐</li>
+                <li>嘿嘿嘿</li>
+                <li>女人</li>
+                <li>房产</li>
+                <li>个性推荐</li>
+            </ul>
+        </div>
+
+    </body>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $("li").on("click",function(){
+            $(this).addClass("back_red").siblings().removeClass("back_red");
+        });
+        var enter_li = '';
+        $("li").on("mouseenter",function(){
+            var this_ = this;
+            enter_li = setTimeout(function(){
+                var li_width = $(this_).width()+20;
+                var li_left = 0;
+                for(var i=0;i<$(this_).index();i++){
+                    li_left += Number($("li").eq(i).width()+20);
+                }
+                $("#box").animate({
+                    "width":li_width,
+                    "left":li_left
+                },300)
+            },200)
+
+        })
+        $("li").mouseleave(function(){
+            clearTimeout(enter_li);
+        })
+        $("ul").mouseleave(function(){
+            var li_width = $(".back_red").width()+20;
+            var li_left = 0;
+            for(var i=0;i<$(".back_red").index();i++){
+                li_left += Number($("li").eq(i).width()+20);
+            }
+            $("#box").animate({
+                "width":li_width,
+                "left":li_left
+            },400)
+        })
+    </script>
+</html>
