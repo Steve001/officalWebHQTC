@@ -31,17 +31,7 @@
     justify-content: center;
 
 }
-.text-p{
-    
-    line-height: .625rem;
-    text-align: center;
-    font-size: 0.325rem;
-    position: absolute;
-    top: 1.125rem;
-    right: 1.125rem;
-    
 
-}
 .contain-form{
     position: absolute;
     /* background-color: red; */
@@ -79,4 +69,37 @@
     line-height: .625rem;
     cursor: pointer;
     margin-left: 4.2rem;
+}
+.tips{
+    /* position: relative; */
+    position: fixed;
+    right: 0;
+    top: 30%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.tip-l{
+    width: 2rem;
+    border: solid 1px red;
+    border-radius: .2rem;
+    padding: .1rem;
+    background-color: #f7f7f7;
+    display: none;
+}
+.tip-l h1{
+    color: red;
+    font-style: .2rem;
+}
+.tip-l p{
+color: red;
+font-size: .02rem;
+margin-top: .1rem;
+}
+.tip-r{
+ width: 1rem;
+ cursor: pointer;
+}
+.tip-r img{
+    width: 100%;
 }

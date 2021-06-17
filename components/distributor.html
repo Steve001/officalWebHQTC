@@ -15,51 +15,67 @@
 
 <body>
     <section class="header"></section>
-<section class="banner">
-    <img src="../img/become-dealar-pc.png" alt="">
-    <section class="banner-text">
-        <h1>成为经销商合作伙伴</h1>
-        <p>提升全球农业生产效率，构建一个满足人类未来 100 年发展需求的农业生态系统，让全世界的人们都能获得充足、丰富和安全的食物。</p>
-    </section>
-</section>
-<section class="contain">
-    <section class="text-p">咨询电话:14000-200</section>
-    <section class="contain-form">
-        <section class="clas">
-            <p>申请合作类型</p>
-            <select name id="cooperation_type" class="selected">
-                <option disabled selected style="display: none;">*选择合作类型</option>
-                <option value="1">分销合作</option>
-                <option value="2">经销合作</option>
-            </select>
+    <section class="banner">
+        <img src="../img/become-dealar-pc.png" alt="">
+        <section class="banner-text">
+            <h1>成为经销商合作伙伴</h1>
+            <p>提升全球农业生产效率，构建一个满足人类未来 100 年发展需求的农业生态系统，让全世界的人们都能获得充足、丰富和安全的食物。</p>
         </section>
-        <section class="clas">
-            <p>申请合作合作类型</p>
-            <select name id="cooperation_type" class="selected">
-                <option disabled selected style="display: none;">*选择合作产品类型</option>
-                <option value="1">农业无人机</option>
-                <option value="2">植保</option>
-                <option value="2">农业物联网</option>
-            </select>
-            <section class="input-confirm">
-                <p>申请人信息</p>
-                <input class="input_style" type="text" placeholder="*姓名">
-                <input class="input_style" type="text" placeholder="*手机号">
-                <input class="input_style" type="text" placeholder="*邮箱">
+    </section>
+    <section class="contain">
+        <section class="contain-form">
+            <section class="clas">
+                <p>申请合作类型</p>
+                <select name id="cooperation_type" class="selected">
+                    <option disabled selected style="display: none;">*选择合作类型</option>
+                    <option value="1">分销合作</option>
+                    <option value="2">经销合作</option>
+                </select>
+            </section>
+            <section class="clas">
+                <p>申请合作产品类型</p>
+                <select name id="cooperation_type" class="selected">
+                    <option disabled selected style="display: none;">*选择合作产品类型</option>
+                    <option value="1">农业无人机</option>
+                    <option value="2">植保</option>
+                    <option value="2">农业物联网</option>
+                </select>
+                <section class="input-confirm">
+                    <p>申请人信息</p>
+                    <input class="input_style" type="text" placeholder="*姓名">
+                    <input class="input_style" type="text" placeholder="*手机号">
+                    <input class="input_style" type="text" placeholder="*邮箱">
+                </section>
+            </section>
+            <section class="submit">提交</section>
+
+        </section>
+        <section class="tips">
+            <section class="tip-l">
+                <h1>400-200-3030</h1>
+                <p>周一至周五</p>
+                <p>9:00-12:00&nbsp;&nbsp;14:00-18:00</p>
+            </section>
+            <section class="tip-r">
+                <img src="../img/bdsq-contact-icon-pc.png" alt="">
             </section>
         </section>
-        <section class="submit">提交</section>
-        
     </section>
-</section>
     <section class="fooder"></section>
 </body>
 <script type="text/javascript" src="https://vncdn.mobi88.cn/public/jquery-2.1.3.min.js">
 </script>
 <script type="text/javascript">
-    $(function() {
+    $(function () {
         $(".header").load("../common/header.html");
         $(".fooder").load("../common/fooder.html");
+    });
+    $(".tip-r").click(function () {
+        if ($(".tip-l").css("display") == "none") {
+            $(".tip-l").show();
+        } else {
+            $(".tip-l").hide();
+        }
     });
 </script>
 
