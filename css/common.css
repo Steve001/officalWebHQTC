@@ -1,9 +1,9 @@
 /* 首页 */
 
 .header {
-    height: 1rem;
+    height: .8rem;
     width: 100%;
-    position: fixed;
+    position: relative;
     background: #131313bb;
     display: flex;
     justify-content: center;
@@ -24,7 +24,7 @@
     display: inline-block;
     position: absolute;
     left: .4rem;
-    top: .25rem;
+    top: .15rem;
 }
 
 .header-r {
@@ -34,6 +34,73 @@
     align-items: center;
     font-size: .25rem;
     font-weight: bolder;
+}
+.header-r-block{
+    position: relative;
+}
+
+.navbarAlert_Product{
+    position: fixed;
+    top: .8rem;
+    width: 100%;
+    height: 3rem;
+    background: #fff;
+    display: none;
+    left: 0;
+    flex-direction: column;
+}
+.navbarAlert_Product>div{
+   width: 70%;
+   margin-left: 15%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.navbar-Product-Top{
+    height: .8rem;
+    border-bottom: 1px solid #86868b;
+    color: #86868b;
+    font-weight: 100;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    font-size: .2rem;
+}
+.navbar-Product-Top span{
+    cursor: pointer;
+}
+.navBar-Active{
+    color: red;
+    font-weight: bold;
+    font-size: .22rem;
+}
+.navbar-Product-Bottom{
+    height: 2.2rem;
+    /* background: orange; */
+}
+.navbar-Product-Bottom>div{
+    width: 3rem;
+    height: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #131313;
+    font-size: .2rem;
+    font-weight: 100;
+}
+.navbar-Product-Bottom>div img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.navBarAlert_Service,.navBarAlert_AboutUs{
+    position: absolute;
+    top: .57rem;
+    width: 2.5rem;
+    height:3rem;
+    background: #fff;
+    left: -.75rem;
+    display: none;
+    z-index: 10;
 }
 
 body {

@@ -22,7 +22,7 @@ html {
 }
 
 .page {
-    padding-top: 1rem;
+    /* padding-top: .8rem; */
     overflow-y: auto;
     -webkit-overflow-scrolling: touch
 }
