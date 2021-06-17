@@ -20,14 +20,29 @@
 </head>
 
 <body>
+    <!-- 顶部navbar -->
     <section class="header"></section>
+
+    <!-- 主体内容 -->
     <section class="page" id="app">
         <!-- 首页视频模块 -->
         <section class="Home_VideoBox"></section>
+
+        <!-- 首页视频弹出播放模块 -->
+        <section class="Home_VideoAlert"></section>
+
         <!-- 首页智慧农业产品线模块 -->
         <section class="Home_Theproductline"></section>
+
         <!-- 首页合作伙伴模块 -->
         <section class="Home_Partners"></section>
+
+        <!-- 首页相关服务模块 -->
+        <section class="Home_RelatedServices"></section>
+
+        <!-- 首页新闻资讯模块 -->
+        <section class="Home_NewsAndInformation"></section>
+
         <!-- <div id="sticky">
             <canvas id="iphone-se" width="432" height="976"></canvas>
             <p class="left">
@@ -38,6 +53,8 @@
             </p>
         </div> -->
     </section>
+
+    <!-- 底部介绍 -->
     <section class="footer"></section>
 </body>
 
@@ -81,57 +98,89 @@
     $(function() {
         $(".header").load("./common/header.html");
         $(".footer").load("./common/fooder.html");
-        $(".Home_Theproductline").load("./common/Home_Theproductline.html");
-        $(".Home_VideoBox").load("./common/Home_VideoBox.html");
-        $(".Home_Partners").load("./common/Home_Partners.html");
-        $('#iphone-se').height($(window).height())
+        $(".Home_Theproductline").load("./components/Home_Theproductline.html");
+        $(".Home_VideoBox").load("./components/Home_VideoBox.html");
+        $(".Home_Partners").load("./components/Home_Partners.html");
+        $(".Home_RelatedServices").load("./components/Home_RelatedServices.html");
+        $(".Home_VideoAlert").load("./components/Home_VideoAlert.html");
+        $(".Home_NewsAndInformation").load("./components/Home_NewsAndInformation.html");
+        // $('#iphone-se').height($(window).height())
     });
-    // 图像框文字移入移出
-    // $('.partnersChildren').mouseenter(function() {
-    //     console.log('1')
-    //     $('.partnersChildrenDivOne').style.display = 'flex';
-    //     $('.po-p').css('margin-left', '10px')
-    // })
-    // $('.partnersChildren').mouseleave(function() {
-    //     $('.partnersChildrenDivOne').style.display = 'none';
-    //     $('.po-p').css('margin-left', '0px')
-    // });
 
     //鼠标移入移出监测
-	// var oDiv2 = document.getElementsByClassName(".partnersChildren");
-	// oDiv2[0].onmouseover = function(){
-	// 	$('.partnersChildrenDivOne').style.display = 'flex';
-    //     $('.po-p').css('margin-left', '10px')
-	// }
-	// oDiv2[0].onmouseout = function(){
-	// 	$('.partnersChildrenDivOne').style.display = 'none';
-    //     $('.po-p').css('margin-left', '0px')
-	// }
+	function oDiv1(){
+		$('.partnersChildrenDivOne')[0].style.display = 'flex';
+	}
+	function oDiv2(){
+		$('.partnersChildrenDivOne')[0].style.display = 'none';
+	}
 
+    // 视频显示隐藏弹窗事件
+    function showVideo(){
+        $('.Home_VideoAlert').fadeIn()
+    }
+    function hideVideo(){
+        $('.Home_VideoAlert').fadeOut()
+    }
     // if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) { //移动端
     //     $('.header')[0].style.display = 'none';
     //     $('#app')[0].style.paddingTop = '0'
     // }
-
-    // $(window).on('scroll', function () {
-    //     console.log(document.documentElement.scrollTop)
-    //     console.log(document.getElementById('sticky').offsetTop)
-
-    //     if (document.documentElement.scrollTop >= 1080 && document.documentElement.scrollTop < 1200) {
-    //         $('#sticky')[0].style.position = 'fixed';
-    //         $('#sticky')[0].style.top = '0';
-    //     }
-    //     let scrolled = document.documentElement.scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight)
-    //     let Dome =  $('#sticky')[0];
-    //     console.log(isElementInViewport(Dome))
-    //     if(isElementInViewport(Dome)){
-    //         let frame = Math.ceil(scrolled * 84)
-    //         changeFrame(frame)
-    //     }
-    //     // moveDevice($('#iphone-se'), scrolled, 0.3, 0.6, 0.6, 1)
-    //     showHideText($('.left'), scrolled, 0.45, 0.52, 0.58, 0.65)
-    //     showHideText($('.right'), scrolled, 0.9, 1)
-    // })
+    let oneIndex=0;
+    let twoIndex=0;
+    let threeIndex=0;
+    $(window).on('scroll', function () {
+        let DomeOne = $('.Home_Partners')[0];
+        let DomeTwo = $('.Home_Theproductline')[0];
+        let DomeThree = $('.Home_NewsAndInformation')[0];
+        if(isElementInViewport(DomeOne)) {
+            if(oneIndex != 0){
+                return false;
+            }
+            oneIndex ++;
+            $('#partnersTitle').addClass('vivify popIn')
+            $('.partnersChildren').addClass('vivify popInLeft')
+            $('.partnersChildrenTwo').addClass('vivify popInRight')
+        }
+        if(isElementInViewport(DomeTwo)) {
+            if(twoIndex != 0){
+                return false;
+            }
+            twoIndex ++;
+            $('#Theproductline_title').addClass('vivify popIn')
+            let childrenList = $('.Home_Theproductline').children().children()
+            for (let i = 1; i < childrenList.length; i++) {
+                $(childrenList[i]).addClass('vivify fadeInLeft')
+            }
+        }
+        if(isElementInViewport(DomeThree)) {
+            if(threeIndex != 0){
+                return false;
+            }
+            threeIndex ++;
+            let childrenList = $('.Home_NewsAndInformation').children().children('div')[0].children
+            console.log(childrenList.children)
+            for (let i = 0; i < childrenList.length; i++) {
+                console.log(childrenList[i])
+                $(childrenList[i]).addClass('vivify fadeIn')
+            }
+        }
+        // console.log(document.getElementById('sticky').offsetTop)
+        // if (document.documentElement.scrollTop >= 1080 && document.documentElement.scrollTop < 1200) {
+        //     $('#sticky')[0].style.position = 'fixed';
+        //     $('#sticky')[0].style.top = '0';
+        // }
+        // let scrolled = document.documentElement.scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight)
+        // let Dome =  $('#sticky')[0];
+        // console.log(isElementInViewport(Dome))
+        // if(isElementInViewport(Dome)){
+        //     let frame = Math.ceil(scrolled * 84)
+        //     changeFrame(frame)
+        // }
+        // // moveDevice($('#iphone-se'), scrolled, 0.3, 0.6, 0.6, 1)
+        // showHideText($('.left'), scrolled, 0.45, 0.52, 0.58, 0.65)
+        // showHideText($('.right'), scrolled, 0.9, 1)
+    })
 
     // const loader = new PxLoader()
     // const images = [];
@@ -195,16 +244,14 @@
     //     }
     // }
 
-    // function isElementInViewport(el) {
-    //     //获取元素是否在可视区域
-    //     var rect = el.getBoundingClientRect();
-    //     return (
-    //         rect.top >= 0 &&
-    //         rect.left >= 0 &&
-    //         rect.bottom <=
-    //         (window.innerHeight || document.documentElement.clientHeight) &&
-    //         rect.right <=
-    //         (window.innerWidth || document.documentElement.clientWidth)
-    //     );
-    // }
+    function isElementInViewport(el) {
+        //获取元素是否在可视区域
+        var clientHeight = window.innerHeight;
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        var offsetTop = el.offsetTop;
+        var objHeight = el.offsetHeight;
+        if(offsetTop < scrollTop + clientHeight && offsetTop + objHeight > scrollTop) {
+            return true;
+        }
+    }
 </script>

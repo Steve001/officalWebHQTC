@@ -31,6 +31,33 @@
     margin-top: .5rem;
     cursor: pointer;
 }
+.Home_VideoAlert{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.videoAlert{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.videoAlertContaner{
+    width: 50%;
+}
+.videoAlert>img{
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: .3rem;
+    height: .3rem;
+}
 .genduoBox{
     font-size: .25rem;
     position: absolute;
@@ -49,13 +76,13 @@
     height: auto;
     display: flex;
     background: #fff;
-    padding: 1rem;
-    box-sizing: border-box;
+    padding: 0 0 1rem 0;
+    /* box-sizing: border-box; */
     font-size: .22rem;
     justify-content: space-between;
     position: relative;
     justify-content: center;
-    padding-top: 2rem;
+    flex-wrap: wrap;
 }
 .Theproductline_title{
     position: absolute;
@@ -78,6 +105,8 @@
     align-items: center;
     justify-content: space-between;
     margin-left: 1rem;
+    font-size: .23rem;
+    margin-top: 2rem;
 }
 
 .frame img:hover{
@@ -87,7 +116,8 @@
 }
 
 .frame img {
-    width: 100%;
+    width: 2rem;
+    height: 2rem;
     transition: all 0.5s;
 }
 
@@ -98,9 +128,10 @@
     background: #fff;
     margin-top: 0.1rem;
     padding: 1rem 0;
+    padding-top: 0;
     box-sizing: border-box;
     position: relative;
-    padding-top: 2rem;
+    flex-wrap: wrap;
 }
 .partnersBox>div{
     width: 11rem;
@@ -108,21 +139,23 @@
     background: #fff;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border-radius: 0.2rem;
+    border-radius: 0.1rem;
     overflow: hidden;
+    margin-top: 2rem;
 }
 .partnersBox>div img{
     width: 100%;
     height: 100%;
-    border-radius: 0.2rem;
+    border-radius: 0.1rem;
 }
 
 .partnersBox>div:hover img{
     transform: scale(1.2);
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
     cursor: pointer;
 }
 
@@ -138,8 +171,78 @@
     flex-direction: column;
     align-items: center;
     display: none;
+    top: 1rem;
+    cursor: pointer;
 }
 .partnersBox>div span{
     color: #fff;
     font-size: .25rem;
+}
+.partnersBox>div>div>span:nth-child(1){
+    font-weight: bold;
+    font-size: .35rem;
+}
+
+.relatedServices > div{
+    width: 7rem;
+    height: 6rem;
+    background: rgba(0, 0, 0, .05);
+    border-radius: 0;
+    transition: all .5s;
+}
+.relatedServices > div span{
+    color: #1d1d1f;
+}
+
+.newsAndInformation{
+    width: 100%;
+    height: 4rem;
+    background: #fff;
+    margin-top: .1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #F5F5F5;
+}
+.listBox{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: .5rem;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+}
+.listBox>div{
+    flex: 1;
+    height: 2rem;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding:0 .3rem;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.listBox>div>span:nth-child(1){
+    font-size: .2rem;
+    color: #999;
+    margin-bottom: .2rem;
+}
+.listBox>div>span:nth-child(2){
+    font-size: .35rem;
+    color: #1d1d1f;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:1;
+    overflow: hidden;
+    margin-bottom: .2rem;
+}
+.listBox>div>span:nth-child(3){
+    font-size: .25rem;
+    color: red;
+}
+.listBox>div:last-child{
+    border: none;
 }
