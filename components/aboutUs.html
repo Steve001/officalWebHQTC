@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/public.css" />
     <link rel="stylesheet" href="../css/aboutUs.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script type="text/javascript" src="/js/public.js"></script>
     <title>关于我们</title>
 </head>
@@ -30,6 +30,35 @@
         </section>
         <section class="banner-t">
             <img src="../img/mission-new-bg.png" alt="">
+        </section>
+        <section class="development">
+            <h1>华启发展史</h1>
+            <section class="swiper-container">
+                <section class="swiper-wrapper">
+                    <section class="swiper-slide">
+                        <h1>2017年</h1>
+                        <p>
+                            推出全自主飞行的植保无人机 P20，开始探索农业全程无人化技术；极飞遥感无人机投入规模化使用，中国农田开启数字化进程
+                        </p>
+                        <img class="l-img" src="../img/ki4tdba73igewsdus10xx44l1mr2xhdk.png" alt="">
+                    </section>
+                    <section class="swiper-slide"><h1>2018年</h1>
+                        <p>
+                            推出全自主飞行的植保无人机 P20，开始探索农业全程无人化技术；极飞遥感无人机投入规模化使用，中国农田开启数字化进程
+                        </p>
+                        <img class="l-img" src="../img/ki4tdba73igewsdus10xx44l1mr2xhdk.png" alt=""></section>
+                    <section class="swiper-slide"><h1>2021年</h1>
+                        <p>
+                            推出全自主飞行的植保无人机 P20，开始探索农业全程无人化技术；极飞遥感无人机投入规模化使用，中国农田开启数字化进程
+                        </p>
+                        <img class="l-img" src="../img/ki4tdba73igewsdus10xx44l1mr2xhdk.png" alt=""></section>
+                </section>
+                <!-- 如果需要导航按钮 -->
+                <section class="swiper-button-prev"></section>
+                <section class="swiper-button-next"></section>
+                <!-- 如果需要滚动条 -->
+                <section class="swiper-scrollbar"></section>
+            </section>
         </section>
         <section class="core">
             <span>华启核心价值观</span>
@@ -112,6 +141,27 @@
         $(".footer").load("../common/fooder.html");
     });
 
+    //    轮播图
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal', // 垂直切换选项
+        loop: true, // 循环模式选项
+        autoplay:true,
+        // 如果需要分页器
+        // pagination: {
+        //   el: '.swiper-pagination',
+        // },
+
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // 如果需要滚动条
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    })
 </script>
 
 </html>
