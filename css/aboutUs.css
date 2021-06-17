@@ -30,23 +30,19 @@
             display: block;
         }
         
-        .development {
-            height: 5rem;
-            background-color: green;
-            text-align: center;
-            font-size: 1.25rem;
-        }
         
         .core {
             text-align: center;
-            background-color: blue;
+            /* background-color: blue; */
+            padding: 1.875rem 0;
         }
         .wrap-contain{
             display: flex;
             justify-content: space-around;
+            margin-top: .625rem;
         }
         .wrap{
-            width: 5.35rem;
+            width: 20%;
             background-color: red;
             position: relative;
             overflow: hidden;
@@ -62,6 +58,7 @@
             font-size: 1.25rem;
         }
         .wrap img{
+            width: 100%;
             display: block;
         }
         .wrap:hover .wrap-p{
@@ -70,5 +67,49 @@
             font-size: .0.625rem;
         }
         .wrap:hover{
-            opacity: 0.6;
+            opacity: 0.9;
         }
+        /* 从下到上 */
+        .wrap .wrap-pp{
+            position: absolute;
+            top: 6.9375rem;
+            left: .0625rem;
+            transition: all 1.5s;
+        }
+        .wrap:hover .wrap-pp{
+            transform: translate(0,-6.0625rem);
+            color: white;
+            font-size: .0.625rem;
+        }
+        .wrap:hover .wrap-ppp{
+            display: none;
+        }
+        .wrap-ppp{
+            position: absolute;
+            top: 0.824rem;
+            left: 1.354rem;
+            font-size: .324rem;
+            color: #fff;
+        }
+        /* 文本描述 */
+        .textp{
+            text-align: center;
+        }
+        .textp h1{
+            font-size: 0.625rem;
+            margin: 0.235rem auto;
+        }
+        .textp p{
+            font-size: 0.235rem;
+            margin: 0.235rem auto;
+
+        }
+.cooperation{
+    width: 100%;
+    padding: 0.325rem 0;
+    
+}
+.cooperation img{
+    width: 100%;
+}
+

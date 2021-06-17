@@ -22,11 +22,61 @@
     color: white;
 }
 .contain{
+    height: 18rem;
+    /* background-color: red; */
     background-color: #f7f7f7;
+    position: relative;
+    margin: 0.75rem;
+    display: flex;
+    justify-content: center;
+
 }
 .text-p{
-    float: right;
+    
+    line-height: .625rem;
+    text-align: center;
+    font-size: 0.325rem;
+    position: absolute;
+    top: 1.125rem;
+    right: 1.125rem;
+    
+
 }
 .contain-form{
-    background-color: #ffffff;
+    position: absolute;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+.clas{
+  margin: .95rem 1.875rem;
+
+}
+.clas p{
+    font-size: .625rem;
+    margin: .625rem 0;
+}.selected{
+    width: 6.25rem;
+    height: .625rem;
+    border: black solid .0225rem;
+}
+.input-confirm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.input_style{
+    width: 6.25rem;
+    height: .625rem;
+    border: black solid .0225rem;
+    margin: .425rem 0;
+}
+.submit{
+    width: 1.625rem;
+    height: .625rem;
+    background-color: green;
+    text-align: center;
+    line-height: .625rem;
+    cursor: pointer;
+    margin-left: 4.2rem;
 }
