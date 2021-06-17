@@ -22,11 +22,84 @@
     color: white;
 }
 .contain{
+    height: 18rem;
+    /* background-color: red; */
     background-color: #f7f7f7;
+    position: relative;
+    margin: 0.75rem;
+    display: flex;
+    justify-content: center;
+
 }
-.text-p{
-    float: right;
-}
+
 .contain-form{
-    background-color: #ffffff;
+    position: absolute;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+.clas{
+  margin: .95rem 1.875rem;
+
+}
+.clas p{
+    font-size: .625rem;
+    margin: .625rem 0;
+}.selected{
+    width: 6.25rem;
+    height: .625rem;
+    border: black solid .0225rem;
+}
+.input-confirm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.input_style{
+    width: 6.25rem;
+    height: .625rem;
+    border: black solid .0225rem;
+    margin: .425rem 0;
+}
+.submit{
+    width: 1.625rem;
+    height: .625rem;
+    background-color: green;
+    text-align: center;
+    line-height: .625rem;
+    cursor: pointer;
+    margin-left: 4.2rem;
+}
+.tips{
+    /* position: relative; */
+    position: fixed;
+    right: 0;
+    top: 30%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.tip-l{
+    width: 2rem;
+    border: solid 1px red;
+    border-radius: .2rem;
+    padding: .1rem;
+    background-color: #f7f7f7;
+    display: none;
+}
+.tip-l h1{
+    color: red;
+    font-style: .2rem;
+}
+.tip-l p{
+color: red;
+font-size: .02rem;
+margin-top: .1rem;
+}
+.tip-r{
+ width: 1rem;
+ cursor: pointer;
+}
+.tip-r img{
+    width: 100%;
 }
