@@ -23,7 +23,6 @@
 <body>
     <!-- 顶部navbar -->
     <section class="header"></section>
-
     <!-- 主体内容 -->
     <section class="page" id="app">
         <!-- 首页视频模块 -->
@@ -84,7 +83,7 @@
                     //滚动大于0的时候要做的操作
                 }
                 if (scrollTop > 1105) {
-                    
+
                 }
             },
         },
@@ -106,59 +105,63 @@
         $(".Home_VideoAlert").load("./components/Home_VideoAlert.html");
         $(".Home_NewsAndInformation").load("./components/Home_NewsAndInformation.html");
         // $('#iphone-se').height($(window).height())
+
     });
 
     //鼠标移入移出监测
-	function oDiv1(){
-		$('.partnersChildrenDivOne')[0].style.display = 'flex';
-	}
-	function oDiv2(){
-		$('.partnersChildrenDivOne')[0].style.display = 'none';
-	}
+    function oDiv1() {
+        $('.partnersChildrenDivOne')[0].style.display = 'flex';
+    }
+
+    function oDiv2() {
+        $('.partnersChildrenDivOne')[0].style.display = 'none';
+    }
+
 
     // 视频显示隐藏弹窗事件
-    function showVideo(){
+    function showVideo() {
         $('.Home_VideoAlert').fadeIn()
     }
-    function hideVideo(){
+
+    function hideVideo() {
         $('.Home_VideoAlert').fadeOut()
     }
     // if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) { //移动端
     //     $('.header')[0].style.display = 'none';
     //     $('#app')[0].style.paddingTop = '0'
     // }
-    let oneIndex=0;
-    let twoIndex=0;
-    let threeIndex=0;
-    $(window).on('scroll', function () {
+    let oneIndex = 0;
+    let twoIndex = 0;
+    let threeIndex = 0;
+    $(window).on('scroll', function() {
         let DomeOne = $('.Home_Partners')[0];
         let DomeTwo = $('.Home_Theproductline')[0];
         let DomeThree = $('.Home_NewsAndInformation')[0];
-        if(isElementInViewport(DomeOne)) {
-            if(oneIndex != 0){
+        if (isElementInViewport(DomeOne)) {
+            if (oneIndex != 0) {
                 return false;
             }
-            oneIndex ++;
+            oneIndex++;
             $('#partnersTitle').addClass('vivify popIn')
             $('.partnersChildren').addClass('vivify popInLeft')
             $('.partnersChildrenTwo').addClass('vivify popInRight')
         }
-        if(isElementInViewport(DomeTwo)) {
-            if(twoIndex != 0){
+        if (isElementInViewport(DomeTwo)) {
+            if (twoIndex != 0) {
                 return false;
             }
-            twoIndex ++;
+            twoIndex++;
             $('#Theproductline_title').addClass('vivify popIn')
             let childrenList = $('.Home_Theproductline').children().children()
             for (let i = 1; i < childrenList.length; i++) {
                 $(childrenList[i]).addClass('vivify fadeInLeft')
             }
         }
-        if(isElementInViewport(DomeThree)) {
-            if(threeIndex != 0){
+        if (isElementInViewport(DomeThree)) {
+            if (threeIndex != 0) {
                 return false;
             }
-            threeIndex ++;
+            threeIndex++;
             let childrenList = $('.Home_NewsAndInformation').children().children('div')[0].children
             console.log(childrenList.children)
             for (let i = 0; i < childrenList.length; i++) {
@@ -251,7 +254,7 @@
         var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         var offsetTop = el.offsetTop;
         var objHeight = el.offsetHeight;
-        if(offsetTop < scrollTop + clientHeight && offsetTop + objHeight > scrollTop) {
+        if (offsetTop < scrollTop + clientHeight && offsetTop + objHeight > scrollTop) {
             return true;
         }
     }
