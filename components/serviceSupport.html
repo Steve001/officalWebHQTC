@@ -87,9 +87,6 @@
     $(document).ready(function(){
 		$(".fotm-li").on("click",function(){
             $(this).addClass("back_red").siblings().removeClass("back_red");
-            $(this).click(this.index,function(){
-                $('.form-li-file')[this.index].addClass("form-li-filel")
-            })
         });
 	})
    
@@ -99,8 +96,7 @@
                 function () {
                     $(".wu").show();
                     $(".niu").hide();
-                    $(".default").hide();
-                    
+                    $(".default").hide();  
                 }
             )
         }
