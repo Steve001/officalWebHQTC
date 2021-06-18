@@ -1,7 +1,7 @@
 .banner {
     height: 7rem;
     width: 100%;
-    /* padding-top: 1rem; */
+    padding-top: 1rem;
     position: relative;
 }
 
@@ -57,7 +57,7 @@
     height: 4rem;
     z-index: 2;
     /* background-color: blue; */
-    border-bottom: red solid .08rem;
+    border-bottom: #f0f0f2 solid .08rem;
 }
 
 .fotm-li {
@@ -68,7 +68,31 @@
     font-size: .2rem;
 }
 
+.back_red {
+    border-bottom: thistle solid .05rem;
+}
+
 .fotm-li img {
     width: 4rem;
     height: 3rem;
 }
+
+.file {
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.file h1 {
+    font-size: .5rem;
+    margin: 1rem 0;
+}
+
+.file_word {
+    border-top: .05rem solid red;
+    border-bottom: .05rem solid red;
+}
+
+
+/* .form-li-filel{
+    display: none!important;
+} */
