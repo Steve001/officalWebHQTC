@@ -1,12 +1,12 @@
-<section class="header vivify flipInX">
+<section class="header vivify swoopInLeft">
     <a href="#">
         <img class="img-style" src="https://www.xa.com/img/nav-icon-phone.svg" alt="">
     </a>
-    <section class="header-r">
-        <li class="header-r-block">
+    <section class="header-r" id="nav">
+        <li class="header-r-block current">
             <a href="../index.html">首页</a>
         </li>
-        <li class="header-r-block" onmouseover="navBaronOver(this)" >
+        <li class="header-r-block" onmouseover="navBaronOver(this)">
             <a href="../components/product.html">产品</a>
             <div class="navbarAlert_Product">
                 <div class="navbar-Product-Top">
@@ -44,7 +44,11 @@
         </li>
         <li class="header-r-block" onmouseover="navBaronOver(this)">
             <a href="../components/serviceSupport.html">服务支持</a>
-            <div class="navBarAlert_Service" onmouseout="navBaronOut(1)"></div>
+            <div class="navBarAlert_Service">
+                <span>产品技术支持</span>
+                <span>售后服务政策</span>
+                <span>保障与维修</span>
+            </div>
         </li>
         <li class="header-r-block" onmouseover="navBaronOver(this)">
             <a href="../components/aboutUs.html">关于我们</a>
@@ -53,6 +57,109 @@
         <li class="header-r-block">
             <a href="../components/distributor.html">经销商</a>
         </li>
+        <div class="nav-current"></div>
     </section>
-    
+
 </section>
+
+<script>
+    var $navcur = $(".nav-current");
+
+    var $nav = $("#nav");
+    var current = ".current";
+    var itemW = $nav.find('.current').innerWidth(); //默认当前位置宽度
+    var defLeftW = $nav.find('.current').position().left; //默认当前位置Left值
+
+    //添加默认下划线
+    $navcur.css({
+        width: itemW,
+        left: defLeftW
+    });
+
+    //hover事件
+    $nav.find("li").hover(function() {
+        var index = $(this).index(); //获取滑过元素索引值
+        var leftW = $(this).position().left; //获取滑过元素Left值
+        var currentW = $nav.find("li").eq(index).innerWidth(); //获取滑过元素Width值
+        $navcur.stop().animate({
+            left: leftW,
+            width: currentW
+        }, 300);
+
+    }, function() {
+        $navcur.stop().animate({
+            left: defLeftW,
+            width: itemW
+        }, 300)
+    })
+
+
+
+    // 鼠标滑入
+    function navBaronOver(ev) {
+
+        switch (ev.children[0].innerText) {
+            case '产品':
+                $('.navbarAlert_Product').slideDown()
+                $('.navBarAlert_Service').hide()
+                $('.navBarAlert_AboutUs').hide()
+
+                break;
+            case '服务支持':
+                $('.navbarAlert_Product').hide()
+                $('.navBarAlert_AboutUs').hide()
+                $('.navBarAlert_Service').slideDown()
+                break;
+            case '关于我们':
+                $('.navBarAlert_Service').hide()
+                $('.navbarAlert_Product').hide()
+                $('.navBarAlert_AboutUs').slideDown()
+                break;
+            default:
+                break;
+        }
+    }
+
+    // 鼠标滑出
+    function navBaronOut(index) {
+        var m_move_x = window.event.pageX; //鼠标X轴坐标
+        var m_move_y = window.event.pageY;　　 //鼠标Y轴坐标
+        var div1 = document.getElementsByClassName("navbar-Product-Bottom")[0];
+        var divx1 = div1.offsetLeft;
+        var divy1 = div1.offsetTop;    
+        var divx2 = div1.offsetLeft + div1.offsetWidth;    
+        var divy2 = div1.offsetTop + div1.offsetHeight;    
+        switch (index) {
+            case 0:
+                if (m_move_x < divx1 || m_move_x > divx2 || m_move_y < divy1 || m_move_y > divy2) {
+                    $('.navbarAlert_Product').hide()
+                }
+                break;
+            case 1:
+                $('.navBarAlert_Service').hide()
+                break;
+            case 2:
+                $('.navBarAlert_AboutUs').hide()
+                break;
+            default:
+                break;
+        }
+    }
+
+    // 主菜单点击事件
+    $('.header-r-block').on('click', function(ev) {
+        console.log(this)
+    })
+
+    function navBarClick(index) {
+        let dome = $('.navbar-Product-Top').children();
+        console.log(dome)
+        for (let i = 0; i < dome.length; i++) {
+            if (i == index) {
+                $(dome[i]).addClass('navBar-Active')
+            } else {
+                $(dome[i]).removeClass('navBar-Active')
+            }
+        }
+    }
+</script>

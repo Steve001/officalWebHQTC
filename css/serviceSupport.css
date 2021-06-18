@@ -1,15 +1,17 @@
-.banner{
+.banner {
     height: 7rem;
     width: 100%;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     position: relative;
 }
-.banner img{
+
+.banner img {
     display: block;
     width: 100%;
     height: 100%;
 }
-.input-p{
+
+.input-p {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -17,10 +19,12 @@
     margin-left: -25%;
     text-align: center;
 }
-.input-p h1{
+
+.input-p h1 {
     font-size: .8rem;
 }
-.inputt{
+
+.inputt {
     border: solid .02rem #f0f0f2;
     width: 12rem;
     height: 1rem;
@@ -30,20 +34,23 @@
     position: relative;
     background-color: #f6f6f6;
 }
-#inputt_icon{
+
+#inputt_icon {
     position: absolute;
     right: .2rem;
     top: 2.3rem;
     width: .6rem;
-    height:.6rem;
+    height: .6rem;
     z-index: 1;
 }
-.product_line{
+
+.product_line {
     /* background-color: red; */
     z-index: 1;
     padding: 0 2rem;
 }
-.form{
+
+.form {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -52,15 +59,16 @@
     /* background-color: blue; */
     border-bottom: red solid .08rem;
 }
-.fotm-li{
+
+.fotm-li {
     width: 4rem;
     height: 4rem;
     text-align: center;
     /* border-bottom: thistle solid .1rem; */
     font-size: .2rem;
 }
-.fotm-li img{
+
+.fotm-li img {
     width: 4rem;
     height: 3rem;
-
 }
