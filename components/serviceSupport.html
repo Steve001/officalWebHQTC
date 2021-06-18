@@ -27,24 +27,51 @@
     </section>
     <section class="product_line">
         <section class="form">
-            <li class="fotm-li">
+            <li class="fotm-li" id="wuwu">
                 <img src="../img/8D26619B4FD4CBC37FCF32D2BCA8B0E1.png" alt="">
                 <p>农业无人机</p>
             </li>
-            <li class="fotm-li">
-                <img src="../img/8D26619B4FD4CBC37FCF32D2BCA8B0E1.png" alt="">
-                <p>农业无人机</p>
-            </li>
-            <li class="fotm-li">
-                <img src="../img/8D26619B4FD4CBC37FCF32D2BCA8B0E1.png" alt="">
-                <p>农业无人机</p>
-            </li>
-            <li class="fotm-li">
+            <li class="fotm-li" id="niuniu">
                 <img src="../img/8D26619B4FD4CBC37FCF32D2BCA8B0E1.png" alt="">
                 <p>农业无人机</p>
             </li>
         </section>
 
+    </section>
+    <section class="file">
+        <h1>文档与手册</h1>
+        <section class="file_word">
+            <section class="default">
+                <p style="display: flex; justify-content: space-between;">
+                    <span>无人default</span><a href="../word/1.doc" download="">下载</a>
+                </p>
+            </section>
+            <section class="wu" style="display: none;">
+                <p style="display: flex; justify-content: space-between;">
+                    <span>无人机</span><a href="../word/1.doc" download="">下载</a>
+                </p>
+            </section>
+            <section class="niu" style="display: none;">
+                <p style="display: flex; justify-content: space-between;">
+                    <span>牛人机</span><a href="../word/1.doc" download="">下载</a>
+                </p>
+                <p style="display: flex; justify-content: space-between;">
+                    <span>牛人机</span><a href="../word/1.doc" download="">下载</a>
+                </p>
+                <p style="display: flex; justify-content: space-between;">
+                    <span>牛人机</span><a href="../word/1.doc" download="">下载</a>
+                </p>
+                <p style="display: flex; justify-content: space-between;">
+                    <span>牛人机</span><a href="../word/1.doc" download="">下载</a>
+                </p>
+                <p style="display: flex; justify-content: space-between;">
+                    <span>牛人机</span><a href="../word/1.doc" download="">下载</a>
+                </p>
+                <p style="display: flex; justify-content: space-between;">
+                    <span>牛人机</span><a href="../word/1.doc" download="">下载</a>
+                </p>
+            </section>
+        </section>
     </section>
     <section class="footer"></section>
 </body>
@@ -57,19 +84,37 @@
     });
 
     $(document).ready(function() {
-        $(".fotm-li").each(function(index) {
-            $(this).click(function() {
-                $(this).css(
-                    'border-bottom', 'thistle solid .1rem'
-                )
-                $(!this).css(
-                    'border-bottom', 'none'
-                )
-
+        $(".fotm-li").on("click", function() {
+            $(this).addClass("back_red").siblings().removeClass("back_red");
+            $(this).click(this.index, function() {
+                $('.form-li-file')[this.index].addClass("form-li-filel")
             })
-
-        })
+        });
     })
+
+    $(
+        function() {
+            $("#wuwu").click(
+                function() {
+                    $(".wu").show();
+                    $(".niu").hide();
+                    $(".default").hide();
+
+                }
+            )
+        }
+    )
+    $(
+        function() {
+            $("#niuniu").click(
+                function() {
+                    $(".niu").show();
+                    $(".wu").hide();
+
+                }
+            )
+        }
+    )
 </script>
 
 </html>
