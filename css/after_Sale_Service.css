@@ -1,0 +1,11 @@
+/* 售后服务 */
+.banner{
+    height: 2rem;
+background-color: #333333;
+padding-top: 1rem;
+text-align: center;
+}
+.banner>h1{
+    color: #fff;
+    font-size: .8rem;
+}
