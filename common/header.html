@@ -6,7 +6,7 @@
         <li class="header-r-block current">
             <a href="../index.html">首页</a>
         </li>
-        <li class="header-r-block" onmouseover="navBaronOver(this)">
+        <li class="header-r-block" >
             <a href="../components/product.html">产品</a>
             <div class="navbarAlert_Product">
                 <div class="navbar-Product-Top">
@@ -18,7 +18,7 @@
                     <span onclick="navBarClick(5)">农业物联网</span>
                     <span onclick="navBarClick(6)">智慧农业系统</span>
                 </div>
-                <div class="navbar-Product-Bottom" onmouseout="navBaronOut(0)">
+                <div class="navbar-Product-Bottom">
                     <div>
                         <img src="/img/082B2E5568CEF228452D33D47357D20A.png" alt="">
                         <span>农业无人机</span>
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </li>
-        <li class="header-r-block" onmouseover="navBaronOver(this)">
+        <li class="header-r-block" >
             <a href="../components/serviceSupport.html">服务支持</a>
             <div class="navBarAlert_Service">
                 <span>产品技术支持</span>
@@ -50,9 +50,9 @@
                 <span>保障与维修</span>
             </div>
         </li>
-        <li class="header-r-block" onmouseover="navBaronOver(this)">
+        <li class="header-r-block" >
             <a href="../components/aboutUs.html">关于我们</a>
-            <div class="navBarAlert_AboutUs" onmouseout="navBaronOut(2)"></div>
+            <div class="navBarAlert_AboutUs"></div>
         </li>
         <li class="header-r-block">
             <a href="../components/distributor.html">经销商</a>
@@ -135,55 +135,55 @@
 
 
     // 鼠标滑入
-    function navBaronOver(ev) {
+    // function navBaronOver(ev) {
 
-        switch (ev.children[0].innerText) {
-            case '产品':
-                $('.navbarAlert_Product').slideDown()
-                $('.navBarAlert_Service').hide()
-                $('.navBarAlert_AboutUs').hide()
+    //     switch (ev.children[0].innerText) {
+    //         case '产品':
+    //             $('.navbarAlert_Product').slideDown()
+    //             $('.navBarAlert_Service').hide()
+    //             $('.navBarAlert_AboutUs').hide()
 
-                break;
-            case '服务支持':
-                $('.navbarAlert_Product').hide()
-                $('.navBarAlert_AboutUs').hide()
-                $('.navBarAlert_Service').slideDown()
-                break;
-            case '关于我们':
-                $('.navBarAlert_Service').hide()
-                $('.navbarAlert_Product').hide()
-                $('.navBarAlert_AboutUs').slideDown()
-                break;
-            default:
-                break;
-        }
-    }
+    //             break;
+    //         case '服务支持':
+    //             $('.navbarAlert_Product').hide()
+    //             $('.navBarAlert_AboutUs').hide()
+    //             $('.navBarAlert_Service').slideDown()
+    //             break;
+    //         case '关于我们':
+    //             $('.navBarAlert_Service').hide()
+    //             $('.navbarAlert_Product').hide()
+    //             $('.navBarAlert_AboutUs').slideDown()
+    //             break;
+    //         default:
+    //             break;
+    //     }
+    // }
 
     // 鼠标滑出
-    function navBaronOut(index) {
-        var m_move_x = window.event.pageX; //鼠标X轴坐标
-        var m_move_y = window.event.pageY;　　 //鼠标Y轴坐标
-        var div1 = document.getElementsByClassName("navbar-Product-Bottom")[0];
-        var divx1 = div1.offsetLeft;
-        var divy1 = div1.offsetTop;    
-        var divx2 = div1.offsetLeft + div1.offsetWidth;    
-        var divy2 = div1.offsetTop + div1.offsetHeight;    
-        switch (index) {
-            case 0:
-                if (m_move_x < divx1 || m_move_x > divx2 || m_move_y < divy1 || m_move_y > divy2) {
-                    $('.navbarAlert_Product').hide()
-                }
-                break;
-            case 1:
-                $('.navBarAlert_Service').hide()
-                break;
-            case 2:
-                $('.navBarAlert_AboutUs').hide()
-                break;
-            default:
-                break;
-        }
-    }
+    // function navBaronOut(index) {
+    //     var m_move_x = window.event.pageX; //鼠标X轴坐标
+    //     var m_move_y = window.event.pageY;　　 //鼠标Y轴坐标
+    //     var div1 = document.getElementsByClassName("navbar-Product-Bottom")[0];
+    //     var divx1 = div1.offsetLeft;
+    //     var divy1 = div1.offsetTop;    
+    //     var divx2 = div1.offsetLeft + div1.offsetWidth;    
+    //     var divy2 = div1.offsetTop + div1.offsetHeight;    
+    //     switch (index) {
+    //         case 0:
+    //             if (m_move_x < divx1 || m_move_x > divx2 || m_move_y < divy1 || m_move_y > divy2) {
+    //                 $('.navbarAlert_Product').hide()
+    //             }
+    //             break;
+    //         case 1:
+    //             $('.navBarAlert_Service').hide()
+    //             break;
+    //         case 2:
+    //             $('.navBarAlert_AboutUs').hide()
+    //             break;
+    //         default:
+    //             break;
+    //     }
+    // }
 
     // 主菜单点击事件
     $('.header-r-block').on('click', function(ev) {
