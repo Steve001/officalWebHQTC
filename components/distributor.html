@@ -133,8 +133,8 @@
             alert('请输入正确的邮箱号')
             return false;
         }
-
-        $.post(`http://localhost:1337/api/user/addUser`, {
+        // http://localhost:1337/api/user/addUser
+        $.post(`http://39.103.133.174:1337/api/user/addUser`, {
             username: nvc_user_name,
             mobile: nvc_mobile,
             email: nvc_email,
