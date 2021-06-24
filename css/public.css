@@ -31,4 +31,6 @@ html {
     transition: all;
 }
 
-
+#WidgetFloaterPanels {
+    display: none !important;
+}

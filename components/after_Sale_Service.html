@@ -22,12 +22,12 @@
     <section class="main">
         <section class="nav">
             <a href="#navList_1">
-                <p class="nav_list" >
+                <p class="nav_list">
                     服务对象
                 </p>
             </a>
             <a href="#navList_2">
-                <p class="nav_list" >
+                <p class="nav_list">
                     退货服务
                 </p>
             </a>
@@ -101,25 +101,27 @@
     </section>
     <section class="footer"></section>
 </body>
-<script type="text/javascript" src="https://vncdn.mobi88.cn/public/jquery-2.1.3.min.js">
+<script type="text/javascript" src="https://vncdn.mobi88.cn/public/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="../js/md5.js"></script>
+<script type="text/javascript" src="../js/LanguagePublic.js"></script>
 </script>
 <script type="text/javascript">
-    $(function () {
+    $(function() {
         $(".header").load("../common/header.html");
         $(".footer").load("../common/fooder.html");
     });
-     let navList = $('.nav').children().children();
-     $(navList).each(function(){
+    let navList = $('.nav').children().children();
+    $(navList).each(function() {
         //  $(this).css('border-left','gold solid .02rem')
-       $(this).mouseover(function(){
-        //    console.log($(this));
-        $(this).css('border-left','gold solid .02rem')
-       })
-       $(this).mouseleave(function(){
-        //    console.log($(this));
-        $(this).css('border-left','none')
-       })
-     })
+        $(this).mouseover(function() {
+            //    console.log($(this));
+            $(this).css('border-left', 'gold solid .02rem')
+        })
+        $(this).mouseleave(function() {
+            //    console.log($(this));
+            $(this).css('border-left', 'none')
+        })
+    })
 </script>
 
 </html>
