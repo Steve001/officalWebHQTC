@@ -39,7 +39,8 @@
     flex-direction: column;
 }
 .clas{
-  margin: .95rem 1.875rem;
+  /* margin: .95rem 1.875rem; */
+  text-align: center;
 
 }
 .clas p{
@@ -54,6 +55,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 .input_style{
     width: 6.25rem;
@@ -65,10 +67,8 @@
     width: 1.625rem;
     height: .625rem;
     background-color: green;
-    text-align: center;
-    line-height: .625rem;
     cursor: pointer;
-    margin-left: 4.2rem;
+
 }
 .tips{
     /* position: relative; */
@@ -102,4 +102,8 @@ margin-top: .1rem;
 }
 .tip-r img{
     width: 100%;
+}
+.input-s{
+    display: flex;
+    justify-content: center;
 }

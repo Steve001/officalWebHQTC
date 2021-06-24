@@ -1,6 +1,6 @@
 function transformLanguage(newLanguage) {
     // 获取所有dom元素中文
-    let transformStr = '提升全球农业生产效率,首页,产品,服务支持,关于我们,经销商,滑动查看更多';
+    let transformStr = '提升全球农业生产效率,首页,产品,服务支持,关于我们,经销商,滑动查看更多,了解更多';
     // 获取所有dom元素
     function getChildDom(dom, type, data = {}) {
         if (type == 'read') {
