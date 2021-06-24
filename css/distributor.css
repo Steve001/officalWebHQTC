@@ -1,27 +1,31 @@
-.banner{
+.banner {
     width: 100%;
-    /* padding-top: .8rem; */
+    padding-top: .8rem;
     position: relative;
 }
-.banner img{
+
+.banner img {
     width: 100%;
     display: block;
 }
-.banner-text{
+
+.banner-text {
     position: absolute;
-    top: .5rem;
+    top: 1rem;
     left: 10%;
     /* background-color: red; */
 }
-.banner-text h1{
+
+.banner-text h1 {
     font-size: 0.625rem;
     color: white;
 }
-.banner-text p{
 
+.banner-text p {
     color: white;
 }
-.contain{
+
+.contain {
     height: 18rem;
     /* background-color: red; */
     background-color: #f7f7f7;
@@ -29,57 +33,62 @@
     margin: 0.75rem;
     display: flex;
     justify-content: center;
-
 }
 
-.contain-form{
+.contain-form {
     position: absolute;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
 }
-.clas{
-  /* margin: .95rem 1.875rem; */
-  text-align: center;
 
+.clas {
+    /* margin: .95rem 1.875rem; */
+    text-align: center;
 }
-.clas p{
+
+.clas p {
     font-size: .625rem;
     margin: .625rem 0;
-}.selected{
+}
+
+.selected {
     width: 6.25rem;
     height: .625rem;
     border: black solid .0225rem;
 }
-.input-confirm{
+
+.input-confirm {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-.input_style{
+
+.input_style {
     width: 6.25rem;
     height: .625rem;
     border: black solid .0225rem;
     margin: .425rem 0;
 }
-.submit{
+
+.submit {
     width: 1.625rem;
     height: .625rem;
     background-color: green;
     cursor: pointer;
-
 }
-.tips{
+
+.tips {
     /* position: relative; */
     position: fixed;
     right: 0;
     top: 30%;
     display: flex;
     justify-content: space-around;
-    
 }
-.tip-l{
+
+.tip-l {
     width: 2rem;
     border: solid 1px red;
     border-radius: .2rem;
@@ -87,23 +96,28 @@
     background-color: #f7f7f7;
     display: none;
 }
-.tip-l h1{
+
+.tip-l h1 {
     color: red;
     font-style: .2rem;
 }
-.tip-l p{
-color: red;
-font-size: .02rem;
-margin-top: .1rem;
+
+.tip-l p {
+    color: red;
+    font-size: .02rem;
+    margin-top: .1rem;
 }
-.tip-r{
- width: 1rem;
- cursor: pointer;
+
+.tip-r {
+    width: 1rem;
+    cursor: pointer;
 }
-.tip-r img{
+
+.tip-r img {
     width: 100%;
 }
-.input-s{
+
+.input-s {
     display: flex;
     justify-content: center;
 }

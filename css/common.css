@@ -3,11 +3,11 @@
 .header {
     height: .8rem;
     width: 100%;
-    position: relative;
+    position: fixed;
     background: #131313bb;
     display: flex;
     justify-content: center;
-    z-index: 99;
+    z-index: 1000;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     min-width: 1200px;
@@ -43,15 +43,19 @@
     height: .8rem;
     display: flex;
 }
-.header-r-block:hover .navbarAlert_Product{
+
+.header-r-block:hover .navbarAlert_Product {
     display: block;
 }
-.header-r-block:hover .navBarAlert_Service{
+
+.header-r-block:hover .navBarAlert_Service {
     display: block!important;
 }
-.navbarAlert_Product:hover{
+
+.navbarAlert_Product:hover {
     display: block!important;
 }
+
 .navbarAlert_Product {
     position: fixed;
     top: .8rem;
@@ -79,8 +83,8 @@
     border-bottom: 1px solid #86868b;
     color: #86868b;
     font-weight: 100;
-    padding: 0 2rem;
-    box-sizing: border-box;
+    /* padding: 0 2rem; */
+    /* box-sizing: border-box; */
     font-size: .2rem;
 }
 
@@ -115,7 +119,8 @@
     width: 1.5rem;
     height: 1.5rem;
 }
-.navBarAlert_Service{
+
+.navBarAlert_Service {
     display: none;
 }
 
@@ -126,7 +131,7 @@
     width: 2.5rem;
     height: auto;
     background: #fff;
-    left: -.35rem;
+    left: -.75rem;
     display: none;
     z-index: 10;
     /* display: flex; */

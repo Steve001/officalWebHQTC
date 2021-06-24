@@ -1,72 +1,82 @@
         .contain {
-            /* padding-top: .8rem; */
+            padding-top: .8rem;
         }
+        
         .banner {
             width: 100%;
             height: 6rem;
             position: relative;
             overflow: hidden;
-        }    
+        }
+        
         .banner img {
             width: 100%;
             height: 100%;
             display: block;
         }
-        .banner h2{
+        
+        .banner h2 {
             position: absolute;
-            left:10%;
-            top:18%;
+            left: 10%;
+            top: 18%;
             font-size: .8rem;
             font-family: Georgia, 'Times New Roman', Times, serif;
             transform: translateX(-8rem);
             transition: all 2s;
         }
-        .banner:hover h2{
+        
+        .banner:hover h2 {
             transform: translateX(0);
         }
-        .banner p{
+        
+        .banner p {
             position: absolute;
-            left:25%;
-            top:50%;
+            left: 25%;
+            top: 50%;
             font-size: .8rem;
             font-family: Georgia, 'Times New Roman', Times, serif;
             transform: translateY(6rem);
             transition: all 1s;
         }
-        .banner:hover p{
+        
+        .banner:hover p {
             transform: translateY(0);
         }
-        .banner #borderW{
+        
+        .banner #borderW {
             position: absolute;
             width: 0;
-            left:18%;
-            height:66%;
-            top:15%;
+            left: 18%;
+            height: 66%;
+            top: 15%;
             border: 1px solid #fff;
-            border-left:0;
+            border-left: 0;
             border-right: 0;
             transition: all 1s;
         }
-        .banner:hover #borderW{
-            left:5%;
+        
+        .banner:hover #borderW {
+            left: 5%;
             width: 40%;
-            
         }
-        .banner #borderH{
+        
+        .banner #borderH {
             position: absolute;
             width: 32%;
-            height:80%;
-            left:8%;
-            top:10%;
-            border:1px solid #fff;
-            border-top:0;
-            border-bottom:0;
+            height: 80%;
+            left: 8%;
+            top: 10%;
+            border: 1px solid #fff;
+            border-top: 0;
+            border-bottom: 0;
             transition: all 1s;
-            transform: scale(1,0);
+            transform: scale(1, 0);
         }
-        .banner:hover #borderH{
-            transform: scale(1,1);
-        }    
+        
+        .banner:hover #borderH {
+            transform: scale(1, 1);
+        }
+        
         .p-text {
             height: 3.75rem;
             text-align: center;
@@ -83,87 +93,105 @@
             width: 100%;
             height: 100%;
             display: block;
-        }    
-        .development{
+        }
+        
+        .development {
             /* background-color: red; */
             width: 100%;
             height: 10rem;
             text-align: center;
             padding-top: 2rem;
-        }   
-        .development h1{
+        }
+        
+        .development h1 {
             font-size: 1rem;
         }
+        
         .swiper-container {
             padding-top: 1rem!important;
             width: 14rem;
             height: 6rem;
-        } 
+        }
         /* 导航按钮 */
-        .swiper-button-prev{
+        
+        .swiper-button-prev {
             margin-top: 2rem!important;
         }
-        .swiper-button-next{
+        
+        .swiper-button-next {
             margin-top: 2rem!important;
         }
-        .l-img{
+        
+        .l-img {
             width: 10rem;
             height: 4rem;
         }
+        
         .core {
             text-align: center;
             /* background-color: blue; */
             padding: 1.875rem 0;
         }
-        .wrap-contain{
+        
+        .wrap-contain {
             display: flex;
             justify-content: space-around;
             margin-top: .625rem;
         }
-        .wrap{
+        
+        .wrap {
             width: 20%;
             background-color: red;
             position: relative;
             overflow: hidden;
             cursor: pointer;
         }
-        .wrap .wrap-p{
+        
+        .wrap .wrap-p {
             position: absolute;
             top: -2.0625rem;
             left: .0625rem;
             transition: all 1.5s;
         }
-        .core span{
+        
+        .core span {
             font-size: 1.25rem;
         }
-        .wrap img{
+        
+        .wrap img {
             width: 100%;
             display: block;
         }
-        .wrap:hover .wrap-p{
-            transform: translate(0,3.0625rem);
+        
+        .wrap:hover .wrap-p {
+            transform: translate(0, 3.0625rem);
             color: white;
             font-size: .0.625rem;
         }
-        .wrap:hover{
+        
+        .wrap:hover {
             opacity: 0.9;
         }
         /* 从下到上 */
-        .wrap .wrap-pp{
+        
+        .wrap .wrap-pp {
             position: absolute;
             top: 6.9375rem;
             left: .0625rem;
             transition: all 1.5s;
         }
-        .wrap:hover .wrap-pp{
-            transform: translate(0,-6.0625rem);
+        
+        .wrap:hover .wrap-pp {
+            transform: translate(0, -6.0625rem);
             color: white;
             font-size: .0.625rem;
         }
-        .wrap:hover .wrap-ppp{
+        
+        .wrap:hover .wrap-ppp {
             display: none;
         }
-        .wrap-ppp{
+        
+        .wrap-ppp {
             position: absolute;
             top: 0.824rem;
             left: 1.354rem;
@@ -171,25 +199,28 @@
             color: #fff;
         }
         /* 文本描述 */
-        .textp{
+        
+        .textp {
             text-align: center;
         }
-        .textp h1{
+        
+        .textp h1 {
             font-size: 0.625rem;
             margin: 0.235rem auto;
         }
-        .textp p{
+        
+        .textp p {
             font-size: 0.235rem;
             margin: 0.235rem auto;
-
         }
-.cooperation{
-    width: 100%;
-    padding: 0.325rem 0;
-    text-align: center;
-    font-size: 1rem;
-    
-}
-.cooperation img{
-    width: 100%;
-}
+        
+        .cooperation {
+            width: 100%;
+            padding: 0.325rem 0;
+            text-align: center;
+            font-size: 1rem;
+        }
+        
+        .cooperation img {
+            width: 100%;
+        }

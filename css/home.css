@@ -1,19 +1,22 @@
-.homeVideoBox{
+.homeVideoBox {
     width: 100%;
     height: auto;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: .8rem;
 }
+
 .homeVideo {
     display: flex;
     width: 100%;
     height: 12.7rem;
-    object-fit:fill;
+    object-fit: fill;
 }
-.videoTitleInfo{
+
+.videoTitleInfo {
     position: absolute;
     color: #fff;
     font-size: .5rem;
@@ -21,22 +24,26 @@
     flex-direction: column;
     align-items: center;
 }
-.videoTitleInfo>span:nth-child(1){
+
+.videoTitleInfo>span:nth-child(1) {
     font-weight: bold;
     font-size: .8rem;
 }
-.videoTitleInfo>img{
-    width:.8rem;
+
+.videoTitleInfo>img {
+    width: .8rem;
     height: .8rem;
     margin-top: .5rem;
     cursor: pointer;
 }
-.Home_VideoAlert{
+
+.Home_VideoAlert {
     width: 100%;
     height: 100%;
     display: none;
 }
-.videoAlert{
+
+.videoAlert {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -47,10 +54,12 @@
     justify-content: center;
     align-items: center;
 }
-.videoAlertContaner{
+
+.videoAlertContaner {
     width: 50%;
 }
-.videoAlert>img{
+
+.videoAlert>img {
     cursor: pointer;
     position: absolute;
     right: 1rem;
@@ -58,7 +67,8 @@
     width: .3rem;
     height: .3rem;
 }
-.genduoBox{
+
+.genduoBox {
     font-size: .25rem;
     position: absolute;
     bottom: 1rem;
@@ -66,12 +76,13 @@
     display: flex;
     align-items: center;
 }
-.genduoBox>img{
+
+.genduoBox>img {
     width: .35rem;
     margin-left: .2rem;
 }
 
-.Theproductline{
+.Theproductline {
     width: 100%;
     height: auto;
     display: flex;
@@ -84,7 +95,8 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-.Theproductline_title{
+
+.Theproductline_title {
     position: absolute;
     color: #1d1d1f;
     font-size: .4rem;
@@ -92,9 +104,10 @@
     top: .5rem;
 }
 
-.Theproductline .frame:nth-child(2){
+.Theproductline .frame:nth-child(2) {
     margin-left: 0;
 }
+
 .frame {
     width: 3rem;
     height: 3rem;
@@ -109,7 +122,7 @@
     margin-top: 2rem;
 }
 
-.frame img:hover{
+.frame img:hover {
     transform: scale(1.2);
     /* background-color: #dedede; */
     cursor: pointer;
@@ -121,7 +134,7 @@
     transition: all 0.5s;
 }
 
-.partnersBox{
+.partnersBox {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -133,7 +146,8 @@
     position: relative;
     flex-wrap: wrap;
 }
-.partnersBox>div{
+
+.partnersBox>div {
     width: 11rem;
     height: 7rem;
     background: #fff;
@@ -146,13 +160,14 @@
     overflow: hidden;
     margin-top: 2rem;
 }
-.partnersBox>div img{
+
+.partnersBox>div img {
     width: 100%;
     height: 100%;
     border-radius: 0.1rem;
 }
 
-.partnersBox>div:hover img{
+.partnersBox>div:hover img {
     transform: scale(1.2);
     filter: blur(5px);
     -webkit-filter: blur(5px);
@@ -165,7 +180,8 @@
     filter: blur(0px);
     -webkit-filter: blur(0px);
 }
-.partnersBox>div>div{
+
+.partnersBox>div>div {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -174,27 +190,30 @@
     top: 1rem;
     cursor: pointer;
 }
-.partnersBox>div span{
+
+.partnersBox>div span {
     color: #fff;
     font-size: .25rem;
 }
-.partnersBox>div>div>span:nth-child(1){
+
+.partnersBox>div>div>span:nth-child(1) {
     font-weight: bold;
     font-size: .35rem;
 }
 
-.relatedServices > div{
+.relatedServices>div {
     width: 7rem;
     height: 6rem;
     background: rgba(0, 0, 0, .05);
     border-radius: 0;
     transition: all .5s;
 }
-.relatedServices > div span{
+
+.relatedServices>div span {
     color: #1d1d1f;
 }
 
-.newsAndInformation{
+.newsAndInformation {
     width: 100%;
     height: 4rem;
     background: #fff;
@@ -204,7 +223,8 @@
     justify-content: center;
     background-color: #F5F5F5;
 }
-.listBox{
+
+.listBox {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: .5rem;
@@ -212,7 +232,8 @@
     position: absolute;
     bottom: 0;
 }
-.listBox>div{
+
+.listBox>div {
     flex: 1;
     height: 2rem;
     border-right: 1px solid #ddd;
@@ -220,29 +241,32 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding:0 .3rem;
+    padding: 0 .3rem;
     box-sizing: border-box;
     cursor: pointer;
 }
 
-.listBox>div>span:nth-child(1){
+.listBox>div>span:nth-child(1) {
     font-size: .2rem;
     color: #999;
     margin-bottom: .2rem;
 }
-.listBox>div>span:nth-child(2){
+
+.listBox>div>span:nth-child(2) {
     font-size: .35rem;
     color: #1d1d1f;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp:1;
+    -webkit-line-clamp: 1;
     overflow: hidden;
     margin-bottom: .2rem;
 }
-.listBox>div>span:nth-child(3){
+
+.listBox>div>span:nth-child(3) {
     font-size: .25rem;
     color: red;
 }
-.listBox>div:last-child{
+
+.listBox>div:last-child {
     border: none;
 }
