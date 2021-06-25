@@ -91,7 +91,7 @@
             </div>
             <div class="section section5">
                 <h3>多种操控模式，提供最优应用</h3>
-                <p>自主规划每次作业的最佳航线以及应用模式</p>
+                <span>自主规划每次作业的最佳航线以及应用模式</span>
                 <section class="section5_contain">
                     <section>
                         <img src="../img/back_img5_ash/back_img5_1.png" alt="">
@@ -105,7 +105,7 @@
                         <img src="../img/back_img5_ash/back_img5_3.png" alt="">
                         <p>断点航线</p>
                     </section>
-                    
+
                 </section>
                 <section class="section_5_img">
                     <img src="../img/back_img5_1.png" alt="">
@@ -124,28 +124,28 @@
                 <h3>更多机型&nbsp;任意选择</h3>
                 <p>可根据实际作业需求，按需选择</p>
                 <section class="section15_contain">
-                    <section  class="section15_contain_1">
+                    <section class="section15_contain_1">
                         <section class="section15_select">
                             <span>YK6-10L</span>
                             <img src="../img/back_img16_icon.png" alt="">
                         </section>
                         <img src="../img/back_img16_1.png" alt="">
                     </section>
-                    <section  class="section15_contain_1">
+                    <section class="section15_contain_1">
                         <section class="section15_select">
                             <span>YK6-16L</span>
                             <img src="../img/back_img16_icon.png" alt="">
                         </section>
                         <img src="../img/back_img16_2.png" alt="">
                     </section>
-                    <section  class="section15_contain_1">
+                    <section class="section15_contain_1">
                         <section class="section15_select">
                             <span>YK6-22L</span>
                             <img src="../img/back_img16_icon.png" alt="">
                         </section>
                         <img src="../img/back_img16_3.png" alt="">
                     </section>
-                    <section  class="section15_contain_1">
+                    <section class="section15_contain_1">
                         <section class="section15_select">
                             <span>YK6-25L</span>
                             <img src="../img/back_img16_icon.png" alt="">
@@ -197,6 +197,19 @@
                 if (index == 4) {
                     $('.section4').find('p').fadeIn(2000);
                 }
+                if (index == 5) {
+                    $('.section5').find('span').delay(100).animate({
+                        bottom: '0'
+                    }, 1500, 'easeOutExpo');
+                }
+                if (index == 6) {
+                    $('.section6').find('p').fadeIn(2000);
+                }
+                if (index == 7) {
+                    $('.section7').find('p').delay(100).animate({
+                        bottom: '0'
+                    }, 1500, 'easeOutExpo');
+                }
             },
             onLeave: function (index, direction) {
                 if (index == '2') {
@@ -212,6 +225,19 @@
                 if (index == '4') {
                     $('.section4').find('p').fadeOut(2000);
                 }
+                if (index == '5') {
+                    $('.section5').find('span').delay(500).animate({
+                        bottom: '-120%'
+                    }, 1500, 'easeOutExpo');
+                }
+                if (index == '6') {
+                    $('.section6').find('p').fadeOut(2000);
+                }
+                if (index == '7') {
+                    $('.section7').find('p').delay(500).animate({
+                        bottom: '-120%'
+                    }, 1500, 'easeOutExpo');
+                }
             },
             afterRender: function () { },
             afterResize: function () { },
@@ -219,7 +245,10 @@
             onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) { }
 
         });
-        // $('.section3_contain')
+        // $('.section3_contain_1').on('mouseover',function(){
+        //     $('..section3_contain_1 img').attr('src','../img/back_img4_red/back_img4_11.png');
+
+        // })
     });
 </script>
 

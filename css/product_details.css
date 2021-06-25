@@ -23,11 +23,20 @@
     position: relative;
     bottom: -120%;
 }
-
+.section5 span {
+    position: relative;
+    bottom: -120%;
+}
 .section4 p {
     display: none;
 }
-
+.section6 p {
+    display: none;
+}
+.section7 p {
+    position: relative;
+    bottom: -120%;
+}
 
 /* 第一屏 */
 .section1{
@@ -140,6 +149,11 @@ background-color:black!important;
     font-size: 0.5rem;
     opacity: 0.9;
 }
+.section5 span{
+    color: black!important;
+    font-size: .3rem;
+    opacity: 0.5;
+}
 .section5 p{
     color: black!important;
     font-size: .3rem;
@@ -195,7 +209,7 @@ background-color:black!important;
     background: url(../img/back_img7.jpg) no-repeat;
     background-position: center center;
     background-size: contain;
-background-color:black!important;
+    background-color:black!important;
 }
 .section7 h3{
     margin-top: -5rem;
