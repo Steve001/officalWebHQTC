@@ -35,6 +35,46 @@
                 <h3>第四屏</h3>
                 <p>这是最后一屏</p>
             </div>
+            <div class="section section1">
+                <h3>第五屏</h3>
+                <p>fullPage.js — 项目导航演示</p>
+            </div>
+            <div class="section section2">
+                <h3>第六屏</h3>
+                <p>请查看右边的圆圈</p>
+            </div>
+            <div class="section section3">
+                <h3>第七屏</h3>
+                <p>圆圈还可以设置位置，颜色，加上 tip，点击可以控制</p>
+            </div>
+            <div class="section section4">
+                <h3>第八屏</h3>
+                <p>这是最后一屏</p>
+            </div>
+            <div class="section section3">
+                <h3>第三屏</h3>
+                <p>圆圈还可以设置位置，颜色，加上 tip，点击可以控制</p>
+            </div>
+            <div class="section section4">
+                <h3>第四屏</h3>
+                <p>这是最后一屏</p>
+            </div>
+            <div class="section section1">
+                <h3>第五屏</h3>
+                <p>fullPage.js — 项目导航演示</p>
+            </div>
+            <div class="section section2">
+                <h3>第六屏</h3>
+                <p>请查看右边的圆圈</p>
+            </div>
+            <div class="section section3">
+                <h3>第七屏</h3>
+                <p>圆圈还可以设置位置，颜色，加上 tip，点击可以控制</p>
+            </div>
+            <div class="section section4">
+                <h3>第八屏</h3>
+                <p>这是最后一屏</p>
+            </div>
         </div>
     </div>
     <!-- <section class="footer"></section> -->
@@ -51,20 +91,20 @@
         // $(".footer").load("../common/fooder.html");
 
         $('#dowebok').fullpage({
-            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90', '#1bbc9b', '#4BBFC3', '#1bbc9b', '#4BBFC3', '#7BAABE', '#f90', '#1bbc9b', '#4BBFC3', '#1bbc9b', '#4BBFC3'],
             'navigation': true,
             resize: true, //字体是否随窗口缩放而缩放，默认false
-            navigationTooltips: ['firstSlide', 'secondSlide'], //导航小圆点的提示
+            navigationTooltips: ['首屏', '数据优势', '功能概述', '智能操控', '作业地图', '智能避障', '载重能力', '播撒效果', '黑夜作业', '三重定位', '双IMU', '喷洒系统', '品质配备', '后背隐藏能源'], //导航小圆点的提示
             scrollingSpeed: 1000,
             afterLoad: function(anchorLink, index) {
                 console.log(index)
                 if (index == 2) {
-                    $('.section2').find('p').delay(500).animate({
+                    $('.section2').find('p').delay(100).animate({
                         left: '0'
                     }, 500, 'easeOutExpo');
                 }
                 if (index == 3) {
-                    $('.section3').find('p').delay(500).animate({
+                    $('.section3').find('p').delay(100).animate({
                         bottom: '0'
                     }, 1500, 'easeOutExpo');
                 }
