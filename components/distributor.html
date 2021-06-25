@@ -74,13 +74,13 @@
 <script type="text/javascript" src="../js/LanguagePublic.js"></script>
 </script>
 <script type="text/javascript">
-    $(function () {
+    $(function() {
         $(".header").load("../common/header.html");
         $(".footer").load("../common/fooder.html");
 
 
     });
-    $(".tip-r").click(function () {
+    $(".tip-r").click(function() {
         if ($(".tip-l").css("display") == "none") {
             $(".tip-l").show();
         } else {
@@ -142,7 +142,7 @@
             email: nvc_email,
             cooperation_type: nvc_cooperation_type,
             cooperative_products: nvc_cooperative_products,
-        }, function (data) {
+        }, function(data) {
             console.log(data)
             if (data.code == 200) {
                 alert(data.message)

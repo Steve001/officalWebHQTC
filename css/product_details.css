@@ -1,0 +1,283 @@
+.product-detailsBox {
+    padding-top: .8rem;
+    box-sizing: border-box;
+}
+
+.section {
+    text-align: center;
+    font: 50px "Microsoft Yahei";
+    color: #fff;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-color: #fff !important;
+}
+
+.section2 .selection2-text {
+    position: relative;
+    left: -100%;
+}
+
+.section3 p {
+    position: relative;
+    bottom: -120%;
+}
+
+.section4 p {
+    display: none;
+}
+
+
+/* 第一屏 */
+.section1{
+    background-image: url(../img/back_img1.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+}
+.section1 h1{
+    margin-top: -5rem;
+    color: #222222!important;
+    font-size: 1rem;
+}
+.section1 p{
+    color: #3a3633!important;
+    font-size: .5rem;
+}
+/* 第二屏 */
+.section2{
+    /* background-image: url(../img/back_img2.jpg); */
+    background: url(../img/back_img2.jpg) no-repeat;
+    background-position: center center;
+    background-size: contain;
+    display: flex;
+    background-color: black!important;
+}
+.selection2-text{
+    color: #3a3633!important;
+    font-size: .5rem;
+    margin-top: -4rem;
+}
+.selection2-text>section{
+    width: 2.5rem;
+    /* background-color: red; */
+   display: inline-block;
+   margin: 0 0.5rem;
+}
+.selection2-text>section>p{
+    display: inline-block;
+    color: #fefefe;
+}
+.selection2-text>section>p>span{
+    font-size: .8rem;
+    color: #fff;
+    opacity: 0.8;
+}
+/* 第三屏 */
+.section3{
+    background-image: url(../img/back_img3.jpg);
+    background-position: center center;
+    /* background-size: 100% 100%; */
+    background-size: contain;
+
+}
+.section3 h3{
+    margin-top: -6rem;
+    color: #222222!important;
+    font-size: 1rem;
+}
+.section3 p{
+    color: #b1b1b1!important;
+    font-size: .5rem;
+}
+.section3_contain{
+    display: flex;
+    flex-wrap: wrap;
+    width: 7.5rem;
+    margin: 0 auto;
+}
+.section3_contain>section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .3rem .3rem;
+}
+.section3_contain>section>img{
+    display: block;
+    width: .9rem;
+    height: 100%;
+}
+.section3_contain>section>span{
+    font-size: .2rem;
+    color: #060606;
+}
+/* 第四屏 */
+.section4{
+    background: url(../img/back_img4.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+background-color:black!important;
+}
+.section4 h3{
+    margin-top: -5rem;
+    color: #fff!important;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+.section4 p{
+    color: #ffff!important;
+    font-size: .5rem;
+}
+/* 第五屏 */
+.section5{
+    background: #fff!important;
+    padding-top: .8rem;
+}
+.section5 h3{
+    margin-top: -2rem;
+    color: black!important;
+    font-size: 0.5rem;
+    opacity: 0.9;
+}
+.section5 p{
+    color: black!important;
+    font-size: .3rem;
+    opacity: 0.5;
+}
+.section5_contain{
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+}
+.section5_contain>section{
+    margin: 0 .5rem;
+    cursor: pointer;
+}
+.section5_contain>section>img{
+    display: block;
+    width: 1rem;
+    height:1rem;
+    border-radius: .5rem;
+    background-color: #ececec;
+    
+}
+.section_5_img{
+    width: 12rem;
+    margin: 0 auto ;
+
+}
+.section_5_img>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/* 第六屏 */
+.section6{
+    background: url(../img/back_img6.jpg) no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color:black!important;
+}
+.section6 h3{
+    margin-top: -6rem;
+    color: #fff!important;
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+.section6 p{
+    color: #ffff!important;
+    font-size: .4rem;
+    opacity: 0.5;
+}
+/* 第七屏 */
+.section7{
+    background: url(../img/back_img7.jpg) no-repeat;
+    background-position: center center;
+    background-size: contain;
+background-color:black!important;
+}
+.section7 h3{
+    margin-top: -5rem;
+    color: #030400!important;
+    font-size: .6rem;
+    opacity: 0.9;
+}
+.section7 p{
+    color: #030400!important;
+    font-size: .3rem;
+    opacity: 0.4;
+}
+/* 第十五屏 */
+.section15{
+    background: #fff!important;
+}
+.section15 h3{
+    /* margin-top: -5rem; */
+    color: black!important;
+    font-size: 0.5rem;
+    opacity: 0.9;
+}
+.section15 p{
+    color: black!important;
+    font-size: .3rem;
+    opacity: 0.5;
+}
+.section15_select{
+    width: 5rem;
+    border-bottom: black solid .05rem;
+    position: relative;
+    text-align: left!important;
+
+}
+.section15_select>span{
+    color: black!important;
+    font-size: .3rem;
+}
+.section15_select>img{
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    position: absolute;
+    top: .5rem;
+    right: 0;
+}
+.section15_contain{
+    width: 14rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+.section15_contain_1{
+    width: 4rem;
+    margin: 0 1rem;
+}
+.section15_contain_1>img{
+    width: 3rem;
+}
+/* 第十六屏 */
+.section16{
+    background: url(../img/back_img16.jpg) no-repeat;
+}
+.section16 h3{
+    font-size: 1rem;
+    margin-top: -2rem;
+}
+.section16 p{
+    font-size: .6rem;
+    opacity: 0.8;
+    margin-top: .5rem;
+}
+.section16_button{
+    width: 3rem;
+    text-align: center;
+    color: #ffff;
+    background-color: red;
+    font-size: .5rem;
+    border-radius: .4rem;
+    line-height: .9rem;
+    margin: 0 auto;
+    margin-top: .5rem;
+    cursor: pointer;
+}
