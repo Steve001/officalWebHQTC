@@ -452,6 +452,27 @@
     font-size: .3rem;
     opacity: 0.4;
 }
+/* 第八屏 */
+
+.section8 {
+    background: url(../img/back_img8.jpg) no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-color: black!important;
+}
+
+.section8 h3 {
+    margin-top: -6rem;
+    color: #fff!important;
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+.section8 p {
+    color: #ffff!important;
+    font-size: .4rem;
+    opacity: 0.5;
+}
 
 
 /* 第十五屏 */
