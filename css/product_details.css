@@ -1,0 +1,29 @@
+.product-detailsBox {
+    padding-top: .8rem;
+    box-sizing: border-box;
+}
+
+.section {
+    text-align: center;
+    font: 50px "Microsoft Yahei";
+    color: #fff;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-color: #fff !important;
+}
+
+.section2 p {
+    position: relative;
+    left: -100%;
+}
+
+.section3 p {
+    position: relative;
+    bottom: -120%;
+}
+
+.section4 p {
+    display: none;
+}

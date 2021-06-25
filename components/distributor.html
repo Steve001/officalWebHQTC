@@ -74,13 +74,13 @@
 <script type="text/javascript" src="../js/LanguagePublic.js"></script>
 </script>
 <script type="text/javascript">
-    $(function () {
+    $(function() {
         $(".header").load("../common/header.html");
         $(".footer").load("../common/fooder.html");
 
 
     });
-    $(".tip-r").click(function () {
+    $(".tip-r").click(function() {
         if ($(".tip-l").css("display") == "none") {
             $(".tip-l").show();
         } else {
@@ -135,14 +135,14 @@
             alert('请输入正确的邮箱号')
             return false;
         }
-        // http://localhost:1337/api/user/addUser
-        $.post(`121.89.222.253:1444/api/user/addUser`, {
+        // http://39.103.133.174:1337/api/user/addUser
+        $.post(`http://localhost:1337/api/user/addUser`, {
             username: nvc_user_name,
             mobile: nvc_mobile,
             email: nvc_email,
             cooperation_type: nvc_cooperation_type,
             cooperative_products: nvc_cooperative_products,
-        }, function (data) {
+        }, function(data) {
             console.log(data)
             if (data.code == 200) {
                 alert(data.message)
