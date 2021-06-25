@@ -47,39 +47,39 @@
                         <img src="../img/back_img4_ash/back_img4_1.png" alt="">
                         <span>智能作业</span>
                     </section>
-                    <section>
+                    <section class="section3_contain_2">
                         <img src="../img/back_img4_ash/back_img4_2.png" alt="">
                         <span>高效动力</span>
                     </section>
-                    <section>
+                    <section class="section3_contain_3">
                         <img src="../img/back_img4_ash/back_img4_3.png" alt="">
                         <span>断点记忆</span>
                     </section>
-                    <section>
+                    <section class="section3_contain_4">
                         <img src="../img/back_img4_ash/back_img4_4.png" alt="">
                         <span>智能避障</span>
                     </section>
-                    <section>
+                    <section class="section3_contain_5">
                         <img src="../img/back_img4_ash/back_img4_5.png" alt="">
                         <span>四级抗风</span>
                     </section>
-                    <section>
+                    <section class="section3_contain_6">
                         <img src="../img/back_img4_ash/back_img4_6.png" alt="">
                         <span>三重定位</span>
                     </section>
-                    <section>
+                    <section class="section3_contain_7">
                         <img src="../img/back_img4_ash/back_img4_7.png" alt="">
                         <span>压力喷头</span>
                     </section>
-                    <section>
+                    <section class="section3_contain_8">
                         <img src="../img/back_img4_ash/back_img4_8.png" alt="">
                         <span>急速充电</span>
                     </section>
-                    <section>
+                    <section class="section3_contain_9">
                         <img src="../img/back_img4_ash/back_img4_9.png" alt="">
                         <span>超大载重</span>
                     </section>
-                    <section>
+                    <section class="section3_contain_10">
                         <img src="../img/back_img4_ash/back_img4_10.png" alt="">
                         <span>数据监控</span>
                     </section>
@@ -289,7 +289,6 @@
     $(function() {
         $(".header").load("../common/header.html");
         // $(".footer").load("../common/fooder.html");
-
         $('#dowebok').fullpage({
             sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90', '#1bbc9b', '#4BBFC3', '#1bbc9b', '#4BBFC3', '#0A0A0A', '#0A0A0A', '#131313', '#131313', '#212121', '#00000A', '#212121', '#00000A'],
             'navigation': true,
@@ -461,6 +460,66 @@
             $(this)[0].children[0].src = '../img/11_icon' + str;
             $(this).removeClass("liActive");
         });
+        $(".section3_contain_1").on('mouseover',function(){
+            $(".section3_contain_1 img").attr("src","../img/back_img4_red/back_img4_11.png");
+        })
+        $(".section3_contain_1").on('mouseleave',function(){
+            $(".section3_contain_1 img").attr("src","../img/back_img4_ash/back_img4_1.png");
+        })
+        $(".section3_contain_2").on('mouseover',function(){
+            $(".section3_contain_2 img").attr("src","../img/back_img4_red/back_img4_12.png");
+        })
+        $(".section3_contain_2").on('mouseleave',function(){
+            $(".section3_contain_2 img").attr("src","../img/back_img4_ash/back_img4_2.png");
+        })
+        $(".section3_contain_3").on('mouseover',function(){
+            $(".section3_contain_3 img").attr("src","../img/back_img4_red/back_img4_13.png");
+        })
+        $(".section3_contain_3").on('mouseleave',function(){
+            $(".section3_contain_3 img").attr("src","../img/back_img4_ash/back_img4_3.png");
+        })
+        $(".section3_contain_4").on('mouseover',function(){
+            $(".section3_contain_4 img").attr("src","../img/back_img4_red/back_img4_14.png");
+        })
+        $(".section3_contain_4").on('mouseleave',function(){
+            $(".section3_contain_4 img").attr("src","../img/back_img4_ash/back_img4_4.png");
+        })
+        $(".section3_contain_5").on('mouseover',function(){
+            $(".section3_contain_5 img").attr("src","../img/back_img4_red/back_img4_15.png");
+        })
+        $(".section3_contain_5").on('mouseleave',function(){
+            $(".section3_contain_5 img").attr("src","../img/back_img4_ash/back_img4_5.png");
+        })
+        $(".section3_contain_6").on('mouseover',function(){
+            $(".section3_contain_6 img").attr("src","../img/back_img4_red/back_img4_16.png");
+        })
+        $(".section3_contain_6").on('mouseleave',function(){
+            $(".section3_contain_6 img").attr("src","../img/back_img4_ash/back_img4_6.png");
+        })
+        $(".section3_contain_7").on('mouseover',function(){
+            $(".section3_contain_7 img").attr("src","../img/back_img4_red/back_img4_17.png");
+        })
+        $(".section3_contain_7").on('mouseleave',function(){
+            $(".section3_contain_7 img").attr("src","../img/back_img4_ash/back_img4_7.png");
+        })
+        $(".section3_contain_8").on('mouseover',function(){
+            $(".section3_contain_8 img").attr("src","../img/back_img4_red/back_img4_18.png");
+        })
+        $(".section3_contain_8").on('mouseleave',function(){
+            $(".section3_contain_8 img").attr("src","../img/back_img4_ash/back_img4_8.png");
+        })
+        $(".section3_contain_9").on('mouseover',function(){
+            $(".section3_contain_9 img").attr("src","../img/back_img4_red/back_img4_19.png");
+        })
+        $(".section3_contain_9").on('mouseleave',function(){
+            $(".section3_contain_9 img").attr("src","../img/back_img4_ash/back_img4_9.png");
+        })
+        $(".section3_contain_10").on('mouseover',function(){
+            $(".section3_contain_10 img").attr("src","../img/back_img4_red/back_img4_20.png");
+        })
+        $(".section3_contain_10").on('mouseleave',function(){
+            $(".section3_contain_10 img").attr("src","../img/back_img4_ash/back_img4_10.png");
+        })
     });
 </script>
 
