@@ -214,9 +214,9 @@
     bottom: -120%;
 }
 
-.section4 p {
+/* .section4 p {
     display: none;
-}
+} */
 
 .section6 p {
     display: none;
@@ -361,11 +361,13 @@
 .section4 p {
     color: #ffff!important;
     font-size: .5rem;
+    margin-bottom: 2.3rem;
 }
 .swiper-container {
     width: 5.7rem;
     height: 2.5rem;
-    margin: 2.3rem auto 0;
+    /* margin: 2.3rem auto 0; */
+    margin: 0 auto;
     /* background-color: red; */
   
 } 

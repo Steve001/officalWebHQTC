@@ -92,18 +92,18 @@
             <div class="section section4">
                 <h3>全新智能化自主作业</h3>
                 <p>提高工作效率，让无人机作业时航线更精准</p>
-               
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">Slide 1</div>
-                            <div class="swiper-slide">Slide 2</div>
-                            <div class="swiper-slide">Slide 3</div>
-                        </div>
-                        <!-- 如果需要导航按钮 -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
 
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
                     </div>
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
             </div>
             <div class="section section5">
                 <h3>多种操控模式，提供最优应用</h3>
@@ -306,11 +306,15 @@
     <!-- <section class="footer"></section> -->
 </body>
 <script type="text/javascript" src="https://vncdn.mobi88.cn/public/jquery-2.1.3.min.js"></script>
+<!-- <script type="text/javascript" src="../js/idangerous.swiper2.7.6.min.js"></script> -->
 <script type="text/javascript" src="../js/md5.js"></script>
 <script type="text/javascript" src="../js/LanguagePublic.js"></script>
 <script type="text/javascript" src="../js/jquery.fullPage.min.js"></script>
 <script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+</script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript">
+
     $(function () {
         $(".header").load("../common/header.html");
         // $(".footer").load("../common/fooder.html");
@@ -334,9 +338,9 @@
                         bottom: '0'
                     }, 1500, 'easeOutExpo');
                 }
-                if (index == 4) {
-                    $('.section4').find('p').fadeIn(2000);
-                }
+                // if (index == 4) {
+                //     $('.section4').find('p').fadeIn(2000);
+                // }
                 if (index == 5) {
                     $('.section5').find('span').delay(100).animate({
                         bottom: '0'
@@ -406,9 +410,9 @@
                         bottom: '-120%'
                     }, 1500, 'easeOutExpo');
                 }
-                if (index == '4') {
-                    $('.section4').find('p').fadeOut(2000);
-                }
+                // if (index == '4') {
+                //     $('.section4').find('p').fadeOut(2000);
+                // }
                 if (index == '5') {
                     $('.section5').find('span').delay(500).animate({
                         bottom: '-120%'
@@ -572,18 +576,24 @@
             $(" .section5_contain_1 p").css("cssText", "color: black!important");
             $(" .section5_contain_2 p").css("cssText", "color: black!important");
         });
-
     });
+
     //  轮播图
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'horizontal', // 垂直切换选项
         loop: true, // 循环模式选项
         autoplay: true,
+        // 如果需要前进后退按钮
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+
+
     })
+
 </script>
+
+
 
 </html>
