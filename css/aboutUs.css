@@ -4,7 +4,7 @@
         
         .banner {
             width: 100%;
-            height: 6rem;
+            height: 100%;
             position: relative;
             overflow: hidden;
         }
@@ -76,57 +76,85 @@
         .banner:hover #borderH {
             transform: scale(1, 1);
         }
-        
-        .p-text {
-            height: 3.75rem;
-            text-align: center;
-            font-size: .5rem;
-            padding-top: 0.875rem;
+        /* 第二 */
+        .profile{
+            display: flex;
+            padding: 1rem 3rem 1rem;
+            box-sizing: border-box;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .profile_text{
+            width: 7rem;
+            padding: 0 .5rem;
             box-sizing: border-box;
         }
-        
-        .banner-t {
-            width: 100%;
+        .profile_text h3{
+            font-size: .5rem;
+            font-weight: 400;
         }
-        
-        .banner-t img {
+        .profile_text h4{
+            font-size: .3rem;
+            font-weight: 800;
+            opacity: 0.3;
+        }
+        .profile_text p{
+            font-size: .4rem;
+            font-weight: 400;
+            padding: .4rem 0;
+        } 
+        .profile_text span{
+            font-size: .2rem;
+            opacity: 0.8;
+        }
+        .profile_img{
+            width: 8rem;
+
+        }
+        .profile_img img{
+            display: block;
             width: 100%;
             height: 100%;
-            display: block;
         }
-        
-        .development {
-            /* background-color: red; */
-            width: 100%;
-            height: 10rem;
-            text-align: center;
-            padding-top: 2rem;
-        }
-        
-        .development h1 {
-            font-size: 1rem;
-        }
-        
-        .swiper-container {
-            padding-top: 1rem!important;
-            width: 14rem;
-            height: 6rem;
-        }
-        /* 导航按钮 */
-        
-        .swiper-button-prev {
-            margin-top: 2rem!important;
-        }
-        
-        .swiper-button-next {
-            margin-top: 2rem!important;
-        }
-        
-        .l-img {
-            width: 10rem;
-            height: 4rem;
-        }
-        
+
+        /* 联系我们 */
+     .contact{
+         padding: 1rem 3rem 1rem;
+         display: flex;
+         background-color: #f9fafc;
+         box-sizing: border-box;
+         justify-content: space-around;
+     }
+     .contact_text{
+        width: 7rem;
+        padding: 0 .5rem;
+        box-sizing: border-box;
+     }
+     .contact_text h3{
+        font-size: .5rem;
+        font-weight: 400;
+    }
+    .contact_text h4{
+        font-size: .3rem;
+        font-weight: 800;
+        opacity: 0.3;
+    }
+    .contact_text h5{
+        font-size: .4rem;
+        font-weight: 400;
+        padding-top: .4rem;
+    }
+    .contact_text p{
+        font-size: .25rem;
+        font-weight: 400;
+        padding-top: .4rem;
+        padding-bottom: .1rem;
+    }
+    .contact_text span{
+        font-size: .2rem;
+        font-weight: 400;
+        opacity: 0.8;
+    }
         .core {
             text-align: center;
             /* background-color: blue; */
@@ -198,29 +226,11 @@
             font-size: .324rem;
             color: #fff;
         }
-        /* 文本描述 */
-        
-        .textp {
-            text-align: center;
-        }
-        
-        .textp h1 {
-            font-size: 0.625rem;
-            margin: 0.235rem auto;
-        }
-        
-        .textp p {
-            font-size: 0.235rem;
-            margin: 0.235rem auto;
-        }
-        
-        .cooperation {
-            width: 100%;
-            padding: 0.325rem 0;
-            text-align: center;
-            font-size: 1rem;
-        }
-        
-        .cooperation img {
-            width: 100%;
-        }
+        /* 百度地图 */
+#container{
+    width: 8rem;
+    height: 6rem;
+}
+
+
+
