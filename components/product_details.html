@@ -92,18 +92,26 @@
             <div class="section section4">
                 <h3>全新智能化自主作业</h3>
                 <p>提高工作效率，让无人机作业时航线更精准</p>
-
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
+                <section class="box">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../img/back_img4/back_img4_1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/back_img4/back_img4_2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/back_img4/back_img4_3.jpg" alt="">
+                            </div>
+                        </div>
+                        
                     </div>
-                    <!-- 如果需要导航按钮 -->
                     <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
-                </div>
+                        <div class="swiper-button-next"></div>
+                </section>
+                
+                
             </div>
             <div class="section section5">
                 <h3>多种操控模式，提供最优应用</h3>
@@ -581,6 +589,8 @@
         direction: 'horizontal', // 垂直切换选项
         loop: true, // 循环模式选项
         autoplay: true,
+        autoplayDisableOnInteraction : false,
+        speed:300,
         // 如果需要前进后退按钮
         navigation: {
             nextEl: '.swiper-button-next',

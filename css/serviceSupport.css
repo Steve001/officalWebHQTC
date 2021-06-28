@@ -1,7 +1,7 @@
 .banner {
     height: 7rem;
     width: 100%;
-    padding-top: 1rem;
+    padding-top: .8rem;
     position: relative;
 }
 
@@ -79,7 +79,7 @@
 
 .file {
     text-align: center;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
 }
 
 .file h1 {
@@ -87,12 +87,25 @@
     margin: 1rem 0;
 }
 
-.file_word {
+/* .file_word {
     border-top: .05rem solid red;
     border-bottom: .05rem solid red;
-}
+} */
 
 
 /* .form-li-filel{
     display: none!important;
 } */
+
+.file_word{
+    width: 80vw; 
+    height: 8rem;
+    margin: 0 auto 1rem;
+    /* background-color: red; */
+    box-sizing: border-box;
+    border: black .02rem solid;
+}
+.file_word_p{
+    height: .5rem;
+    line-height: .5rem;
+}

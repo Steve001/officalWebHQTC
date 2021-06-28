@@ -17,15 +17,14 @@
 <body>
     <section class="header"></section>
     <section class="banner">
-        <img src="../img/4B9F23FBC4F2E791972213C31412E916.jpg" alt="">
-        <section class="input-p">
+        <img src="../img/about-index-pc.png" alt="">
+        <!-- <section class="input-p">
             <h1>产品技术支持</h1>
             <img id="inputt_icon" src="../img/u=110577387,2340361853&fm=26&fmt=auto&gp=0.webp" alt="">
-            <input class="inputt" placeholder="搜索你需要的产品资料" type="text">
+            <input class="inputt" placeholder="搜索你需要的产品资料" type="text"> -->
         </section>
-
     </section>
-    <section class="product_line">
+    <!-- <section class="product_line">
         <section class="form">
             <li class="fotm-li" id="wuwu">
                 <img src="../img/8D26619B4FD4CBC37FCF32D2BCA8B0E1.png" alt="">
@@ -36,12 +35,11 @@
                 <p>农业无人机</p>
             </li>
         </section>
-
-    </section>
+    </section> -->
     <section class="file">
         <h1>文档与手册</h1>
         <section class="file_word">
-            <section class="default">
+            <!-- <section class="default">
                 <p style="display: flex; justify-content: space-between;">
                     <span>无人default</span><a href="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/注意事项_20210604103426.pdf?versionId=CAEQHxiBgICG.rPv0RciIDJjY2ZjYzI0YWI0OTRhMmRiNjY1NTVlYThkMDFjZWUw" download="">下载</a>
                 </p>
@@ -70,7 +68,16 @@
                 <p style="display: flex; justify-content: space-between;">
                     <span>牛人机</span><a href="../word/1.doc" download="">下载</a>
                 </p>
-            </section>
+            </section> -->
+            <p class="file_word_p" style="display: flex; justify-content: space-between;">
+                <span>牛人机</span><a href="../word/1.doc" download="">下载</a>
+            </p>
+            <p class="file_word_p"  style="display: flex; justify-content: space-between;">
+                <span>牛人机</span><a href="../word/1.doc" download="">下载</a>
+            </p>
+            <p class="file_word_p"  style="display: flex; justify-content: space-between;">
+                <span>牛人机</span><a href="../word/1.doc" download="">下载</a>
+            </p>
         </section>
     </section>
     <section class="footer"></section>
@@ -90,28 +97,28 @@
             $(this).addClass("back_red").siblings().removeClass("back_red");
         });
     })
-    $(
-        function() {
-            $("#wuwu").click(
-                function() {
-                    $(".wu").show();
-                    $(".niu").hide();
-                    $(".default").hide();
-                }
-            )
-        }
-    )
-    $(
-        function() {
-            $("#niuniu").click(
-                function() {
-                    $(".niu").show();
-                    $(".wu").hide();
+    // $(
+    //     function() {
+    //         $("#wuwu").click(
+    //             function() {
+    //                 $(".wu").show();
+    //                 $(".niu").hide();
+    //                 $(".default").hide();
+    //             }
+    //         )
+    //     }
+    // )
+    // $(
+    //     function() {
+    //         $("#niuniu").click(
+    //             function() {
+    //                 $(".niu").show();
+    //                 $(".wu").hide();
 
-                }
-            )
-        }
-    )
+    //             }
+    //         )
+    //     }
+    // )
 </script>
 
 </html>
