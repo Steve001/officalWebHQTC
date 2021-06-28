@@ -16,6 +16,51 @@
     object-fit: fill;
 }
 
+.swiper-container {
+    width: 100%;
+    height: 12.7rem;
+}
+
+.swiper-wrapper>div:nth-child(1) {
+    background: url(../img/honeSwiper-1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.swiper-wrapper>div:nth-child(2) {
+    background: url(../img/honeSwiper-2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.swiper-wrapper>div:nth-child(3) {
+    background: url(../img/honeSwiper-3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: #fff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff!important;
+}
+
+.swiper-button-prev {
+    left: 100px !important;
+}
+
+.swiper-button-next {
+    right: 100px !important;
+}
+
+.swiper-button-prev {}
+
 .videoTitleInfo {
     position: absolute;
     color: #fff;

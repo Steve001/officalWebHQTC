@@ -18,13 +18,21 @@
     color: #fff !important;
 }
 
-.header .img-style {
-    width: 1rem;
-    height: .5rem;
-    display: inline-block;
+.header>div {
     position: absolute;
+    border-radius: 50%;
+    background: #fff;
     left: .4rem;
     top: .15rem;
+    width: .5rem;
+    height: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-style {
+    width: 80%;
 }
 
 .header-r {
@@ -273,6 +281,10 @@ p.right {
     color: #86868b;
     margin-top: .3rem;
     cursor: pointer;
+}
+
+.footerTop_left>ul>li>a {
+    color: #86868b;
 }
 
 .footerTop_right {
