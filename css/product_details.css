@@ -219,9 +219,9 @@
     display: none;
 } */
 
-.section6 p {
+/* .section6 p {
     display: none;
-}
+} */
 
 .section7 p {
     position: relative;
@@ -465,15 +465,18 @@
 .section6 {
     background: url(../img/back_img6.jpg) no-repeat;
     background-position: center center;
+    /* background-size: 100% 100%; */
     background-size: contain;
+    display: flex;
     background-color: black!important;
 }
 
 .section6 h3 {
-    margin-top: -6rem;
+    margin-top: -5rem;
     color: #fff!important;
     font-size: 0.8rem;
     opacity: 0.9;
+    padding-top: 3rem;
 }
 
 .section6 p {
@@ -481,8 +484,46 @@
     font-size: .4rem;
     opacity: 0.5;
 }
-
-
+.sectionContain{
+    width: 14rem;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 1rem;
+    /* background-color: red; */
+}
+.sectionContain>.section6_left{
+   width: 31rem;
+   height: 6rem;
+   
+}
+@keyframes section6_left{
+    0%{background-clor:#F00;left:0rem;top:0rem;opacity: 0;}
+    /* 25%{background-clor:#F00;left:2.5rem;top:0rem;opacity: 1;} */
+    50%{background-clor:#F00;left:5rem;top:0rem;opacity: 1;}
+    /* 75%{background-clor:#F00;left:2.5rem;top:0rem;opacity: 1;} */
+    100%{background-clor:#F00;left:0rem;top:0rem;opacity: 0;}  
+}
+@keyframes section6_right{
+    0%{background-clor:#F00;right:0rem;top:0rem;opacity: 0;}
+    50%{background-clor:#F00;right:5rem;top:0rem;opacity: 1;}
+    100%{background-clor:#F00;right:0rem;top:0rem;opacity: 0;}  
+}
+.sectionContain>.section6_right{
+    width: 12rem;
+   height: 6rem;
+}
+.sectionContain>.section6_left>img{
+    margin-top: 3rem;
+    display: block;
+    position:absolute;/*这句不能少，否则动不起来*/
+    animation:section6_left 2s infinite;/*keyframes名称，动画时间，循环*/
+}
+.sectionContain>.section6_right>img{
+    display: block;
+    margin-top: 3rem;
+    position:absolute;/*这句不能少，否则动不起来*/
+    animation:section6_right 2s infinite;/*keyframes名称，动画时间，循环*/
+}
 /* 第七屏 */
 
 .section7 {
