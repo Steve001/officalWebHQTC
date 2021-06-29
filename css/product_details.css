@@ -1,6 +1,3 @@
-#LoadingBar{
-    background-color: red;
-}
 .product-detailsBox {
     padding-top: .8rem;
     box-sizing: border-box;
@@ -312,12 +309,12 @@
 .section3 h3 {
     margin-top: -6rem;
     color: #222222!important;
-    font-size: 40px;
+    font-size: 1rem;
 }
 
 .section3 p {
     color: #b1b1b1!important;
-    font-size: 20px;
+    font-size: .5rem;
 }
 
 .section3_contain {
@@ -363,14 +360,14 @@
 .section4 h3 {
     margin-top: -5rem;
     color: #fff!important;
-    font-size: 40px;
+    font-size: 1rem;
     opacity: 0.9;
 }
 
 .section4 p {
     color: #ffff!important;
-    font-size: 30px;
-    margin-bottom: 3rem;
+    font-size: .5rem;
+    margin-bottom: 2.3rem;
 }
 
 .box {
@@ -445,6 +442,9 @@
 .section5_contain>section {
     margin: 0 .5rem;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section5_contain>section>img {
@@ -477,6 +477,10 @@
     color: red!important;
 } */
 
+.section5_contain_1>p:nth-child(2) {
+    color: red!important;
+}
+
 
 /* 第六屏 */
 
@@ -492,7 +496,7 @@
 .section6 h3 {
     margin-top: -5rem;
     color: #fff!important;
-    font-size: 40px;
+    font-size: 0.8rem;
     opacity: 0.9;
     padding-top: 3rem;
 }
@@ -596,7 +600,7 @@
 .section7 h3 {
     margin-top: -5rem;
     color: #030400!important;
-    font-size: 40px;
+    font-size: .6rem;
     opacity: 0.9;
 }
 
@@ -619,7 +623,7 @@
 .section8 h3 {
     margin-top: -6rem;
     color: #fff!important;
-    font-size: 40px;
+    font-size: 0.8rem;
     opacity: 0.9;
 }
 
