@@ -132,11 +132,15 @@
     $('.header-r-block').on('click', function(ev) {
         console.log(this)
 
-        let childrenDom = $(this).children().children()[1];
-        console.log(childrenDom)
+        let childrenDom = $(this).children().children()[0];
+        console.log(childrenDom,8888)
         $(childrenDom).on('click', function() {
             window.location.href = '../components/product_details.html'
         })
+    let afterSale =  $(this).children().children()[1];
+    $(afterSale).on('click',function(){
+        window.location.href = '../components/after_Sale_Service.html'
+    })
     })
 
     function navBarClick(index) {
@@ -150,8 +154,4 @@
             }
         }
     }
-    $('.navBarAlert_Service').children()[1].click(function() {
-        $(Location).attr("href", "../components/after_Sale_Service.html")
-    })
-    let aa = $('.navBarAlert_Service').children()[1]
 </script>
