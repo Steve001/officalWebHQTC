@@ -11,9 +11,18 @@
     </div> -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">
+                <h3 class="vivify popIn">高层破窗灭火弹无人机</h3>
+                <span class="vivify shake" onclick="goProduct()">进一步了解 ></span>
+            </div>
+            <div class="swiper-slide">
+                <h3>YK6-30植保无人机</h3>
+                <span onclick="goProduct()">进一步了解 ></span>
+            </div>
+            <div class="swiper-slide">
+                <h3 onclick="goDistributor()">支持定制服务</h3>
+                <h3 onclick="goDistributor()">可根据实际作业需求，提供全案定制服务</h3>
+            </div>
         </div>
         <!-- 如果需要导航按钮 -->
         <div class="swiper-button-prev"></div>
@@ -36,7 +45,13 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-
-
     })
+
+    function goProduct() {
+        window.location.href = '../components/product.html'
+    }
+
+    function goDistributor() {
+        window.location.href = '../components/distributor.html'
+    }
 </script>
