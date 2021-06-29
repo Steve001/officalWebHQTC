@@ -1,6 +1,6 @@
 <section class="header vivify swoopInLeft">
     <div style="cursor: pointer;">
-        <img class="img-style" src="../img/logo.png" alt="" id="change">
+        <img class="img-style" src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/logo.png" alt="" id="change">
     </div>
     <section class="header-r" id="nav">
         <li class="header-r-block current">
@@ -15,20 +15,20 @@
                     <span onclick="navBarClick(2)">消防无人机</span>
                 </div>
                 <div class="navbar-Product-Bottom">
-                    <div>
-                        <img src="/img/082B2E5568CEF228452D33D47357D20A.png" alt="">
+                    <div onclick="window.location.href = '../components/product_details.html'">
+                        <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/082B2E5568CEF228452D33D47357D20A.png" alt="">
                         <span>YK6-10L</span>
                     </div>
-                    <div>
-                        <img src="/img/082B2E5568CEF228452D33D47357D20A.png" alt="">
+                    <div onclick="window.location.href = '../components/product_details.html'">
+                        <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/082B2E5568CEF228452D33D47357D20A.png" alt="">
                         <span>YK6-16L</span>
                     </div>
-                    <div>
-                        <img src="/img/082B2E5568CEF228452D33D47357D20A.png" alt="">
+                    <div onclick="window.location.href = '../components/product_details.html'">
+                        <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/082B2E5568CEF228452D33D47357D20A.png" alt="">
                         <span>YK6-22L</span>
                     </div>
-                    <div>
-                        <img src="/img/082B2E5568CEF228452D33D47357D20A.png" alt="">
+                    <div onclick="window.location.href = '../components/product_details.html'">
+                        <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/082B2E5568CEF228452D33D47357D20A.png" alt="">
                         <span>YK6-25L</span>
                     </div>
                 </div>
@@ -55,13 +55,13 @@
 </section>
 
 <script>
-    $(function () {       // do something 
+    $(function() {       // do something 
         var script = document.createElement("script");
         script.type = "text/javascript";
         script.src = "http://www.microsoftTranslator.com/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**";
         document.getElementsByTagName('head')[0].appendChild(script);
         var value = sessionStorage.getItem("language");
-        document.onreadystatechange = function () {
+        document.onreadystatechange = function() {
             if (document.readyState == 'complete') {
                 console.log(value)
                 if (value === "1") {
@@ -70,15 +70,15 @@
             }
         }
 
-        function onProgress(value) { }
+        function onProgress(value) {}
 
-        function onError(error) { }
+        function onError(error) {}
 
         function onComplete() {
             $("#WidgetFloaterPanels").hide();
         }
 
-        function onRestoreOriginal() { }
+        function onRestoreOriginal() {}
     });
 
     function translate() {
@@ -91,7 +91,7 @@
         window.location.reload(); //刷新当前页面.
     }
 
-    $("#change").click(function () {
+    $("#change").click(function() {
         translate();
     })
 
@@ -108,7 +108,7 @@
     });
 
     //hover事件
-    $nav.find("li").hover(function () {
+    $nav.find("li").hover(function() {
         var index = $(this).index(); //获取滑过元素索引值
         var leftW = $(this).position().left; //获取滑过元素Left值
         var currentW = $nav.find("li").eq(index).innerWidth(); //获取滑过元素Width值
@@ -117,27 +117,12 @@
             width: currentW
         }, 300);
 
-    }, function () {
+    }, function() {
         $navcur.stop().animate({
             left: defLeftW,
             width: itemW
         }, 300)
     })
-
-    // 主菜单点击事件
-    // $('.navBarAlert_Service').on('click', function (ev) {
-    //     console.log(this)
-
-    //     let childrenDom = $(this).children()[0];
-    //     console.log(childrenDom, 8888)
-    //     $(childrenDom).on('click', function () {
-    //         window.location.href = '../components/product_details.html'
-    //     })
-    //     let afterSale = $(this).children()[1];
-    //     $(afterSale).on('click', function () {
-    //         window.location.href = '../components/after_Sale_Service.html'
-    //     })
-    // })
 
     function navBarClick(index) {
         let dome = $('.navbar-Product-Top').children();

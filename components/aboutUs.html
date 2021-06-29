@@ -19,7 +19,7 @@
     <section class="header"></section>
     <section class="contain">
         <section class="banner">
-            <img src="../img/banner_aboutus.jpg" alt="">
+            <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/banner_aboutus.jpg" alt="">
             <h2>行业指导</h2>
             <p>一对一服务</p>
             <section id="borderW"></section>
@@ -27,7 +27,7 @@
         </section>
         <sectio class="profile">
             <section class="profile_img">
-                <img src="../img/sevice+port.jpg" alt="">
+                <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/seviceport.jpg" alt="">
             </section>
             <section class="profile_text">
                 <h3>专业介绍</h3>
@@ -37,7 +37,7 @@
                     华启天成（深圳）智能科技有限公司，主要从事行业级无人机和无人机相关产品的研发和制造，公司产品覆盖各行业各领域，是一家专业的无人机解决方案提供商，公司致力于在5G大数据时代，结合AR大数据等技术，针对不同行业的痛点，提供智能专业的无人机产品。
                 </span>
             </section>
-            
+
         </sectio>
         <sectio class="contact">
             <section class="contact_text">
@@ -125,20 +125,19 @@
 <script type="text/javascript" src="../js/LanguagePublic.js"></script>
 <!-- </script> -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script type="text/javascript"
-    src="http://api.map.baidu.com/api?v=1.0&type=webgl&ak=rLd2nXM8f4xsTfPz1zAEyQlsvpN1UfGz"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.0&type=webgl&ak=rLd2nXM8f4xsTfPz1zAEyQlsvpN1UfGz"></script>
 </script>
 <script type="text/javascript">
-    $(function () {
+    $(function() {
         $(".header").load("../common/header.html");
         $(".footer").load("../common/fooder.html");
     });
     // 百度地图
-    var map = new BMapGL.Map("container");          // 创建地图实例 
-    var point = new BMapGL.Point(113.96016, 22.546828);  // 创建点坐标 
+    var map = new BMapGL.Map("container"); // 创建地图实例 
+    var point = new BMapGL.Point(113.96016, 22.546828); // 创建点坐标 
     map.centerAndZoom(point, 15);
-    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放  
-    var marker = new BMapGL.Marker(point);        // 创建标注   
+    map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放  
+    var marker = new BMapGL.Marker(point); // 创建标注   
     map.addOverlay(marker);
 
 

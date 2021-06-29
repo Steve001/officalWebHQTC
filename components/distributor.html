@@ -18,7 +18,7 @@
 <body>
     <section class="header"></section>
     <section class="banner">
-        <img src="../img/become-dealar-pc.png" alt="">
+        <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/become-dealar-pc.png" alt="">
         <section class="banner-text">
             <h1>成为经销商合作伙伴</h1>
             <p>在公司现有产品的基础上，我们支持各类定制化客制化需求，在公司强大的研发实力加持下，我们能够提供极其专业的方案定制。</p>
@@ -26,7 +26,7 @@
     </section>
     <section class="contain">
         <section class="contain-form">
-            <form action="http://127.0.0.1:8081/add" method="post" target="targetIfr">
+            <form method="post" target="targetIfr">
                 <section class="clas">
                     <p>申请合作类型</p>
                     <select name="cooperation_type" id="cooperation_type" class="selected">
@@ -64,7 +64,7 @@
                 <p>9:00-12:00&nbsp;&nbsp;14:00-18:00</p>
             </section>
             <section class="tip-r">
-                <img src="../img/bdsq-contact-icon-pc.png" alt="">
+                <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/bdsq-contact-icon-pc.png" alt="">
             </section>
         </section>
     </section>
@@ -149,8 +149,6 @@
             if (data.code == 200) {
                 alert(data.message)
                 window.location.href = '../index.html'
-            } else {
-
             }
         });
     }
