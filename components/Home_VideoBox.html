@@ -1,5 +1,5 @@
 <div class="homeVideoBox">
-    <video src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/video.mp4?versionId=CAEQHxiBgIDCrYDa0RciIDljZTdmZTg3YzUxMjQ2Yjc5MmYxZjBjZjE4YTFlNDhi" muted autoplay loop class="homeVideo"></video>
+    <!-- <video src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/video.mp4?versionId=CAEQHxiBgIDCrYDa0RciIDljZTdmZTg3YzUxMjQ2Yjc5MmYxZjBjZjE4YTFlNDhi" muted autoplay loop class="homeVideo"></video>
     <div class="videoTitleInfo">
         <span class="vivify driveInLeft">ADANCING AGRICULTURE</span>
         <span class="vivify driveInRight">提升全球农业生产效率</span>
@@ -8,5 +8,50 @@
     <div class="genduoBox">
         <span>滑动查看更多</span>
         <img src="/img/xia.png" alt="">
+    </div> -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <h3 class="vivify popIn">高层破窗灭火弹无人机</h3>
+                <span class="vivify shake" onclick="goProduct()">进一步了解 ></span>
+            </div>
+            <div class="swiper-slide">
+                <h3>YK6-30植保无人机</h3>
+                <span onclick="goProduct()">进一步了解 ></span>
+            </div>
+            <div class="swiper-slide">
+                <h3 onclick="goDistributor()">支持定制服务</h3>
+                <h3 onclick="goDistributor()">可根据实际作业需求，提供全案定制服务</h3>
+            </div>
+        </div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
 </div>
+
+<script>
+    //  轮播图
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal', // 垂直切换选项
+        loop: false, // 循环模式选项
+        autoplay: {
+            disableOnInteraction: false, //开启这个就可以自动滑动了
+            delay: 5000,
+        },
+        stopOnLastSlide: false,
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+
+    function goProduct() {
+        window.location.href = '../components/product.html'
+    }
+
+    function goDistributor() {
+        window.location.href = '../components/distributor.html'
+    }
+</script>

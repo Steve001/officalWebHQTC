@@ -1,20 +1,72 @@
 <div class="newsAndInformation">
-    <span class="Theproductline_title">新闻资讯</span>
-    <div class="listBox">
-        <div>
-            <span>2021-06-11 20:55</span>
-            <span>全球科学家：技术将如何改变农业的未来？</span>
-            <span>了解更多></span>
+    <div class="swiper-container newsAndInformation-swiper">
+        <div class="swiper-info">
+            <span>华启天成</span>
+            <span>《铸科技之典范，行世间之风采》</span>
         </div>
-        <div>
-            <span>2021-06-11 20:55</span>
-            <span>这一次，我们打算把它绿了！</span>
-            <span>了解更多></span>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="title">#01 _ 植保无人机</div><img data-src="../img/honeSwiper-1.jpg" data-srcset="../img/honeSwiper-1.jpg 2x" class="swiper-lazy">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title">#02 _ 展示</div><video src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/video.mp4?versionId=CAEQHxiBgIDCrYDa0RciIDljZTdmZTg3YzUxMjQ2Yjc5MmYxZjBjZjE4YTFlNDhi" muted autoplay loop></video>
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title">#03 _ 消防无人机</div><img data-src="../img/honeSwiper-2.jpg" data-srcset="../img/honeSwiper-2.jpg 2x" class="swiper-lazy">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title">#04 _ A guestroom</div><img data-src="../img/honeSwiper-3.jpg" data-srcset="../img/honeSwiper-3.jpg 2x" class="swiper-lazy">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
         </div>
-        <div>
-            <span>2021-06-11 20:55</span>
-            <span>科技创始人在 2021 中国国际大数据产业博览会上发表演讲</span>
-            <span>了解更多></span>
-        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
 </div>
+
+<script>
+    var swiper = new Swiper('.newsAndInformation-swiper', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        speed: 700,
+        allowTouchMove: false,
+        lazy: {
+            loadPrevNext: true,
+            loadPrevNextAmount: 3,
+        },
+        centeredSlides: true,
+        spaceBetween: 50,
+        slidesOffsetBefore: 40,
+        loop: true,
+        slidesPerView: 'auto',
+        on: {
+            slideChangeTransitionEnd: function(swipe) {
+                console.log(swipe.realIndex)
+                this.slides.transition(this.params.autoplay.delay + this.params.speed).transform('translate3d(-60px, 0, 0)');
+            },
+            slideChangeTransitionStart: function() {
+                this.slides.transition(this.params.speed).transform('translate3d(0, 0, 0)');
+            },
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function(index, className) {
+                return '<div class="' + className + '"><span></span><i></i></div>';
+            },
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    window.onresize = function() {
+        swiper.update();
+    }
+</script>

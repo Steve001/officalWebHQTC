@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/vivify.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script type="text/javascript" src="js/public.js"></script>
     <!-- <script src="./js/pxloader-all.min.js"></script>
     <script src="./js/PxLoaderImage.js"></script> -->
@@ -33,14 +34,11 @@
         <!-- 首页视频弹出播放模块 -->
         <section class="Home_VideoAlert"></section>
 
-        <!-- 首页智慧农业产品线模块 -->
+        <!-- 首页智慧产品线模块 -->
         <section class="Home_Theproductline"></section>
 
         <!-- 首页合作伙伴模块 -->
         <section class="Home_Partners"></section>
-
-        <!-- 首页相关服务模块 -->
-        <section class="Home_RelatedServices"></section>
 
         <!-- 首页新闻资讯模块 -->
         <section class="Home_NewsAndInformation"></section>
@@ -63,6 +61,7 @@
 </html>
 <script type="text/javascript" src="js/vue.js"></script>
 <script type="text/javascript" src="https://vncdn.mobi88.cn/public/jquery-2.1.3.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="js/md5.js"></script>
 <script type="text/javascript" src="/js/LanguagePublic.js"></script>
 <script type="text/javascript">
@@ -142,7 +141,6 @@
     $(window).on('scroll', function() {
         let DomeOne = $('.Home_Partners')[0];
         let DomeTwo = $('.Home_Theproductline')[0];
-        let DomeThree = $('.Home_NewsAndInformation')[0];
         if (isElementInViewport(DomeOne)) {
             if (oneIndex != 0) {
                 return false;
@@ -157,23 +155,7 @@
                 return false;
             }
             twoIndex++;
-            $('#Theproductline_title').addClass('vivify popIn')
-            let childrenList = $('.Home_Theproductline').children().children()
-            for (let i = 1; i < childrenList.length; i++) {
-                $(childrenList[i]).addClass('vivify fadeInLeft')
-            }
-        }
-        if (isElementInViewport(DomeThree)) {
-            if (threeIndex != 0) {
-                return false;
-            }
-            threeIndex++;
-            let childrenList = $('.Home_NewsAndInformation').children().children('div')[0].children
-            console.log(childrenList.children)
-            for (let i = 0; i < childrenList.length; i++) {
-                console.log(childrenList[i])
-                $(childrenList[i]).addClass('vivify fadeIn')
-            }
+            $('.Home_Theproductline').addClass('vivify popIn')
         }
         // console.log(document.getElementById('sticky').offsetTop)
         // if (document.documentElement.scrollTop >= 1080 && document.documentElement.scrollTop < 1200) {

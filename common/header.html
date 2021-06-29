@@ -1,6 +1,6 @@
 <section class="header vivify swoopInLeft">
     <div style="cursor: pointer;">
-        <img class="img-style" src="https://www.xa.com/img/nav-icon-phone.svg" alt="" id="change">
+        <img class="img-style" src="../img/logo.png" alt="" id="change">
     </div>
     <section class="header-r" id="nav">
         <li class="header-r-block current">
@@ -13,10 +13,6 @@
                     <span onclick="navBarClick(0)" class="navBar-Active">全部产品</span>
                     <span onclick="navBarClick(1)">植保无人机</span>
                     <span onclick="navBarClick(2)">消防无人机</span>
-                    <span onclick="navBarClick(3)">农机自驾仪</span>
-                    <span onclick="navBarClick(4)">遥感无人机</span>
-                    <span onclick="navBarClick(5)">农业物联网</span>
-                    <span onclick="navBarClick(6)">智慧农业系统</span>
                 </div>
                 <div class="navbar-Product-Bottom">
                     <div>
@@ -41,9 +37,9 @@
         <li class="header-r-block">
             <a href="../components/serviceSupport.html">服务支持</a>
             <div class="navBarAlert_Service">
-                <span>产品技术支持</span>
-                <span>售后服务政策</span>
-                <span>保障与维修</span>
+                <span><a href="../components/product_details.html" style="color: #000 !important;">产品技术支持</a></span>
+                <span><a href="../components/after_Sale_Service.html" style="color: #000 !important;"> 售后服务政策</a></span>
+                <!-- <span>保障与维修</span> -->
             </div>
         </li>
         <li class="header-r-block">
@@ -59,13 +55,13 @@
 </section>
 
 <script>
-    $(function() {       // do something 
+    $(function () {       // do something 
         var script = document.createElement("script");
         script.type = "text/javascript";
         script.src = "http://www.microsoftTranslator.com/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**";
         document.getElementsByTagName('head')[0].appendChild(script);
         var value = sessionStorage.getItem("language");
-        document.onreadystatechange = function() {
+        document.onreadystatechange = function () {
             if (document.readyState == 'complete') {
                 console.log(value)
                 if (value === "1") {
@@ -74,15 +70,15 @@
             }
         }
 
-        function onProgress(value) {}
+        function onProgress(value) { }
 
-        function onError(error) {}
+        function onError(error) { }
 
         function onComplete() {
             $("#WidgetFloaterPanels").hide();
         }
 
-        function onRestoreOriginal() {}
+        function onRestoreOriginal() { }
     });
 
     function translate() {
@@ -95,7 +91,7 @@
         window.location.reload(); //刷新当前页面.
     }
 
-    $("#change").click(function() {
+    $("#change").click(function () {
         translate();
     })
 
@@ -112,7 +108,7 @@
     });
 
     //hover事件
-    $nav.find("li").hover(function() {
+    $nav.find("li").hover(function () {
         var index = $(this).index(); //获取滑过元素索引值
         var leftW = $(this).position().left; //获取滑过元素Left值
         var currentW = $nav.find("li").eq(index).innerWidth(); //获取滑过元素Width值
@@ -121,7 +117,7 @@
             width: currentW
         }, 300);
 
-    }, function() {
+    }, function () {
         $navcur.stop().animate({
             left: defLeftW,
             width: itemW
@@ -129,19 +125,19 @@
     })
 
     // 主菜单点击事件
-    $('.header-r-block').on('click', function(ev) {
-        console.log(this)
+    // $('.navBarAlert_Service').on('click', function (ev) {
+    //     console.log(this)
 
-        let childrenDom = $(this).children().children()[0];
-        console.log(childrenDom,8888)
-        $(childrenDom).on('click', function() {
-            window.location.href = '../components/product_details.html'
-        })
-    let afterSale =  $(this).children().children()[1];
-    $(afterSale).on('click',function(){
-        window.location.href = '../components/after_Sale_Service.html'
-    })
-    })
+    //     let childrenDom = $(this).children()[0];
+    //     console.log(childrenDom, 8888)
+    //     $(childrenDom).on('click', function () {
+    //         window.location.href = '../components/product_details.html'
+    //     })
+    //     let afterSale = $(this).children()[1];
+    //     $(afterSale).on('click', function () {
+    //         window.location.href = '../components/after_Sale_Service.html'
+    //     })
+    // })
 
     function navBarClick(index) {
         let dome = $('.navbar-Product-Top').children();
