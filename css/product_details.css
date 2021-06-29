@@ -442,6 +442,9 @@
 .section5_contain>section {
     margin: 0 .5rem;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section5_contain>section>img {
@@ -473,6 +476,10 @@
 .section5_contain_3>p:active{
     color: red!important;
 } */
+
+.section5_contain_1>p:nth-child(2) {
+    color: red!important;
+}
 
 
 /* 第六屏 */
