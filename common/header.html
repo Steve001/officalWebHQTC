@@ -37,9 +37,9 @@
         <li class="header-r-block">
             <a href="../components/serviceSupport.html">服务支持</a>
             <div class="navBarAlert_Service">
-                <span>产品技术支持</span>
-                <span>售后服务政策</span>
-                <span>保障与维修</span>
+                <span><a href="../components/product_details.html" style="color: #000 !important;">产品技术支持</a></span>
+                <span><a href="../components/after_Sale_Service.html" style="color: #000 !important;"> 售后服务政策</a></span>
+                <!-- <span>保障与维修</span> -->
             </div>
         </li>
         <li class="header-r-block">
@@ -122,21 +122,6 @@
             left: defLeftW,
             width: itemW
         }, 300)
-    })
-
-    // 主菜单点击事件
-    $('.header-r-block').on('click', function(ev) {
-        console.log(this)
-
-        let childrenDom = $(this).children().children()[0];
-        console.log(childrenDom, 8888)
-        $(childrenDom).on('click', function() {
-            window.location.href = '../components/product_details.html'
-        })
-        let afterSale = $(this).children().children()[1];
-        $(afterSale).on('click', function() {
-            window.location.href = '../components/after_Sale_Service.html'
-        })
     })
 
     function navBarClick(index) {
