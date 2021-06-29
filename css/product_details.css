@@ -20,7 +20,7 @@
 }
 
 .section9 {
-    background: url(../img/9_bg.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/9_bg.jpg) no-repeat;
     background-size: contain;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@
 }
 
 .section10 {
-    background: url(../img/10_bg.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/10_bg.jpg) no-repeat;
     background-size: contain;
     display: flex;
     flex-direction: column;
@@ -36,7 +36,7 @@
 }
 
 .section11 {
-    background: url(../img/11_bg.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/11_bg.jpg) no-repeat;
     background-size: contain;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@
 }
 
 .section12 {
-    background: url(../img/12_bg.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/12_bg.jpg) no-repeat;
     background-size: contain;
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@
 }
 
 .section14 {
-    background: url(../img/14_bg.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/14_bg.jpg) no-repeat;
     background-size: contain;
     display: flex;
     flex-direction: column;
@@ -201,14 +201,17 @@
     position: relative;
     bottom: -120%;
 }
+
 .section15 p {
     position: relative;
     bottom: -120%;
 }
-.selection2-text{
+
+.selection2-text {
     position: relative;
     left: -120%;
 }
+
 .section5 span {
     position: relative;
     bottom: -120%;
@@ -218,6 +221,7 @@
 /* .section4 p {
     display: none;
 } */
+
 
 /* .section6 p {
     display: none;
@@ -236,7 +240,7 @@
 /* 第一屏 */
 
 .section1 {
-    background-image: url(../img/back_img1.jpg);
+    background-image: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img1.jpg);
     background-position: center center;
     background-size: 100% 100%;
     display: flex;
@@ -258,8 +262,8 @@
 /* 第二屏 */
 
 .section2 {
-    /* background-image: url(../img/back_img2.jpg); */
-    background: url(../img/back_img2.jpg) no-repeat;
+    /* background-image: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img2.jpg); */
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img2.jpg) no-repeat;
     background-position: center center;
     background-size: contain;
     display: flex;
@@ -294,7 +298,7 @@
 /* 第三屏 */
 
 .section3 {
-    background-image: url(../img/back_img3.jpg);
+    background-image: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img3.jpg);
     background-position: center center;
     /* background-size: 100% 100%; */
     background-size: contain;
@@ -327,7 +331,8 @@
     align-items: center;
     margin: .3rem .3rem;
 }
-.section3_contain>section:hover span{
+
+.section3_contain>section:hover span {
     color: red;
 }
 
@@ -346,11 +351,10 @@
 /* 第四屏 */
 
 .section4 {
-    background: url(../img/back_img4.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img4.jpg) no-repeat;
     background-position: center center;
     background-size: cover;
     background-color: black!important;
-    
 }
 
 .section4 h3 {
@@ -359,25 +363,30 @@
     font-size: 1rem;
     opacity: 0.9;
 }
+
 .section4 p {
     color: #ffff!important;
     font-size: .5rem;
     margin-bottom: 2.3rem;
 }
-.box{
+
+.box {
     margin: 0 auto;
     width: 20vw;
 }
+
 .swiper-container {
     margin: 0 auto;
-  border-radius: .5rem!important;
-} 
-.swiper-slide>img{
+    border-radius: .2rem!important;
+}
+
+.swiper-slide>img {
     width: 100%;
     height: 100%;
     display: block;
 }
-.swiper-button-prev{
+
+.swiper-button-prev {
     top: 36%!important;
     left: 5rem!important;
     font-size: .1rem;
@@ -387,7 +396,7 @@
     opacity: 0;
 }
 
-.swiper-button-next{
+.swiper-button-next {
     top: 36%!important;
     right: 5rem!important;
     font-size: .1rem;
@@ -396,6 +405,8 @@
     /* background-color: red; */
     opacity: 0;
 }
+
+
 /* 第五屏 */
 
 .section5 {
@@ -451,6 +462,8 @@
     width: 100%;
     height: 100%;
 }
+
+
 /* .section5_contain_1>p:active{
     color: red!important;
 }
@@ -460,10 +473,12 @@
 .section5_contain_3>p:active{
     color: red!important;
 } */
+
+
 /* 第六屏 */
 
 .section6 {
-    background: url(../img/back_img6.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img6.jpg) no-repeat;
     background-position: center center;
     /* background-size: 100% 100%; */
     background-size: contain;
@@ -484,50 +499,92 @@
     font-size: .4rem;
     opacity: 0.5;
 }
-.sectionContain{
+
+.sectionContain {
     width: 14rem;
     display: flex;
     margin: 0 auto;
     margin-top: 1rem;
     /* background-color: red; */
 }
-.sectionContain>.section6_left{
-   width: 31rem;
-   height: 6rem;
-   
+
+.sectionContain>.section6_left {
+    width: 31rem;
+    height: 6rem;
 }
-@keyframes section6_left{
-    0%{background-clor:#F00;left:0rem;top:0rem;opacity: 0;}
+
+@keyframes section6_left {
+    0% {
+        background-clor: #F00;
+        left: 0rem;
+        top: 0rem;
+        opacity: 0;
+    }
     /* 25%{background-clor:#F00;left:2.5rem;top:0rem;opacity: 1;} */
-    50%{background-clor:#F00;left:5rem;top:0rem;opacity: 1;}
+    50% {
+        background-clor: #F00;
+        left: 5rem;
+        top: 0rem;
+        opacity: 1;
+    }
     /* 75%{background-clor:#F00;left:2.5rem;top:0rem;opacity: 1;} */
-    100%{background-clor:#F00;left:0rem;top:0rem;opacity: 0;}  
+    100% {
+        background-clor: #F00;
+        left: 0rem;
+        top: 0rem;
+        opacity: 0;
+    }
 }
-@keyframes section6_right{
-    0%{background-clor:#F00;right:0rem;top:0rem;opacity: 0;}
-    50%{background-clor:#F00;right:5rem;top:0rem;opacity: 1;}
-    100%{background-clor:#F00;right:0rem;top:0rem;opacity: 0;}  
+
+@keyframes section6_right {
+    0% {
+        background-clor: #F00;
+        right: 0rem;
+        top: 0rem;
+        opacity: 0;
+    }
+    50% {
+        background-clor: #F00;
+        right: 5rem;
+        top: 0rem;
+        opacity: 1;
+    }
+    100% {
+        background-clor: #F00;
+        right: 0rem;
+        top: 0rem;
+        opacity: 0;
+    }
 }
-.sectionContain>.section6_right{
+
+.sectionContain>.section6_right {
     width: 12rem;
-   height: 6rem;
+    height: 6rem;
 }
-.sectionContain>.section6_left>img{
+
+.sectionContain>.section6_left>img {
     margin-top: 3rem;
     display: block;
-    position:absolute;/*这句不能少，否则动不起来*/
-    animation:section6_left 2s infinite;/*keyframes名称，动画时间，循环*/
+    position: absolute;
+    /*这句不能少，否则动不起来*/
+    animation: section6_left 2s infinite;
+    /*keyframes名称，动画时间，循环*/
 }
-.sectionContain>.section6_right>img{
+
+.sectionContain>.section6_right>img {
     display: block;
     margin-top: 3rem;
-    position:absolute;/*这句不能少，否则动不起来*/
-    animation:section6_right 2s infinite;/*keyframes名称，动画时间，循环*/
+    position: absolute;
+    /*这句不能少，否则动不起来*/
+    animation: section6_right 2s infinite;
+    /*keyframes名称，动画时间，循环*/
 }
+
+
 /* 第七屏 */
 
 .section7 {
-    background: url(../img/back_img7.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img7.jpg) no-repeat;
     background-position: center center;
     background-size: contain;
     background-color: black!important;
@@ -545,10 +602,12 @@
     font-size: .3rem;
     opacity: 0.4;
 }
+
+
 /* 第八屏 */
 
 .section8 {
-    background: url(../img/back_img8.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img8.jpg) no-repeat;
     background-position: center center;
     background-size: 100% 100%;
     background-color: black!important;
@@ -624,36 +683,44 @@
 .section15_contain_1>img {
     width: 3rem;
 }
-.section15_select_img{
+
+.section15_select_img {
     width: 4rem;
     height: 4rem;
     /* background-color: red; */
 }
-.section15_select_img>img{
+
+.section15_select_img>img {
     width: 3rem;
     height: 3rem;
     /* background-color: red; */
 }
-.section15_contain_1:nth-child(1):hover .section15_select_img img{
+
+.section15_contain_1:nth-child(1):hover .section15_select_img img {
     width: 4rem;
     height: 4rem;
 }
-.section15_contain_1:nth-child(2):hover .section15_select_img img{
+
+.section15_contain_1:nth-child(2):hover .section15_select_img img {
     width: 4rem;
     height: 4rem;
 }
-.section15_contain_1:nth-child(3):hover .section15_select_img img{
+
+.section15_contain_1:nth-child(3):hover .section15_select_img img {
     width: 4rem;
     height: 4rem;
 }
-.section15_contain_1:nth-child(4):hover .section15_select_img img{
+
+.section15_contain_1:nth-child(4):hover .section15_select_img img {
     width: 4rem;
     height: 4rem;
 }
+
+
 /* 第十六屏 */
 
 .section16 {
-    background: url(../img/back_img16.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img16.jpg) no-repeat;
 }
 
 .section16 h3 {
