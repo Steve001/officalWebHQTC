@@ -4,30 +4,30 @@
     </div>
     <section class="header-r" id="nav">
         <li class="header-r-block current">
-            <a href="../index.html">首页</a>
+            <a href="/index.html" i18n="i18n.home">首页</a>
         </li>
         <li class="header-r-block">
-            <a href="../components/product.html">产品</a>
+            <a href="../components/product.html" i18n="i18n.product">产品</a>
             <div class="navbarAlert_Product">
                 <div class="navbar-Product-Top">
-                    <span onclick="navBarClick(0)" class="navBar-Active">全部产品</span>
-                    <span onclick="navBarClick(1)">植保无人机</span>
-                    <span onclick="navBarClick(2)">消防无人机</span>
+                    <span onclick="navBarClick(0)" class="navBar-Active" i18n="i18n.alltheproducts">全部产品</span>
+                    <span onclick="navBarClick(1)" i18n="i18n.plantProtectionUAV">植保无人机</span>
+                    <span onclick="navBarClick(2)" i18n="i18n.firefightingdrone">消防无人机</span>
                 </div>
                 <div class="navbar-Product-Bottom">
-                    <div onclick="window.location.href = '../components/product_details.html'">
+                    <div onclick="window.location.href = '/components/product_details.html'">
                         <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/082B2E5568CEF228452D33D47357D20A.png" alt="">
-                        <span>YK6-10L</span>
+                        <span>YK6-30</span>
                     </div>
-                    <div onclick="window.location.href = '../components/product_details.html'">
+                    <div onclick="window.location.href = '/components/product_details.html'">
                         <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/082B2E5568CEF228452D33D47357D20A.png" alt="">
                         <span>YK6-16L</span>
                     </div>
-                    <div onclick="window.location.href = '../components/product_details.html'">
+                    <div onclick="window.location.href = '/components/product_details.html'">
                         <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/082B2E5568CEF228452D33D47357D20A.png" alt="">
                         <span>YK6-22L</span>
                     </div>
-                    <div onclick="window.location.href = '../components/product_details.html'">
+                    <div onclick="window.location.href = '/components/product_details.html'">
                         <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/082B2E5568CEF228452D33D47357D20A.png" alt="">
                         <span>YK6-25L</span>
                     </div>
@@ -35,66 +35,28 @@
             </div>
         </li>
         <li class="header-r-block">
-            <a href="../components/serviceSupport.html">服务支持</a>
+            <a href="../components/serviceSupport.html" i18n="i18n.serviceSupport">服务支持</a>
             <div class="navBarAlert_Service">
-                <span><a href="../components/serviceSupport.html" style="color: #000 !important;">产品技术支持</a></span>
-                <span><a href="../components/after_Sale_Service.html" style="color: #000 !important;"> 售后服务政策</a></span>
+                <span><a href="/hqtc_pc/components/serviceSupport.html" style="color: #000 !important;" i18n="i18n.productsupport">产品技术支持</a></span>
+                <span><a href="/hqtc_pc/components/after_Sale_Service.html" style="color: #000 !important;" i18n="i18n.after-sales"> 售后服务政策</a></span>
                 <!-- <span>保障与维修</span> -->
             </div>
         </li>
         <li class="header-r-block">
-            <a href="../components/aboutUs.html">关于我们</a>
+            <a href="../components/aboutUs.html" i18n="i18n.themselves">关于我们</a>
             <div class="navBarAlert_AboutUs"></div>
         </li>
         <li class="header-r-block">
-            <a href="../components/distributor.html">经销商</a>
+            <a href="../components/distributor.html" i18n="i18n.distributor">经销商</a>
         </li>
         <div class="nav-current"></div>
     </section>
 
 </section>
-
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/jquery.i18n.min.js"></script>
+<script src="/js/language.js"></script>
 <script>
-    $(function() {       // do something 
-        var script = document.createElement("script");
-        script.type = "text/javascript";
-        script.src = "http://www.microsoftTranslator.com/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**";
-        document.getElementsByTagName('head')[0].appendChild(script);
-        var value = sessionStorage.getItem("language");
-        document.onreadystatechange = function() {
-            if (document.readyState == 'complete') {
-                console.log(value)
-                if (value === "1") {
-                    Microsoft.Translator.Widget.Translate('zh-CHS', 'en', onProgress, onError, onComplete, onRestoreOriginal, 2000);
-                }
-            }
-        }
-
-        function onProgress(value) {}
-
-        function onError(error) {}
-
-        function onComplete() {
-            $("#WidgetFloaterPanels").hide();
-        }
-
-        function onRestoreOriginal() {}
-    });
-
-    function translate() {
-        var value = sessionStorage.getItem("language");
-        if (value === "1") {
-            sessionStorage.setItem("language", "0");
-        } else {
-            sessionStorage.setItem("language", "1");
-        }
-        window.location.reload(); //刷新当前页面.
-    }
-
-    $("#change").click(function() {
-        translate();
-    })
-
     var $navcur = $(".nav-current");
     var $nav = $("#nav");
     var current = ".current";

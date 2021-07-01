@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/public.css" />
     <link rel="stylesheet" href="../css/distributor.css">
-    <link rel="stylesheet" href="/css/vivify.min.css" />
-    <link rel="stylesheet" href="/js/DropDown/DropDown.css" />
-    <script type="text/javascript" src="/js/public.js"></script>
+    <link rel="stylesheet" href="../css/vivify.min.css" />
+    <link rel="stylesheet" href="../js/DropDown/DropDown.css" />
+    <script type="text/javascript" src="../js/public.js"></script>
     <title>经销商</title>
 </head>
 
@@ -73,9 +73,8 @@
 </body>
 <script type="text/javascript" src="https://vncdn.mobi88.cn/public/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="../js/md5.js"></script>
-<script type="text/javascript" src="../js/LanguagePublic.js"></script>
 <script src="../js/DropDown/DropDown.js"></script>
-</script>
+<script src="../js/utils.js"></script>
 <script type="text/javascript">
     let select1Value = '';
     $(function() {
@@ -142,8 +141,11 @@
             username: nvc_user_name,
             mobile: nvc_mobile,
             email: nvc_email,
-            cooperation_type: nvc_cooperation_type != '选择合作类型' ? nvc_cooperation_type : '',
-            cooperative_products: nvc_cooperative_products,
+            cooperation_type: nvc_cooperation_type != '选择合作类型' ? nvc_cooperation_type : null,
+            cooperative_products: nvc_cooperative_products != '' ? nvc_cooperative_products : null,
+            type: 1, // 1线上---0线下
+            get_time: parseTime(new Date()), //当前时间
+
         }, function(data) {
             console.log(data)
             if (data.code == 200) {

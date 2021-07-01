@@ -2,16 +2,16 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <h3 class="vivify popIn">高层破窗灭火弹无人机</h3>
-                <span class="vivify shake" onclick="goProduct()">进一步了解 ></span>
+                <h3 class="vivify popIn" i18n="i18n.swiper_text1">高层破窗灭火弹无人机</h3>
+                <span class="vivify shake" onclick="goProduct()" i18n="i18n.Learnmore">进一步了解 ></span>
             </div>
             <div class="swiper-slide">
-                <h3>YK6-30植保无人机</h3>
-                <span onclick="goProduct()">进一步了解 ></span>
+                <h3 i18n="i18n.YK6-30plantProtectionUAV">YK6-30植保无人机</h3>
+                <span onclick="goProduct()" i18n="i18n.Learnmore">进一步了解 ></span>
             </div>
             <div class="swiper-slide">
-                <h3 onclick="goDistributor()">支持定制服务</h3>
-                <h3 onclick="goDistributor()">可根据实际作业需求，提供全案定制服务</h3>
+                <h3 onclick="goDistributor()" i18n="i18n.supportServices">支持定制服务</h3>
+                <h3 onclick="goDistributor()" i18n="i18n.according">可根据实际作业需求，提供全案定制服务</h3>
             </div>
         </div>
         <!-- 如果需要导航按钮 -->
@@ -19,7 +19,9 @@
         <div class="swiper-button-next"></div>
     </div>
 </div>
-
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/jquery.i18n.min.js"></script>
+<script src="js/language.js"></script>
 <script>
     //  轮播图
     var mySwiper = new Swiper('.swiper-container', {
@@ -38,10 +40,10 @@
     })
 
     function goProduct() {
-        window.location.href = '../components/product.html'
+        window.location.href = '/components/product_details.html'
     }
 
     function goDistributor() {
-        window.location.href = '../components/distributor.html'
+        window.location.href = '/components/distributor.html'
     }
 </script>
