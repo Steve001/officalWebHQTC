@@ -472,17 +472,6 @@
     height: 100%;
 }
 
-
-/* .section5_contain_1>p:active{
-    color: red!important;
-}
-.section5_contain_2>p:active{
-    color: red!important;
-}
-.section5_contain_3>p:active{
-    color: red!important;
-} */
-
 .section5_contain_1>p:nth-child(2) {
     color: red!important;
 }
