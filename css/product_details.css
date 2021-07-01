@@ -495,7 +495,6 @@
 .section6 {
     background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img6.jpg) no-repeat;
     background-position: center center;
-    /* background-size: 100% 100%; */
     background-size: contain;
     display: flex;
     background-color: black!important;
@@ -520,7 +519,6 @@
     display: flex;
     margin: 0 auto;
     margin-top: 1rem;
-    /* background-color: red; */
 }
 
 .sectionContain>.section6_left {
@@ -712,23 +710,19 @@
 }
 
 .section15_contain_1:nth-child(1):hover .section15_select_img img {
-    width: 4rem;
-    height: 4rem;
+    transform: scale(1.2,1.2);
 }
 
 .section15_contain_1:nth-child(2):hover .section15_select_img img {
-    width: 4rem;
-    height: 4rem;
+    transform: scale(1.2,1.2);
 }
 
 .section15_contain_1:nth-child(3):hover .section15_select_img img {
-    width: 4rem;
-    height: 4rem;
+    transform: scale(1.2,1.2);
 }
 
 .section15_contain_1:nth-child(4):hover .section15_select_img img {
-    width: 4rem;
-    height: 4rem;
+    transform: scale(1.2,1.2);
 }
 
 
