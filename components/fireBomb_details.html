@@ -174,7 +174,7 @@
             <div class="section section8">
                 <h3>超航时长&nbsp;颠覆想象</h3>
                 <p>搭载大容量双电池，实现超长续航，无忧作业</p>
-                <section  class="section8_img_left">
+                <section class="section8_img_left">
                     <img src="../img/back_imge8_liner.jpg" alt="">
                 </section>
                 <section class="sectiojn8_img_center">
@@ -217,14 +217,11 @@
     <!-- <section class="footer"></section> -->
 </body>
 <script type="text/javascript" src="https://vncdn.mobi88.cn/public/jquery-2.1.3.min.js"></script>
-<script type="text/javascript" src="../js/md5.js"></script>
-<script type="text/javascript" src="../js/LanguagePublic.js"></script>
 <script type="text/javascript" src="../js/jquery.fullPage.min.js"></script>
 <script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
-</script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript">
-    $(function () {
+    $(function() {
         $(".header").load("../common/header.html");
         // $(".footer").load("../common/fooder.html");
         $('#dowebok').fullpage({
@@ -235,7 +232,7 @@
             scrollingSpeed: 1000,
             easing: 'swing', //定义页面section滚动的动画方式，若修改此项需引入jquery.easing插件
             easingcss3: 'ease', //定义页面section滚动的过渡效果，若修改此项需引入第三方插件
-            afterLoad: function (anchorLink, index) {
+            afterLoad: function(anchorLink, index) {
                 console.log(index)
                 if (index == 2) {
                     $('.section2').find('p').delay(100).animate({
@@ -308,7 +305,7 @@
                     }, 1500, 'easeOutExpo');
                 }
             },
-            onLeave: function (index, direction) {
+            onLeave: function(index, direction) {
                 if (index == '2') {
                     $('.section2').find('p').delay(500).animate({
                         left: '-120%'
@@ -380,10 +377,10 @@
                     }, 1500, 'easeOutExpo');
                 }
             },
-            afterRender: function () { },
-            afterResize: function () { },
-            afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) { },
-            onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) { }
+            afterRender: function() {},
+            afterResize: function() {},
+            afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {},
+            onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
 
         });
         // $(".section11 ul li").hover(function (e) {
@@ -457,19 +454,19 @@
         //     $(".section3_contain_10 img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img4_10.png");
         // });
         // 第二屏
-        $(".section2_contain_1").on('click', function () {
+        $(".section2_contain_1").on('click', function() {
             $(".section_2_img img").attr("src", "../img/back_imge2_1.png");
-            $(" .section2_contain_1 p").css("cssText", "background: red;");    
+            $(" .section2_contain_1 p").css("cssText", "background: red;");
             $(" .section2_contain_2 p").css("cssText", "color: black!important");
             $(" .section2_contain_3 p").css("cssText", "color: black!important");
         });
-        $(".section2_contain_2").on('click', function () {
+        $(".section2_contain_2").on('click', function() {
             $(".section_2_img img").attr("src", "../img/back_imge2_2.png");
             $(".section2_contain_2 p").css("cssText", "color: red !important");
             $(" .section2_contain_1 p").css("cssText", "color: black!important");
             $(" .section2_contain_3 p").css("cssText", "color: black!important");
         });
-        $(".section2_contain_3").on('click', function () {
+        $(".section2_contain_3").on('click', function() {
             $(".section_2_img img").attr("src", "../img/back_imge2_3.png");;
             $(".section2_contain_3 p").css("cssText", "color: red !important");
             $(" .section2_contain_1 p").css("cssText", "color: black!important");
