@@ -101,7 +101,9 @@
             forever: true,
             callback: function(res) {}
         });
-
     }
-    languageSelect(navLanguage);
+    if (navLanguage != "zh") {
+        languageSelect(navLanguage);
+    }
+
 })(jQuery);

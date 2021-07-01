@@ -145,6 +145,10 @@
 .section11 ul li>h4 {
     font-size: .3rem;
     margin-top: .2rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 
 .section11 ul li>span {
@@ -153,6 +157,10 @@
     margin-top: .2rem;
     /* text-align: center; */
     text-align: justify;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
 .liActive {
@@ -349,6 +357,11 @@
 .section3_contain>section>span {
     font-size: .2rem;
     color: #060606;
+    display: -webkit-box;
+    width: 90px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 
 

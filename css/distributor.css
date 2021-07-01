@@ -45,6 +45,10 @@
 .clas {
     /* margin: .95rem 1.875rem; */
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .clas p {
@@ -64,6 +68,10 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.input-confirm label {
+    font-size: 20px;
 }
 
 .input_style {
@@ -138,6 +146,7 @@
     list-style: none;
     vertical-align: top;
     margin-bottom: var(--lgn);
+    width: 6.25rem;
     position: relative;
     display: flex;
     min-height: 40px;
