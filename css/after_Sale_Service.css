@@ -18,7 +18,7 @@ text-align: center;
     left: 0%;
     top: 0%;
     height: 100%;
-    width: 5rem!important;
+    width: 6rem!important;
     background-color: #dddddd;width: 3rem;
     padding-left: 3.4rem;
     padding-top: 1.3rem;
@@ -32,7 +32,7 @@ text-align: center;
     padding-left: .1rem;
 }
 .contain{
- padding-left: .2rem;
+ padding-left: 1.2rem;
  padding-bottom: 2rem;
  padding-right: 4rem;
 }

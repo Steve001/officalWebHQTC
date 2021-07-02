@@ -50,7 +50,8 @@
 .section1 h1 {
     margin-top: -5rem;
     color: #ffffff!important;
-    font-size: 50px;
+    font-size: 55px;
+    font-weight: 400;
 }
 
 .section1 p {
@@ -66,29 +67,31 @@
 .section2 h3 {
     margin-top: -2rem;
     color: #fff!important;
-    font-size: 0.5rem;
-    opacity: 0.9;
+    font-size:55px;
+    font-weight: 400;
 }
 
 .section2 h4 {
     color: #fff!important;
-    font-size: .3rem;
-    opacity: 0.5;
+    font-size: .35rem;
+    opacity: 0.9;
+    margin-top: .2rem;
+    font-weight: 200;
 }
 
 .section2 p {
     color: black!important;
-    font-size: .3rem;
+    font-size: .35rem;
     background:#fff;
-    padding:.2rem;
+    padding:.1rem .5rem;
     border-radius: .5rem;
 }
 .section2_contain {
-    width: 6rem;
+    width: 12rem;
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    margin-top: .5rem;
+    margin-top: 1.2rem;
 }
 
 .section2_contain>section {
@@ -128,14 +131,18 @@
 }
 
 .section3 h3 {
-    margin-top: -2rem;
     color: #000!important;
-    font-size: 40px;
+    font-size: 55px;
+    font-weight: 400;
 }
 
 .section3 p {
     color: black!important;
-    font-size: 20px;
+    font-size: .35rem;
+    opacity: 0.9;
+    margin-top: .2rem;
+    font-weight: 200;
+    margin-top: .2rem;
 }
 .section3_contain {
     display: flex;
@@ -145,7 +152,7 @@
 }
 
 .section3_contain>section {
-    /* margin: .3rem .3rem; */
+    margin: .3rem .3rem;
     width: 8rem;
     padding: .4rem;
     box-sizing: border-box;
@@ -168,52 +175,61 @@
 .section4 h3 {
     margin-top: -5rem;
     color: #fff!important;
-    font-size: 40px;
-    opacity: 0.9;
+    font-size: 55px;
+    font-weight: 400;
 }
 
 .section4 p {
     color: #ffff!important;
-    font-size: 30px;
+    font-size: .35rem;
+    margin-top: .2rem;
     margin-bottom: 3rem;
+    font-weight: 200;
+    opacity: 0.9;
 }
 
 /* 第五屏 */
 
 .section5 {
-    background-image: url(../img/back_imge5.jpg);
+    /* background-image: url(../img/back_imge5.jpg); */
+    background: url(../img/back_imge5.jpg) no-repeat center center;
     background-position: center center;
     /* background-size: 100% 100%; */
-    background-size: contain;
+    background-size: 100% 100%;
     display: flex;
     flex-direction: column;
 }
 
 .section5 h3 {
-    margin-top: -6rem;
+    margin-top: -5rem;
     color: #222222!important;
-    font-size: 40px;
+    font-size: 55px;
+    font-weight: 400;
 }
 
 .section5 p {
     color: #4d4d4d!important;
-    font-size: 20px;
+    font-size: .35rem;
+    margin-top: .2rem;
+    font-weight: 200;
+    opacity: 0.9;
 }
 
 .section5_contain {
     display: flex;
     flex-wrap: wrap;
-    width: 13rem;
+    width: 12rem;
     margin: 0 auto;
+    margin-top: .2rem;
 }
 
 .section5_contain>section {
-    width: 1.5rem;
+    width: 1.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: .3rem .3rem;
+    margin: .17rem .1rem;
 }
 
 .section5_contain>section:hover span {
@@ -222,12 +238,13 @@
 
 .section5_contain>section>img {
     display: block;
-    width: .9rem;
+    width: .8rem;
     height: 100%;
 }
 
 .section5_contain>section>span {
     font-size: .2rem;
+    margin-top: .3rem;
     color: #060606;
 }
 
@@ -246,15 +263,17 @@
 .section6 h3 {
     margin-top: -5rem;
     color: #fff!important;
-    font-size: 40px;
-    opacity: 0.9;
+    font-size: 55px;
     padding-top: 4rem;
+    font-weight: 400;
 }
 
 .section6 p {
     color: #ffff!important;
-    font-size: .3rem;
-    opacity: 0.5;
+    font-size: .35rem;
+    margin-top: .2rem;
+    opacity: 0.9;
+    font-weight: 200;
 }
 
 .sectionContain {
@@ -289,15 +308,16 @@
 
 .section7 h3 {
     color: #fff!important;
-    font-size: 40px;
-    opacity: 0.9;
-    margin-top: -2rem;
+    font-size: 55px;
+    font-weight: 400;
 }
 
 .section7 p {
     color: #fff!important;
-    font-size: .3rem;
-    opacity: 0.4;
+    font-size: .35rem;
+    margin-top: .2rem;
+    opacity: 0.9;
+    font-weight: 200;
 }
 .section7_contain{
     width: 9rem;
@@ -423,30 +443,19 @@
 
 .section8 h3 {
     margin-top: -3rem;
-    color: #fff!important;
-    font-size: 40px;
-    opacity: 0.9;
+    color: white!important;
+    font-size: 55px;
+    font-weight: 400;
 }
 
 .section8 p {
     color: #ffff!important;
-    font-size: .4rem;
-    opacity: 0.5;
+    font-size: .35rem;
+    margin-top: .2rem;
+    opacity: 0.9;
+    font-weight: 200;
 }
-/* .section8_img_left{
-    position: absolute;
-    left: 4rem;
-    top: 3.5rem;
-    width: 12rem;
-    z-index: 2;
-}
-.sectiojn8_img_center{
-    width: 11rem;
-    margin: 0 auto;
-    margin-top: 2rem;
-    z-index: 1;
 
-} */
 .section8_img_left{
     height: 5rem;
     margin-top: 2rem;
@@ -516,14 +525,16 @@
 .section9 h3 {
     margin-top: -5rem;
     color: #fff!important;
-    font-size: 40px;
-    opacity: 0.9;
+    font-size: 55px;
+    font-weight: 400;
 }
 
 .section9 p {
     color: #ffff!important;
-    font-size: .4rem;
-    opacity: 0.5;
+    font-size: .35rem;
+    margin-top: .2rem;
+    opacity: 0.9;
+    font-weight: 200;
 }
 /* 第十屏 */
 .section10 {
@@ -536,14 +547,16 @@
 .section10 h3 {
     margin-top: -5rem;
     color: #fff!important;
-    font-size: 40px;
-    opacity: 0.9;
+    font-size: 55px;
+    font-weight: 400;
 }
 
 .section10 p {
     color: #ffff!important;
-    font-size: .4rem;
-    opacity: 0.5;
+    font-size: .35rem;
+    margin-top: .2rem;
+    opacity: 0.9;
+    font-weight: 200;
 }
 
 /* 第十一屏 */
@@ -557,16 +570,18 @@
 .section11 h3 {
     margin-top: -5rem;
     color: #fff!important;
-    font-size: 40px;
-    opacity: 0.9;
+    font-size: 55px;
+    font-weight: 400;
 }
 
 .section11 p {
     color: #ffff!important;
-    font-size: .4rem;
-    opacity: 0.5;
+    font-size: .35rem;
+    margin-top: .2rem;
+    opacity: 0.9;
     position: relative;
     bottom: -120%;
+    font-weight: 200;
 }
 
 /* 第十二屏 */
@@ -580,14 +595,16 @@
 .section12 h3 {
     margin-top: -5rem;
     color: #fff!important;
-    font-size: 40px;
-    opacity: 0.9;
+    font-size: 55px;
+    font-weight: 400;
 }
 
 .section12 p {
     color: #ffff!important;
-    font-size: .4rem;
-    opacity: 0.5;
+    font-size: .35rem;
+    margin-top: .2rem;
+    opacity: 0.9;
+    font-weight: 200;
 }
 
 /* 第十三屏 */
@@ -601,14 +618,16 @@
 .section13 h3 {
     margin-top: -5rem;
     color: #fff!important;
-    font-size: 40px;
-    opacity: 0.9;
+    font-size: 55px;
+    font-weight: 400;
 }
 
 .section13 p {
     color: #ffff!important;
-    font-size: .4rem;
-    opacity: 0.5;
+    font-size: .35rem;
+    margin-top: .2rem;
+    opacity: 0.9;
+    font-weight: 200;
     position: relative;
     left: -120%;
 }
@@ -624,16 +643,18 @@
 .section14 h3 {
     margin-top: -5rem;
     color: #fff!important;
-    font-size: 40px;
-    opacity: 0.9;
+    font-size: 55px;
+    font-weight: 400;
 }
 
 .section14 p {
     color: #ffff!important;
-    font-size: .4rem;
-    opacity: 0.5;
+    font-size: .35rem;
+    margin-top: .2rem;
+    opacity: 0.9;
     position: relative;
     right: -120%;
+    font-weight: 200;
 }
 /* 第十五屏 */
 .section15 {
@@ -641,24 +662,28 @@
 }
 
 .section15 h3 {
-    font-size: 1rem;
+    font-size: 100px;
     margin-top: -2rem;
+    color: #fff;
+    font-weight: 800;
+    opacity: 0.8;
 }
 
 .section15 p {
-    font-size: .6rem;
+    font-size: 55px;
     opacity: 0.8;
     margin-top: .5rem;
+    font-weight: 200;
 }
 
 .section15_button {
-    width: 3rem;
+    width: 460px;
     text-align: center;
     color: #ffff;
-    background-color: red;
-    font-size: .5rem;
-    border-radius: .4rem;
-    line-height: .9rem;
+    background-color: #e2142b;
+    font-size: 70px;
+    border-radius: 100px;
+    line-height: 110px;
     margin: 0 auto;
     margin-top: .5rem;
     cursor: pointer;
