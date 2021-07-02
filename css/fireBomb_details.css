@@ -152,9 +152,9 @@
 }
 
 .section3_contain>section {
-    margin: .3rem .3rem;
+   margin: 0 auto;
     width: 8rem;
-    padding: .4rem;
+    padding: .4rem  0;
     box-sizing: border-box;
 }
 
@@ -192,17 +192,19 @@
 
 .section5 {
     background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge5.jpg) no-repeat center center;
-    background-position: center center;
     background-size: 100% 100%;
-    display: flex;
+    display: flex; 
     flex-direction: column;
+    background-size: contain;
+    background-color: #f9f9f9 !important;
 }
 
 .section5 h3 {
-    margin-top: -5rem;
+    margin-top: -4rem;
     color: #222222!important;
     font-size: 55px;
     font-weight: 400;
+    
 }
 
 .section5 p {
@@ -237,7 +239,6 @@
 .section5_contain>section>img {
     display: block;
     width: .8rem;
-    height: 100%;
 }
 
 .section5_contain>section>span {
@@ -308,6 +309,7 @@
     color: #fff!important;
     font-size: 55px;
     font-weight: 400;
+    margin-top: -3rem;
 }
 
 .section7 p {
@@ -321,7 +323,7 @@
     width: 9rem;
     display: flex;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 2rem;
     justify-content: space-between;
 }
 .section7_contain>.section7_left{
@@ -525,6 +527,8 @@
     color: #fff!important;
     font-size: 55px;
     font-weight: 400;
+    position: relative;
+    display: none;
 }
 
 .section9 p {
@@ -533,6 +537,8 @@
     margin-top: .2rem;
     opacity: 0.9;
     font-weight: 200;
+    position: relative;
+    left: -120%;
 }
 /* 第十屏 */
 .section10 {
@@ -555,6 +561,8 @@
     margin-top: .2rem;
     opacity: 0.9;
     font-weight: 200;
+    position: relative;
+    right: -120%;
 }
 
 /* 第十一屏 */
@@ -595,6 +603,8 @@
     color: #fff!important;
     font-size: 55px;
     font-weight: 400;
+    position: relative;
+    display: none;
 }
 
 .section12 p {
@@ -603,6 +613,8 @@
     margin-top: .2rem;
     opacity: 0.9;
     font-weight: 200;
+    position: relative;
+    right: -120%;
 }
 
 /* 第十三屏 */
@@ -618,6 +630,8 @@
     color: #fff!important;
     font-size: 55px;
     font-weight: 400;
+    position: relative;
+    display: none;
 }
 
 .section13 p {
@@ -643,6 +657,8 @@
     color: #fff!important;
     font-size: 55px;
     font-weight: 400;
+    position: relative;
+    display: none;
 }
 
 .section14 p {
