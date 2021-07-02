@@ -42,7 +42,7 @@
 /* 第一屏 */
 
 .section1 {
-    background: url(../img/back_imge1.jpg)no-repeat center center;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge1.jpg)no-repeat center center;
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
@@ -166,7 +166,7 @@
 /* 第四屏 */
 
 .section4 {
-    background: url(../img/back_imge4.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge4.jpg) no-repeat;
     background-position: center center;
     background-size: cover;
     background-color: black!important;
@@ -191,10 +191,8 @@
 /* 第五屏 */
 
 .section5 {
-    /* background-image: url(../img/back_imge5.jpg); */
-    background: url(../img/back_imge5.jpg) no-repeat center center;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge5.jpg) no-repeat center center;
     background-position: center center;
-    /* background-size: 100% 100%; */
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
@@ -252,7 +250,7 @@
 /* 第六屏 */
 
 .section6 {
-    background: url(../img/bacl_imge6.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/bacl_imge6.jpg) no-repeat;
     background-position: center center;
     /* background-size: 100% 100%; */
     background-size: contain;
@@ -300,7 +298,7 @@
 /* 第七屏 */
 
 .section7 {
-    background: url(../img/back_imge7.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge7.jpg) no-repeat;
     background-position: center center;
     background-size: contain;
     background-color: black!important;
@@ -435,7 +433,7 @@
 /* 第八屏 */
 
 .section8 {
-    background: url(../img/back_imge8.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge8.jpg) no-repeat;
     background-position: center center;
     background-size: 100% 100%;
     background-color: black!important;
@@ -516,7 +514,7 @@
 }
 /* 第九屏 */
 .section9 {
-    background: url(../img/back_imge9.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge9.jpg) no-repeat;
     background-position: center center;
     background-size: 100% 100%;
     background-color: black!important;
@@ -538,7 +536,7 @@
 }
 /* 第十屏 */
 .section10 {
-    background: url(../img/back_imge10.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge10.jpg) no-repeat;
     background-position: center center;
     background-size: 100% 100%;
     background-color: black!important;
@@ -561,7 +559,7 @@
 
 /* 第十一屏 */
 .section11 {
-    background: url(../img/back_imge11.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge11.jpg) no-repeat;
     background-position: center center;
     background-size: 100% 100%;
     background-color: black!important;
@@ -586,7 +584,7 @@
 
 /* 第十二屏 */
 .section12 {
-    background: url(../img/back_imge12.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge12.jpg) no-repeat;
     background-position: center center;
     background-size: 100% 100%;
     background-color: black!important;
@@ -609,7 +607,7 @@
 
 /* 第十三屏 */
 .section13 {
-    background: url(../img/back_imge13.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge13.jpg) no-repeat;
     background-position: center center;
     background-size: 100% 100%;
     background-color: black!important;
@@ -634,7 +632,7 @@
 
 /* 第十四屏 */
 .section14 {
-    background: url(../img/back_imge14.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge14.jpg) no-repeat;
     background-position: center center;
     background-size: 100% 100%;
     background-color: black!important;
@@ -658,7 +656,7 @@
 }
 /* 第十五屏 */
 .section15 {
-    background: url(../img/back_imge15.jpg) no-repeat;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge15.jpg) no-repeat;
 }
 
 .section15 h3 {
