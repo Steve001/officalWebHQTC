@@ -646,36 +646,10 @@
 
 /* 第十四屏 */
 .section14 {
-    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge14.jpg) no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
-    background-color: black!important;
-}
-
-.section14 h3 {
-    margin-top: -5rem;
-    color: #fff!important;
-    font-size: 55px;
-    font-weight: 400;
-    position: relative;
-    display: none;
-}
-
-.section14 p {
-    color: #ffff!important;
-    font-size: .35rem;
-    margin-top: .2rem;
-    opacity: 0.9;
-    position: relative;
-    right: -120%;
-    font-weight: 200;
-}
-/* 第十五屏 */
-.section15 {
     background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge15.jpg) no-repeat;
 }
 
-.section15 h3 {
+.section14 h3 {
     font-size: 100px;
     margin-top: -2rem;
     color: #fff;
@@ -683,14 +657,14 @@
     opacity: 0.8;
 }
 
-.section15 p {
+.section14 p {
     font-size: 55px;
     opacity: 0.8;
     margin-top: .5rem;
     font-weight: 200;
 }
 
-.section15_button {
+.section14_button {
     width: 460px;
     text-align: center;
     color: #ffff;
