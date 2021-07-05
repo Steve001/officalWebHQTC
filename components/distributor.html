@@ -78,8 +78,9 @@
 <script src="../js/utils.js"></script>
 <script type="text/javascript">
     var nvc_cooperation_type = '';
-    var nvc_cooperative_products = '';
+    var nvc_cooperative_products = '消防无人机,';
     var nowSelectText = '';
+    $('.twoSelectText')[0].innerText = nvc_cooperative_products
     $(function() {
         $(".header").load("../common/header.html");
         $(".footer").load("../common/fooder.html");
@@ -123,6 +124,12 @@
         if (nvc_cooperative_products.indexOf($(this)[0].dataset.title) == -1) {
             nvc_cooperative_products += $(this)[0].dataset.title + ',';
             $('.twoSelectText')[0].innerText += $(this)[0].innerText + ',';
+        } else {
+            var newStr = nvc_cooperative_products.replace($(this)[0].dataset.title + ',', '')
+            console.log(nvc_cooperative_products)
+            $('.twoSelectText')[0].innerText = newStr;
+            nvc_cooperative_products = newStr
+            console.log(newStr)
         }
     })
 
@@ -172,7 +179,6 @@
             return false;
         }
         // http://localhost:1337/api/user/addUser
-
         $.post(`http://39.103.133.174:1337/api/user/addUser`, {
             username: nvc_user_name,
             mobile: nvc_mobile,
@@ -181,12 +187,10 @@
             cooperative_products: newProductsType,
             type: 1, // 1线上---0线下
             get_time: parseTime(new Date()), //当前时间
-
         }, function(data) {
-            console.log(data)
             if (data.code == 200) {
                 alert('提交成功,我们会尽快联系您')
-                window.location.href = '../index.html'
+                    // window.location.href = '../index.html'
             }
         });
     }

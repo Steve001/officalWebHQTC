@@ -33,7 +33,7 @@
 }
 
 .header-r {
-    width: 13rem;
+    width: 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +45,6 @@
 .header-r-block {
     position: relative;
     cursor: pointer;
-    min-width: 1.5rem;
     height: .8rem;
     display: flex;
     flex-direction: column;
