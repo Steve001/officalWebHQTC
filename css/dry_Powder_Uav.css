@@ -26,11 +26,7 @@
 .liActive {
     color: #E2142B;
 }
-/* 暂作例子 */
-.section3 p {
-    position: relative;
-    bottom: -120%;
-}
+
 
 .section2 h4{
     position: relative;
@@ -95,6 +91,7 @@
 }
 
 .section2_contain>section {
+    width: 30%;
     margin: 0 auto;
     cursor: pointer;
     display: flex;
@@ -143,6 +140,8 @@
     margin-top: .2rem;
     font-weight: 200;
     margin-top: .2rem;
+    position: relative;
+    right: -120%;
 }
 .section3_contain {
     display: flex;
