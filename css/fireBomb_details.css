@@ -29,7 +29,7 @@
 /* 暂作例子 */
 .section3 p {
     position: relative;
-    bottom: -120%;
+    left: -120%;
 }
 
 .section2 h4{
@@ -95,6 +95,7 @@
 }
 
 .section2_contain>section {
+    width: 30%;
     margin: 0 auto;
     cursor: pointer;
     display: flex;
@@ -127,7 +128,7 @@
     background-size: contain;
     display: flex;
     flex-direction: column;
-    background: #eee!important;
+    background: #fefefc!important;
 }
 
 .section3 h3 {
@@ -586,7 +587,7 @@
     margin-top: .2rem;
     opacity: 0.9;
     position: relative;
-    bottom: -120%;
+    left: -120%;
     font-weight: 200;
 }
 
