@@ -4,13 +4,14 @@
     height: .8rem;
     width: 100%;
     position: fixed;
-    background: #131313bb;
+    background: rgba(0, 0, 0, .6);
     display: flex;
     justify-content: center;
     z-index: 1000;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     min-width: 1400px;
+    left: 0;
 }
 
 .header a {
@@ -33,7 +34,7 @@
 }
 
 .header-r {
-    width: 13rem;
+    width: 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +46,6 @@
 .header-r-block {
     position: relative;
     cursor: pointer;
-    min-width: 1.5rem;
     height: .8rem;
     display: flex;
     flex-direction: column;
@@ -125,7 +125,7 @@
 
 .navbar-Product-Bottom>div img {
     width: 1.5rem;
-    height: 1.5rem;
+    height: 1rem;
 }
 
 .navBarAlert_Service {
