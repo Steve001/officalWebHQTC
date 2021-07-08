@@ -54,12 +54,12 @@
     position: absolute;
     left:50%;
     transform: translate(-50%);
+    margin-top: -132px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .section2 h3 {
-    margin-top: -2rem;
     color: #fff!important;
     font-size:55px;
     font-weight: 400;
@@ -70,7 +70,7 @@
     color: #fff!important;
     font-size: .35rem;
     opacity: 0.9;
-    margin-top: .2rem;
+    margin-top: 8px;
     font-weight: 200;
     display: none;
 }
@@ -87,7 +87,7 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 1.2rem;
+    margin-top: 18px;
 }
 
 .section2_contain>section {
@@ -145,9 +145,8 @@
     color: black!important;
     font-size: .35rem;
     opacity: 0.9;
-    margin-top: .2rem;
     font-weight: 200;
-    margin-top: .2rem;
+    margin-top: 8px;
     display: none;
 }
 .section3_contain {
@@ -198,7 +197,7 @@
 .section4 p {
     color: #ffff!important;
     font-size: .35rem;
-    margin-top: .2rem;
+    margin-top: 8px;
     margin-bottom: 3rem;
     font-weight: 200;
     opacity: 0.9;
@@ -267,7 +266,7 @@
 }
 
 .section5_contain>section>span {
-    font-size: .2rem;
+    font-size: 8px;
     margin-top: .3rem;
     color: #060606;
 }
@@ -356,7 +355,7 @@
 .section7 p {
     color: #fff!important;
     font-size: .35rem;
-    margin-top: .2rem;
+    margin-top: 8px;
     opacity: 0.9;
     font-weight: 200;
     display: none;
@@ -501,7 +500,7 @@
 .section8 p {
     color: #ffff!important;
     font-size: .35rem;
-    margin-top: .2rem;
+    margin-top: 8px;
     opacity: 0.9;
     font-weight: 200;
     display: none;
@@ -591,7 +590,7 @@
 .section9 p {
     color: #ffff!important;
     font-size: .35rem;
-    margin-top: .2rem;
+    margin-top: 8px;
     opacity: 0.9;
     font-weight: 200;
     display: none;
@@ -622,7 +621,7 @@
 .section10 p {
     color: #ffff!important;
     font-size: .35rem;
-    margin-top: .2rem;
+    margin-top: 8px;
     opacity: 0.9;
     font-weight: 200;
     display: none;
@@ -655,7 +654,7 @@
 .section11 p {
     color: #ffff!important;
     font-size: .35rem;
-    margin-top: .2rem;
+    margin-top: 8px;
     opacity: 0.9;
     font-weight: 200;
     display: none;
@@ -688,7 +687,7 @@
 .section12 p {
     color: #ffff!important;
     font-size: .35rem;
-    margin-top: .2rem;
+    margin-top: 8px;
     opacity: 0.9;
     font-weight: 200;
     display: none;
@@ -720,7 +719,7 @@
 .section13 p {
     color: #ffff!important;
     font-size: .35rem;
-    margin-top: .2rem;
+    margin-top: 8px;
     opacity: 0.9;
     font-weight: 200;
     display: none;
@@ -753,7 +752,7 @@
 .section14 p {
     color: #ffff!important;
     font-size: .35rem;
-    margin-top: .2rem;
+    margin-top: 8px;
     opacity: 0.9;
     font-weight: 200;
     display: none;

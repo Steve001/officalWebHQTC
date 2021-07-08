@@ -88,7 +88,7 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 1.2rem;
+    margin-top: 18px;
 }
 
 .section2_contain>section {
@@ -266,7 +266,7 @@
 }
 
 .section5_contain>section>span {
-    font-size: .2rem;
+    font-size: 8px;
     margin-top: .3rem;
     color: #060606;
 }
@@ -357,7 +357,7 @@
 .section7 p {
     color: #fff!important;
     font-size: .35rem;
-    margin-top: .2rem;
+    margin-top: 8px;
     opacity: 0.9;
     font-weight: 200;
     display: none;
@@ -503,7 +503,7 @@
 .section8 p {
     color: #ffff!important;
     font-size: .35rem;
-    margin-top: .2rem;
+    margin-top: 8px;
     opacity: 0.9;
     font-weight: 200;
     display: none;
@@ -592,7 +592,7 @@
 .section9 p {
     color: #ffff!important;
     font-size: .35rem;
-    margin-top: .2rem;
+    margin-top: 8px;
     opacity: 0.9;
     font-weight: 200;
     display: none;
@@ -624,7 +624,7 @@
 .section10 p {
     color: #ffff!important;
     font-size: .35rem;
-    margin-top: .2rem;
+    margin-top: 8px;
     opacity: 0.9;
     font-weight: 200;
     display: none;
@@ -658,7 +658,7 @@
 .section11 p {
     color: #ffff!important;
     font-size: .35rem;
-    margin-top: .2rem;
+    margin-top: 8px;
     opacity: 0.9;
     font-weight: 200;
     display: none;
@@ -692,7 +692,7 @@
 .section12 p {
     color: #ffff!important;
     font-size: .35rem;
-    margin-top: .2rem;
+    margin-top: 8px;
     opacity: 0.9;
     font-weight: 200;
     display: none;
@@ -724,7 +724,7 @@
 .section13 p {
     color: #ffff!important;
     font-size: .35rem;
-    margin-top: .2rem;
+    margin-top: 8px;
     opacity: 0.9;
     font-weight: 200;
     display: none;
