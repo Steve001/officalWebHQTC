@@ -268,7 +268,7 @@ p.right {
 }
 
 .footerTop_left>ul {
-    font-size: .15rem;
+    font-size: 13px;
 }
 
 .footerTop_left>ul>li:nth-child(1) {
