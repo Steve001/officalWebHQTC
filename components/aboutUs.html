@@ -74,6 +74,8 @@
     $(function() {
         $(".header").load("../common/header.html");
         $(".footer").load("../common/fooder.html");
+        $('.banner').find('h2').fadeIn(800);
+        $('.banner').find('p').fadeIn(800);
     });
     // 百度地图
     var map = new BMapGL.Map("container"); // 创建地图实例 

@@ -21,13 +21,10 @@
             top: 18%;
             font-size: .8rem;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            transform: translateX(-8rem);
-            transition: all 2s;
+            display: none;
+
         }
-        
-        .banner:hover h2 {
-            transform: translateX(0);
-        }
+   
         
         .banner p {
             position: absolute;
@@ -35,12 +32,7 @@
             top: 50%;
             font-size: .8rem;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            transform: translateY(6rem);
-            transition: all 1s;
-        }
-        
-        .banner:hover p {
-            transform: translateY(0);
+            display: none;
         }
         
         .banner #borderW {
