@@ -50,6 +50,9 @@
                 <section class="selection2_img">
                     <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img2_center.png" alt="">
                 </section>
+                <section>
+
+                </section>
             </div>
             <div class="section section3">
                 <section class="section3_txt">
@@ -180,7 +183,8 @@
                     <p i18n="i18n.product_details31">大田植保效率达到新高度，配合数字解决方案，撒播效果出类拔萃</p>
                 </section>
                 <section class="section8_img">
-                    <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img8-center.jpg.jpg" alt="">
+                    <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img8-center.jpg.jpg"
+                        alt="">
                 </section>
             </div>
             <div class="section section9">
@@ -410,7 +414,6 @@
                 if (index == 3) {
                     $('.section3').find('p').fadeIn(800);
                     $('.section3').find('h3').fadeIn(800);
-                    // $('.section3').find('.section3_contain').fadeIn(800);
                 }
                 if (index == 4) {
                     $('.section4').find('p').fadeIn(800);
@@ -599,6 +602,11 @@
         });
         // 第五屏
         $(".section5_contain_1").on('click', function () {
+            $(".section_5_img").removeClass('vivify pulsate');
+            $(".section_5_img").removeClass('vivify hitRight');
+            $(".section_5_img").addClass('vivify hitLeft');
+            
+            // $(".section_5_img").removeClass('vivify flipY');
             $(".section_5_img img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_1.png");
             $(".section5_contain_2 img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/dindian.png");
             $(".section5_contain_3 img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/duandian.png");
@@ -608,6 +616,11 @@
             $(" .section5_contain_3 p").css("cssText", "color: black!important");
         });
         $(".section5_contain_2").on('click', function () {
+            $(".section_5_img").removeClass('vivify hitLeft');
+            $(".section_5_img").removeClass('vivify hitRight');
+            $(".section_5_img").addClass('vivify pulsate');
+            
+            // $(".section_5_img").removeClass('vivify flipY');
             $(".section_5_img img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_2.png");
             $(".section5_contain_1 img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/shoudong.png");
             $(".section5_contain_3 img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/duandian.png");
@@ -617,6 +630,9 @@
             $(" .section5_contain_3 p").css("cssText", "color: black!important");
         });
         $(".section5_contain_3").on('click', function () {
+            $(".section_5_img").removeClass('vivify hitLeft');
+            $(".section_5_img").removeClass('vivify pulsate')
+            $(".section_5_img").addClass('vivify hitRight');
             $(".section_5_img img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_3.png");
             $(".section5_contain_1 img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_1.png");
             $(".section5_contain_2 img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/dindian.png");
