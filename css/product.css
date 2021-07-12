@@ -58,6 +58,7 @@
     display: flex;
     flex-wrap: wrap;
     clear: both;
+	font-size: .2rem;
 }
 
 .nongye-drone>ul>li {

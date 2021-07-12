@@ -79,7 +79,7 @@
 <script src="../js/utils.js"></script>
 <script type="text/javascript">
     var nvc_cooperation_type = '';
-    var nvc_cooperative_products = '消防无人机,';
+    var nvc_cooperative_products = '消防无人机';
     var nowSelectText = '';
     $('.twoSelectText')[0].innerText = nvc_cooperative_products
     $(function() {
@@ -123,10 +123,15 @@
      */
     $('#selectBox_two li').on('click', function() {
         if (nvc_cooperative_products.indexOf($(this)[0].dataset.title) == -1) {
-            nvc_cooperative_products += $(this)[0].dataset.title + ',';
-            $('.twoSelectText')[0].innerText += $(this)[0].innerText + ',';
+            if(nvc_cooperative_products.search("|") != -1 ){//true
+				nvc_cooperative_products += '|' + $(this)[0].dataset.title;
+				$('.twoSelectText')[0].innerText +=  '|' +$(this)[0].innerText;
+			}else{
+				nvc_cooperative_products += $(this)[0].dataset.title + '|';
+				$('.twoSelectText')[0].innerText += $(this)[0].innerText + '|';
+			}
         } else {
-            var newStr = nvc_cooperative_products.replace($(this)[0].dataset.title + ',', '')
+            var newStr = nvc_cooperative_products.replace($(this)[0].dataset.title + '|', '')
             console.log(nvc_cooperative_products)
             $('.twoSelectText')[0].innerText = newStr;
             nvc_cooperative_products = newStr
