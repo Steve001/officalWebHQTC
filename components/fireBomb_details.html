@@ -23,6 +23,7 @@
 
 <body>
     <section class="header"></section>
+    <section class="loading"></section>
     <div class="product-detailsBox">
         <div id="dowebok">
             <div class="section section1">
@@ -276,6 +277,12 @@
     $(function () {
         $(".header").load("../common/header.html");
         // $(".footer").load("../common/fooder.html");
+        $(".loading").load("../components/loading.html");
+        $(window).load(function () {
+            //适当延迟隐藏，提高loading效果
+            $('.loading').delay(500).hide(0);
+            
+        });
         $('#dowebok').fullpage({
             sectionsColor: ['#131313', '#4BBFC3', '#7BAABE', '#f90', '#1bbc9b', '#4BBFC3', '#1bbc9b', '#4BBFC3', '#0A0A0A', '#0A0A0A', '#131313', '#131313', '#212121', '#00000A', '#212121', '#00000A'],
             'navigation': true,
@@ -287,110 +294,110 @@
             afterLoad: function (anchorLink, index) {
                 console.log(index)
                 if (index == 2) {
-                    $('.section2').find('h4').fadeIn(800);
-                    $('.section2').find('h3').fadeIn(800);
+                    $('.section2').find('h4').fadeIn(500);
+                    $('.section2').find('h3').fadeIn(500);
                 }
                 if (index == 3) {
-                    $('.section3').find('p').fadeIn(800);
-                    $('.section3').find('h3').fadeIn(800);
+                    $('.section3').find('p').fadeIn(500);
+                    $('.section3').find('h3').fadeIn(500);
                 }
                 if (index == 4) {
-                    $('.section4').find('p').fadeIn(800);
-                    $('.section4').find('h3').fadeIn(800);
+                    $('.section4').find('p').fadeIn(500);
+                    $('.section4').find('h3').fadeIn(500);
                 }
                 if (index == 5) {
-                    $('.section5').find('p').fadeIn(800);
-                    $('.section5').find('h3').fadeIn(800);
+                    $('.section5').find('p').fadeIn(500);
+                    $('.section5').find('h3').fadeIn(500);
                 }
                 if (index == 6) {
-                    $('.section6').find('p').fadeIn(800);
-                    $('.section6').find('h3').fadeIn(800);
+                    $('.section6').find('p').fadeIn(500);
+                    $('.section6').find('h3').fadeIn(500);
                 }
                 if (index == 7) {
-                    $('.section7').find('p').fadeIn(800);
-                    $('.section7').find('h3').fadeIn(800);
+                    $('.section7').find('p').fadeIn(500);
+                    $('.section7').find('h3').fadeIn(500);
                 }
                 if (index == 8) {
-                    $('.section8').find('p').fadeIn(800);
-                    $('.section8').find('h3').fadeIn(800);
+                    $('.section8').find('p').fadeIn(500);
+                    $('.section8').find('h3').fadeIn(500);
                 }
                 if (index == 9) {
-                    $('.section9').find('p').fadeIn(800);
-                    $('.section9').find('h3').fadeIn(800);
+                    $('.section9').find('p').fadeIn(500);
+                    $('.section9').find('h3').fadeIn(500);
                 }
                 if (index == 10) {
-                    $('.section10').find('p').fadeIn(800);
-                    $('.section10').find('h3').fadeIn(800);
+                    $('.section10').find('p').fadeIn(500);
+                    $('.section10').find('h3').fadeIn(500);
                 }
                 if (index == 11) {
-                    $('.section11').find('p').fadeIn(800);
-                    $('.section11').find('h3').fadeIn(800);
+                    $('.section11').find('p').fadeIn(500);
+                    $('.section11').find('h3').fadeIn(500);
                 }
                 if (index == 12) {
-                    $('.section12').find('p').fadeIn(800);
-                    $('.section12').find('h3').fadeIn(800);
+                    $('.section12').find('p').fadeIn(500);
+                    $('.section12').find('h3').fadeIn(500);
                 }
                 if (index == 13) {
-                    $('.section13').find('p').fadeIn(800);
-                    $('.section13').find('h3').fadeIn(800);
+                    $('.section13').find('p').fadeIn(500);
+                    $('.section13').find('h3').fadeIn(500);
                 }
                 if (index == 14) {
-                    $('.section14').find('p').fadeIn(800);
-                    $('.section14').find('h3').fadeIn(800);;
+                    $('.section14').find('p').fadeIn(500);
+                    $('.section14').find('h3').fadeIn(500);;
                 }
             },
             onLeave: function (index, direction) {
                 if (index == '2') {
-                    $('.section2').find('h4').fadeOut(800);
-                    $('.section2').find('h3').fadeOut(800);
+                    $('.section2').find('h4').fadeOut(500);
+                    $('.section2').find('h3').fadeOut(500);
                 }
                 if (index == '3') {
-                    $('.section3').find('p').fadeOut(800);
-                    $('.section3').find('h3').fadeOut(800);
+                    $('.section3').find('p').fadeOut(500);
+                    $('.section3').find('h3').fadeOut(500);
                 }
                 if (index == '4') {
-                    $('.section4').find('p').fadeOut(800);
-                    $('.section4').find('h3').fadeOut(800);
+                    $('.section4').find('p').fadeOut(500);
+                    $('.section4').find('h3').fadeOut(500);
                 }
                 if (index == '5') {
-                    $('.section5').find('p').fadeOut(800);
-                    $('.section5').find('h3').fadeOut(800);
+                    $('.section5').find('p').fadeOut(500);
+                    $('.section5').find('h3').fadeOut(500);
                 }
                 if (index == '6') {
-                    $('.section6').find('p').fadeOut(800);
-                    $('.section6').find('h3').fadeOut(800);
+                    $('.section6').find('p').fadeOut(500);
+                    $('.section6').find('h3').fadeOut(500);
                 }
                 if (index == '7') {
-                    $('.section7').find('p').fadeOut(800);
-                    $('.section7').find('h3').fadeOut(800);
+                    $('.section7').find('p').fadeOut(500);
+                    $('.section7').find('h3').fadeOut(500);
                 }
                 if (index == '8') {
-                    $('.section8').find('p').fadeOut(800);
-                    $('.section8').find('h3').fadeOut(800);
+                    $('.section8').find('p').fadeOut(500);
+                    $('.section8').find('h3').fadeOut(500);
                 }
                 if (index == 9) {
-                    $('.section9').find('p').fadeOut(800);
-                    $('.section9').find('h3').fadeOut(800);
+                    $('.section9').find('p').fadeOut(500);
+                    $('.section9').find('h3').fadeOut(500);
                 }
                 if (index == 10) {
-                    $('.section10').find('p').fadeOut(800);
-                    $('.section10').find('h3').fadeOut(800);
+                    $('.section10').find('p').fadeOut(500);
+                    $('.section10').find('h3').fadeOut(500);
                 }
                 if (index == '11') {
-                    $('.section11').find('p').fadeOut(800);
-                    $('.section11').find('h3').fadeOut(800);
+                    $('.section11').find('p').fadeOut(500);
+                    $('.section11').find('h3').fadeOut(500);
                 }
                 if (index == 12) {
-                    $('.section12').find('p').fadeOut(800);
-                    $('.section12').find('h3').fadeOut(800);
+                    $('.section12').find('p').fadeOut(500);
+                    $('.section12').find('h3').fadeOut(500);
                 }
                 if (index == 13) {
-                    $('.section13').find('p').fadeOut(800);
-                    $('.section13').find('h3').fadeOut(800);
+                    $('.section13').find('p').fadeOut(500);
+                    $('.section13').find('h3').fadeOut(500);
                 }
                 if (index == 14) {
-                    $('.section14').find('p').fadeOut(800);
-                    $('.section14').find('h3').fadeOut(800);
+                    $('.section14').find('p').fadeOut(500);
+                    $('.section14').find('h3').fadeOut(500);
                 }
             },
             afterRender: function () { },
@@ -527,6 +534,20 @@
             $(" .section2_contain_2 p").css("cssText", "color: black!important;background-color:white!important");
         });
     });
+    $(document).ready(function () {
+            var slideShow = $(".slideShow"), //获取最外层框架的名称
+                ul = slideShow.find("ul"),
+                showNumber = slideShow.find(".showNav span"),//获取按钮
+                oneWidth = slideShow.find("ul li").eq(0).width(); //获取每个图片的宽度
+
+            showNumber.on("click", function () { //为每个按钮绑定一个点击事件 
+                $(this).addClass("active").siblings().removeClass("active"); //按钮被点击时为这个按钮添加高亮状态，并且将其他按钮高亮状态去掉
+                var index = $(this).index(); //获取哪个按钮被点击，也就是找到被点击按钮的索引值
+                ul.animate({
+                    "left": -oneWidth * index, //注意此处用到left属性，所以ul的样式里面需要设置position: relative; 让ul左移N个图片大小的宽度，N根据被点击的按钮索引值index确定
+                })
+            })
+        });
 
     //  轮播图
     var mySwiper = new Swiper('.swiper-container', {
