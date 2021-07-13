@@ -17,12 +17,13 @@
 }
 
 .banner-text h1 {
-    font-size: 0.625rem;
+    font-size: 0.7rem;
     color: white;
 }
 
 .banner-text p {
     color: white;
+	font-size: .3rem;
 }
 
 .contain {
