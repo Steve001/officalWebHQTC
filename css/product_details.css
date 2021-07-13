@@ -167,10 +167,7 @@
     width: 100%;
     height: 100%;
 }
-.section13 {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .section14 {
     background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/14_bg_1.jpg) no-repeat;
@@ -270,7 +267,7 @@
 .section13_txt{
     position: absolute;
     left:50%;
-    margin-top: -1rem ;
+    top: 20%;
     transform: translate(-50%);
     display: flex;
     flex-direction: column;
@@ -283,45 +280,47 @@
     margin-top: -1rem;
     display: none;
 }
-.section13 ul {
-    /* margin: 0  200px; */
+.section13_contain {
+    width: 18rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    /* margin-top: 1.5rem; */
-    margin: 2rem 2rem 0;
+    margin: 0 auto;
+    
 }
 
-.section13 ul li {
-    width: 15%;
-    /* height: 3.5rem; */
+.section13_contain_li {
+    width: 182px;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
     flex-shrink: 0;
     cursor: pointer;
-    margin-bottom: .5rem;
+    margin: 0 20px;
 }
 
-.section13 ul li>img {
-    width: 70%;
-    margin-bottom: .2rem;
+.section13_contain_li>img {
+    display: block;
+    width: 182px;
+    height: 182px;
+    border: solid 1px #050505;
+    border-radius: 20px;
 }
-.section13 ul li>i {
-    font-size: 23px;
-    margin-top: 56px;
+.section13_contain_txt{
+    display: flex;
+    flex-direction: column;
+    
+}
+.section13_contain_txt>i {
+    font-size: 24px;
     text-align: left;
-    width: 166px;
+    margin-top: 58px;
 }
 
-.section13 ul li>span {
-    width: 165px;
-    font-size: 13px;
-    opacity: .7;
-    margin-top: 8px;
-    text-align: left;
+.section13_contain_txt>span {
+   font-size: 12px;
+   text-align: left;
+   opacity: 0.6;
+   font-weight: 500;
+   margin-top: 12px;
 }
 
 
