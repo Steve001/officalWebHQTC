@@ -141,22 +141,29 @@
                     <span i18n="i18n.product_details22">自主规划每次作业的最佳航线以及应用模式</span>
                 </section>
                 <section class="section5_contain">
-                    <section class="section5_contain_1">
+                    <section class="section5_contain_1 aa">
                         <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_11.png" alt="">
                         <p i18n="i18n.product_details23">手动模式</p>
                     </section>
-                    <section class="section5_contain_2">
+                    <section class="section5_contain_2 aa">
                         <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/dindian.png" alt="">
                         <p i18n="i18n.product_details78">定点航线</p>
                     </section>
-                    <section class="section5_contain_3">
+                    <section class="section5_contain_3 aa">
                         <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/duandian.png" alt="">
                         <p i18n="i18n.product_details24">断点航线</p>
                     </section>
-
                 </section>
+                <!-- 图片切换 -->
                 <section class="section_5_img">
-                    <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_1.png" alt="">
+                    <ul>
+                        <li><a href="#"><img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_1.png" /></a>
+                        </li>
+                        <li><a href="#"><img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_2.png" /></a>
+                        </li>
+                        <li><a href="#"><img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_3.png" /></a>
+                        </li>
+                    </ul>
                 </section>
             </div>
             <div class="section section6">
@@ -618,12 +625,6 @@
         });
         // 第五屏
         $(".section5_contain_1").on('click', function () {
-            $(".section_5_img").removeClass('vivify pulsate');
-            $(".section_5_img").removeClass('vivify hitRight');
-            $(".section_5_img").addClass('vivify hitLeft');
-
-            // $(".section_5_img").removeClass('vivify flipY');
-            $(".section_5_img img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_1.png");
             $(".section5_contain_2 img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/dindian.png");
             $(".section5_contain_3 img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/duandian.png");
             $(".section5_contain_1 img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_11.png");
@@ -632,12 +633,6 @@
             $(" .section5_contain_3 p").css("cssText", "color: black!important");
         });
         $(".section5_contain_2").on('click', function () {
-            $(".section_5_img").removeClass('vivify hitLeft');
-            $(".section_5_img").removeClass('vivify hitRight');
-            $(".section_5_img").addClass('vivify pulsate');
-
-            // $(".section_5_img").removeClass('vivify flipY');
-            $(".section_5_img img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_2.png");
             $(".section5_contain_1 img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/shoudong.png");
             $(".section5_contain_3 img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/duandian.png");
             $(".section5_contain_2 img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_12.png");
@@ -646,10 +641,6 @@
             $(" .section5_contain_3 p").css("cssText", "color: black!important");
         });
         $(".section5_contain_3").on('click', function () {
-            $(".section_5_img").removeClass('vivify hitLeft');
-            $(".section_5_img").removeClass('vivify pulsate')
-            $(".section_5_img").addClass('vivify hitRight');
-            $(".section_5_img img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_3.png");
             $(".section5_contain_1 img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_1.png");
             $(".section5_contain_2 img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/dindian.png");
             $(".section5_contain_1 img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/shoudong.png");
@@ -672,7 +663,21 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-    })
+    });
+    $(document).ready(function () {
+            var slideShow = $(".section5"), //获取最外层框架的名称
+                ul = slideShow.find(".section_5_img ul"),
+                showNumber = slideShow.find(".section5_contain .aa"),//获取按钮
+                oneWidth = slideShow.find(".section_5_img ul li").eq(0).width(); //获取每个图片的宽度
+
+            showNumber.on("click", function () { //为每个按钮绑定一个点击事件 
+                // $(this).addClass("active").siblings().removeClass("active"); //按钮被点击时为这个按钮添加高亮状态，并且将其他按钮高亮状态去掉
+                var index = $(this).index(); //获取哪个按钮被点击，也就是找到被点击按钮的索引值
+                ul.animate({
+                    "left": -oneWidth * index, //注意此处用到left属性，所以ul的样式里面需要设置position: relative; 让ul左移N个图片大小的宽度，N根据被点击的按钮索引值index确定
+                })
+            })
+        })
 </script>
 
 

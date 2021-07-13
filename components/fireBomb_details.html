@@ -527,6 +527,20 @@
             $(" .section2_contain_2 p").css("cssText", "color: black!important;background-color:white!important");
         });
     });
+    $(document).ready(function () {
+            var slideShow = $(".slideShow"), //获取最外层框架的名称
+                ul = slideShow.find("ul"),
+                showNumber = slideShow.find(".showNav span"),//获取按钮
+                oneWidth = slideShow.find("ul li").eq(0).width(); //获取每个图片的宽度
+
+            showNumber.on("click", function () { //为每个按钮绑定一个点击事件 
+                $(this).addClass("active").siblings().removeClass("active"); //按钮被点击时为这个按钮添加高亮状态，并且将其他按钮高亮状态去掉
+                var index = $(this).index(); //获取哪个按钮被点击，也就是找到被点击按钮的索引值
+                ul.animate({
+                    "left": -oneWidth * index, //注意此处用到left属性，所以ul的样式里面需要设置position: relative; 让ul左移N个图片大小的宽度，N根据被点击的按钮索引值index确定
+                })
+            })
+        });
 
     //  轮播图
     var mySwiper = new Swiper('.swiper-container', {

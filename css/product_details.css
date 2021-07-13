@@ -416,7 +416,6 @@
 .selection2-text>section>p>i{
     font-size: 110px;
     color: red;
-    opacity: .8;
     font-family: 'alibaba-medium';
     font-weight:  500;
     
@@ -537,9 +536,9 @@
     font-family: 'alibaba-light';
     display: none;
 }
-@media screen and (max-width:1366px){
+@media screen and (max-width:1480px){
     .box{
-        top: 40%!important;
+        top: 41%!important;
      }
    }
 .box {
@@ -661,21 +660,30 @@
     border-radius: 50%;
     background-color: #ececec;
 }
-
 .section_5_img {
     width: 682px;
+    height: 370px;
+    /*其实就是图片的高度*/
+    overflow: hidden;
+    /*此处需要将溢出框架的图片部分隐藏*/
     margin: 0 auto;
-    /* position: absolute; */
-    /*这句不能少，否则动不起来*/
-    /* animation: section_5_img 2s infinite; */
-    /*keyframes名称，动画时间，循环*/
 }
-.section_5_img>img {
+.section_5_img ul {
+    width: 3000px;
+    position: relative;
+    /*此处需注意relative : 对象不可层叠，但将依据left，right，top，bottom等属性在正常文档流中偏移位置，如果没有这个属性，图片将不可左右移动*/
+}
+.section_5_img ul li {
+    float: left;
+    /*让四张图片左浮动，形成并排的横着布局，方便点击按钮时的左移动*/
+    width: 682px;
+    height: 370px;
+}
+.section_5_img> ul li img {
     display: block;
     width: 100%; 
     height: 100%;
 }
-
 .section5_contain_1>p:nth-child(2) {
     color: red!important;
 }
