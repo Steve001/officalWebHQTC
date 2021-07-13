@@ -23,6 +23,7 @@
 
 <body>
     <section class="header"></section>
+    <section class="loading"></section>
     <div class="product-detailsBox">
         <div id="dowebok">
             <div class="section section1">
@@ -268,6 +269,12 @@
 <script type="text/javascript">
     $(function () {
         $(".header").load("../common/header.html");
+        $(".loading").load("../components/loading.html");
+        $(window).load(function () {
+            //适当延迟隐藏，提高loading效果
+            $('.loading').delay(800).hide(0);
+            
+        });
         // $(".footer").load("../common/fooder.html");
         $('#dowebok').fullpage({
             sectionsColor: ['#131313', '#4BBFC3', '#7BAABE', '#f90', '#1bbc9b', '#4BBFC3', '#1bbc9b', '#4BBFC3', '#0A0A0A', '#0A0A0A', '#131313', '#131313', '#212121', '#00000A', '#212121', '#00000A'],

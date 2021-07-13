@@ -20,10 +20,14 @@
     <link rel="stylesheet" href="../css/jquery.fullPage.css" />
     <script type="text/javascript" src="../js/public.js"></script>
     <title i18n="i18n.product">产品</title>
+    <style>
+    </style>
 </head>
 
 <body>
+    
     <section class="header"></section>
+    <section class="loading"></section>
     <div class="product-detailsBox">
         <div id="dowebok">
             <div class="section section1">
@@ -157,11 +161,14 @@
                 <!-- 图片切换 -->
                 <section class="section_5_img">
                     <ul>
-                        <li><a href="#"><img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_1.png" /></a>
+                        <li><a href="#"><img
+                                    src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_1.png" /></a>
                         </li>
-                        <li><a href="#"><img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_2.png" /></a>
+                        <li><a href="#"><img
+                                    src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_2.png" /></a>
                         </li>
-                        <li><a href="#"><img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_3.png" /></a>
+                        <li><a href="#"><img
+                                    src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img5_3.png" /></a>
                         </li>
                     </ul>
                 </section>
@@ -417,7 +424,14 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript">
     $(function () {
+        $(".loading").load("../components/loading.html");
         $(".header").load("../common/header.html");
+        $(window).load(function () {
+            //适当延迟隐藏，提高loading效果
+            $('.loading').delay(800).hide(0);
+            
+        });
+
         // $(".footer").load("../common/fooder.html");
         $('#dowebok').fullpage({
             sectionsColor: ['#131313', '#4BBFC3', '#7BAABE', '#f90', '#1bbc9b', '#4BBFC3', '#1bbc9b', '#4BBFC3', '#0A0A0A', '#0A0A0A', '#131313', '#131313', '#212121', '#00000A', '#212121', '#00000A'],
@@ -665,19 +679,19 @@
         },
     });
     $(document).ready(function () {
-            var slideShow = $(".section5"), //获取最外层框架的名称
-                ul = slideShow.find(".section_5_img ul"),
-                showNumber = slideShow.find(".section5_contain .aa"),//获取按钮
-                oneWidth = slideShow.find(".section_5_img ul li").eq(0).width(); //获取每个图片的宽度
+        var slideShow = $(".section5"), //获取最外层框架的名称
+            ul = slideShow.find(".section_5_img ul"),
+            showNumber = slideShow.find(".section5_contain .aa"),//获取按钮
+            oneWidth = slideShow.find(".section_5_img ul li").eq(0).width(); //获取每个图片的宽度
 
-            showNumber.on("click", function () { //为每个按钮绑定一个点击事件 
-                // $(this).addClass("active").siblings().removeClass("active"); //按钮被点击时为这个按钮添加高亮状态，并且将其他按钮高亮状态去掉
-                var index = $(this).index(); //获取哪个按钮被点击，也就是找到被点击按钮的索引值
-                ul.animate({
-                    "left": -oneWidth * index, //注意此处用到left属性，所以ul的样式里面需要设置position: relative; 让ul左移N个图片大小的宽度，N根据被点击的按钮索引值index确定
-                })
+        showNumber.on("click", function () { //为每个按钮绑定一个点击事件 
+            // $(this).addClass("active").siblings().removeClass("active"); //按钮被点击时为这个按钮添加高亮状态，并且将其他按钮高亮状态去掉
+            var index = $(this).index(); //获取哪个按钮被点击，也就是找到被点击按钮的索引值
+            ul.animate({
+                "left": -oneWidth * index, //注意此处用到left属性，所以ul的样式里面需要设置position: relative; 让ul左移N个图片大小的宽度，N根据被点击的按钮索引值index确定
             })
         })
+    })
 </script>
 
 
