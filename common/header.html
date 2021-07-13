@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-16 10:46:30
- * @LastEditTime: 2021-07-05 16:24:19
+ * @LastEditTime: 2021-07-13 14:52:25
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \hqtc_pc\common\header.html
@@ -73,21 +73,21 @@
     });
 
     //hover事件
-    $nav.find("li").hover(function() {
-        var index = $(this).index(); //获取滑过元素索引值
-        var leftW = $(this).position().left; //获取滑过元素Left值
-        var currentW = $nav.find("li").eq(index).innerWidth(); //获取滑过元素Width值
-        $navcur.stop().animate({
-            left: leftW,
-            width: currentW
-        }, 300);
+    // $nav.find("li").hover(function() {
+    //     var index = $(this).index(); //获取滑过元素索引值
+    //     var leftW = $(this).position().left; //获取滑过元素Left值
+    //     var currentW = $nav.find("li").eq(index).innerWidth(); //获取滑过元素Width值
+    //     $navcur.stop().animate({
+    //         left: leftW,
+    //         width: currentW
+    //     }, 300);
 
-    }, function() {
-        $navcur.stop().animate({
-            left: defLeftW,
-            width: itemW
-        }, 300)
-    })
+    // }, function() {
+    //     $navcur.stop().animate({
+    //         left: defLeftW,
+    //         width: itemW
+    //     }, 300)
+    // })
 
     function navBarClick(index) {
         let dome = $('.navbar-Product-Top').children();
@@ -112,7 +112,7 @@
         }
         if (index == 2) {
             $('.navbar-Product-Bottom div').hide()
-            $(childrenDome[1]).show() 
+            $(childrenDome[1]).show()
             $(childrenDome[2]).show()
             return false;
         }

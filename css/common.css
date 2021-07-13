@@ -339,11 +339,12 @@ p.right {
     cursor: pointer;
 }
 
-#nav .nav-current {
+
+/* #nav .nav-current {
     position: absolute;
     bottom: -2px;
     height: 2px;
     overflow: hidden;
     background: crimson;
     z-index: 88;
-}
+} */
