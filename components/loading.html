@@ -9,10 +9,13 @@
 </head>
 <style>
     .loading p {
-        color: black;
-        opacity: 0.8;
-        font-size: 12px;
+        color:#fff;
+        /* opacity: 0.8; */
+        font-size: 24px;
         text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 80px;
+        padding-bottom: 800px;
 
     }
     .loading{
@@ -20,11 +23,11 @@
     }
 
     .load_more_box {
-        height: 40px;
-        line-height: 40px;
+        height: 80px;
+        line-height: 80px;
         position: relative;
         text-align: center;
-        height: 800px;
+        /* height: 800px; */
         padding-top: 200px;
         margin: 0 auto;
         
@@ -32,7 +35,7 @@
 
     .load_more_box span {
         width: 5px;
-        height: 5px;
+        height: 100px;
         margin: 0 1px;
         display: inline-block;
         vertical-align: middle;
@@ -58,27 +61,28 @@
 
     @keyframes load_more_box {
         0% {
-            height: 5px;
+            height: 50px;
             background: #9b59b6;
         }
 
         25% {
-            height: 30px;
+            height: 80px;
             background: #0081ff;
         }
 
         50% {
-            height: 5px;
+            height: 100px;
             background: #9b59b6;
         }
 
         100% {
-            height: 5px;
+            height: 50px;
             background: #9b59b6;
         }
     }
     .loading{
-        background: #cbcbcb;
+        /* background: #cbcbcb; */
+        background: black;
         /* opacity: 0.2; */
     }
 </style>
@@ -91,9 +95,9 @@
             <span></span>
             <span></span>
             <span></span>
-            <p>加载中。。。</p>
+            
         </div>
-        
+        <p>加载中。。。</p>
     </section>
 </body>
 
