@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/distributor.css">
     <link rel="stylesheet" href="../css/vivify.min.css" />
     <script type="text/javascript" src="../js/public.js"></script>
-    <title i18n="i18n.distributor">经销商</title>
+    <title i18n="i18n.distributor">经销商加盟</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
         <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/become-dealar-pc.png" alt="">
         <section class="banner-text">
             <h1 i18n="i18n.distributor1">成为经销商合作伙伴</h1>
-            <p i18n="i18n.distributor2">在公司现有产品的基础上，我们支持各类定制化客制化需求，在公司强大的研发实力加持下，我们能够提供极其专业的方案定制。</p>
+            <p i18n="i18n.distributor2">诚信立业、合创未来</p>
         </section>
     </section>
     <section class="contain">
@@ -55,7 +55,8 @@
                         <p i18n="i18n.distributor9">申请人信息</p>
                         <input class="input_style" type="text" id="username" name="username" i18n="i18n.distributor11" placeholder="*姓名">
                         <input class="input_style" type="text" id="mobile" name="mobile" i18n="i18n.distributor12" placeholder="*手机号">
-                        <input class="input_style" type="text" id="email" name="email" i18n="i18n.distributor13" placeholder="*邮箱">
+                        <input class="input_style" type="text" id="position" name="position" i18n="i18n.distributor13" placeholder="职位">
+						<!-- <input class="input_style" type="text" id="email" name="email" i18n="i18n.distributor13" placeholder="*邮箱"> -->
                     </section>
                 </section>
             </form>
@@ -170,11 +171,17 @@
     }
 
     function autoSubmit() {
-
+		var newProductsType = '';
         var nvc_user_name = document.getElementById(`username`).value;
         var nvc_mobile = document.getElementById(`mobile`).value;
-        var nvc_email = document.getElementById(`email`).value;
-        var newProductsType = nvc_cooperative_products.substring(0, nvc_cooperative_products.lastIndexOf(','))
+        var nvc_position = document.getElementById(`position`).value;
+		console.log(nvc_cooperative_products)
+		// if(nvc_cooperative_products.lastIndexOf('|') != -1){
+		// 	newProductsType = nvc_cooperative_products.substring(0, nvc_cooperative_products.lastIndexOf('|'))
+		// }else{
+			newProductsType = nvc_cooperative_products
+		// }
+         
         if (nvc_user_name == '' || !nvc_user_name) {
             alert('请输入姓名')
             return false;
@@ -183,15 +190,17 @@
             alert('请输入正确的手机号')
             return false;
         }
-        if (!isEMail(nvc_email)) {
-            alert('请输入正确的邮箱号')
-            return false;
-        }
+        // if (!isEMail(nvc_email)) {
+        //     alert('请输入正确的邮箱号')
+        //     return false;
+        // }
         // http://localhost:1337/api/user/addUser
-        $.post(`http://39.103.133.174:1337/api/user/addUser`, {
+		// https://39.103.133.174:1337/api/user/addUser
+		// https://www.hqtcsz.cn/api/user/addUser
+        $.post(`https://www.hqtcsz.cn/api/user/addUser`, {
             username: nvc_user_name,
             mobile: nvc_mobile,
-            email: nvc_email,
+            position: nvc_position,
             cooperation_type: nvc_cooperation_type,
             cooperative_products: newProductsType,
             type: 1, // 1线上---0线下
@@ -199,7 +208,6 @@
         }, function(data) {
             if (data.code == 200) {
                 alert('提交成功,我们会尽快联系您')
-                    // window.location.href = '../index.html'
             }
         });
     }
