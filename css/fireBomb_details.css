@@ -238,9 +238,9 @@
 .section5_contain {
     display: flex;
     flex-wrap: wrap;
-    width: 12rem;
+    width: 1200px;
     margin: 0 auto;
-    margin-top: 58px;
+    margin-top: 142px;
 }
 
 .section5_contain>section {
@@ -249,7 +249,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: .17rem .1rem;
+    margin: 38px 30px;
 }
 
 .section5_contain>section:hover span {
@@ -259,6 +259,7 @@
 .section5_contain>section>img {
     display: block;
     width: 72px;
+    height: 72px;
 }
 
 .section5_contain>section>span {

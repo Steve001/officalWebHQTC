@@ -206,7 +206,6 @@
 }
 
 /* 第五屏 */
-
 .section5 {
     background-color: #fafafa !important;
 }
@@ -238,9 +237,9 @@
 .section5_contain {
     display: flex;
     flex-wrap: wrap;
-    width: 12rem;
+    width: 1200px;
     margin: 0 auto;
-    margin-top: 58px;
+    margin-top: 142px;
 }
 
 .section5_contain>section {
@@ -249,7 +248,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: .17rem .1rem;
+    margin: 38px 30px;
 }
 
 .section5_contain>section:hover span {
@@ -264,9 +263,10 @@
 
 .section5_contain>section>span {
     font-size: 16px;
-    margin-top: .3rem;
+    margin-top: 6px;
     color: #060606;
 }
+
 
 
 
