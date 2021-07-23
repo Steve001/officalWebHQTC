@@ -56,7 +56,7 @@
                         <input class="input_style" type="text" id="username" name="username" i18n="i18n.distributor11" placeholder="*姓名">
                         <input class="input_style" type="text" id="mobile" name="mobile" i18n="i18n.distributor12" placeholder="*手机号">
                         <input class="input_style" type="text" id="position" name="position" i18n="i18n.distributor13" placeholder="职位">
-						<!-- <input class="input_style" type="text" id="email" name="email" i18n="i18n.distributor13" placeholder="*邮箱"> -->
+                        <!-- <input class="input_style" type="text" id="email" name="email" i18n="i18n.distributor13" placeholder="*邮箱"> -->
                     </section>
                 </section>
             </form>
@@ -67,7 +67,7 @@
         </section>
         <section class="tips">
             <section class="tip-l">
-                <h1>266-076-64</h1>
+                <h1>0755-26607664</h1>
                 <p i18n="i18n.zhouyizhizhouri">周一至周五</p>
                 <p>9:00-12:00&nbsp;&nbsp;14:00-18:00</p>
             </section>
@@ -171,17 +171,17 @@
     }
 
     function autoSubmit() {
-		var newProductsType = '';
+        var newProductsType = '';
         var nvc_user_name = document.getElementById(`username`).value;
         var nvc_mobile = document.getElementById(`mobile`).value;
         var nvc_position = document.getElementById(`position`).value;
-		console.log(nvc_cooperative_products)
-		// if(nvc_cooperative_products.lastIndexOf('|') != -1){
-		// 	newProductsType = nvc_cooperative_products.substring(0, nvc_cooperative_products.lastIndexOf('|'))
-		// }else{
-			newProductsType = nvc_cooperative_products
-		// }
-         
+        console.log(nvc_cooperative_products)
+            // if(nvc_cooperative_products.lastIndexOf('|') != -1){
+            // 	newProductsType = nvc_cooperative_products.substring(0, nvc_cooperative_products.lastIndexOf('|'))
+            // }else{
+        newProductsType = nvc_cooperative_products
+            // }
+
         if (nvc_user_name == '' || !nvc_user_name) {
             alert('请输入姓名')
             return false;
@@ -195,8 +195,8 @@
         //     return false;
         // }
         // http://localhost:1337/api/user/addUser
-		// https://39.103.133.174:1337/api/user/addUser
-		// https://www.hqtcsz.cn/api/user/addUser
+        // https://39.103.133.174:1337/api/user/addUser
+        // https://www.hqtcsz.cn/api/user/addUser
         $.post(`https://www.hqtcsz.cn/api/user/addUser`, {
             username: nvc_user_name,
             mobile: nvc_mobile,
