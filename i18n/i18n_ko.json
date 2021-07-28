@@ -300,5 +300,20 @@
     "i18n.dry_Powder_Uav47": "맞춤형 서비스 지원",
     "i18n.dry_Powder_Uav48": "실제 운영 요구 사항에 따라 보안을위한 맞춤형 서비스를 제공 할 수 있습니다.",
     "i18n.dry_Powder_Uav49": "문의하기",
-    "i18n.dry_Powder_Uav50": "초 미세 분말 소화 무인 기"
+    "i18n.dry_Powder_Uav50": "초 미세 분말 소화 무인 기",
+    "i18n.water_Based_details0": "수성 소화 폭탄 드론",
+    "i18n.water_Based_details8": "화재 UAV 사용자 정의",
+    "i18n.water_Based_details9": "5G 제어 속도 및 안전성",
+    "i18n.water_Based_details10": "작업 효율성을 개선하기 위한 고속, 짧은 대기 시간 및 대규모 연결",
+    "i18n.water_Based_details31": "큰 지역을 소화하고 생명의 통로를 열어라",
+    "i18n.water_Based_details32": "수성 소화 폭탄 4개를 한 번에 휴대할 수 있으며, 한 번의 조작으로 160제곱미터의 화재를 진압할 수 있습니다.",
+    "i18n.water_Based_details33": "자동 지연 발파",
+    "i18n.water_Based_details34": "고정밀 레이저 거리 측정, 지능형 알고리즘, 지연 발파",
+    "i18n.water_Based_details37": "긴 배터리 수명이 상상을 뒤집습니다",
+    "i18n.water_Based_details38": "대용량 스마트 배터리 탑재, 내장 스마트 센서로 배터리 상태를 실시간으로 알려주고, 비행 안전성을 종합적으로 개선",
+    "i18n.water_Based_details42": "UAV는 산업 비행 제어, RTK 고정밀 위치 지정, 3중 중복 IMU 및 보다 안정적인 비행을 채택합니다.",
+    "i18n.water_Based_details44": "10km 이미지 전송, MIPI 고화질 카메라, LED 하이라이트 야간 조명 장착, 전기 스위치 설계, 원격 및 정확한 소방 실행",
+    "i18n.water_Based_details46": "UAV에는 정밀 전자 제어 시스템과 복잡한 화재 환경에서 소화 폭탄 발사 스위치를 원격으로 제어할 수 있는 3체 고화질 MIPI 카메라가 장착되어 있습니다.",
+    "i18n.water_Based_details47": "화재 폭탄을 빨리 교체하십시오",
+    "i18n.water_Based_details48": "UAV 로드는 신속한 분해 구조 설계를 채택하여 소화 폭탄의 신속한 설치 및 분해를 실현하고 작업 효율성을 크게 향상시킵니다."
 }
