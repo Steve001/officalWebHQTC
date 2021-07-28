@@ -250,7 +250,6 @@
     "i18n.fireBomb_details46": " 6 fire bombs at a time, 9㎡ for single fire ",
     "i18n.fireBomb_details47": " quick fire bomb ",
     "i18n.fireBomb_details48": " The quick dismantling structure design enables quick installation and dismantling of fire bombs, greatly improving operational efficiency",
-
     "i18n.dry_Powder_Uav0": "Ultra-fine dry powder fire extinguishing drone",
     "i18n.dry_Powder_Uav1": "Superfine dry powder fire extinguishing drone",
     "i18n.dry_Powder_Uav2": "Professional Customization",
@@ -301,5 +300,20 @@
     "i18n.dry_Powder_Uav47": "Support customized service",
     "i18n.dry_Powder_Uav48": "According to actual operation requirements, we can provide customized services for security",
     "i18n.dry_Powder_Uav49": "Contact Us",
-    "i18n.dry_Powder_Uav50": "Ultra fine dry powder fire fighting UAV"
+    "i18n.dry_Powder_Uav50": "Ultra fine dry powder fire fighting UAV",
+    "i18n.water_Based_details0": "Water-based fire extinguishing bomb drone",
+    "i18n.water_Based_details8": "Fire UAV Customizer",
+    "i18n.water_Based_details9": "5G control speed and safety",
+    "i18n.water_Based_details10": "High speed, low latency and large connections to improve operation efficiency",
+    "i18n.water_Based_details31": "Extinguish a large area and open the passage of life",
+    "i18n.water_Based_details32": "4 water-based fire extinguishing bombs can be carried at one time, and a single operation can extinguish a fire of 160 square meters",
+    "i18n.water_Based_details33": "Automatic Delay Blasting",
+    "i18n.water_Based_details34": "High-precision laser ranging, intelligent algorithm, delayed blasting",
+    "i18n.water_Based_details37": "Long battery life to subvert the imagination",
+    "i18n.water_Based_details38": "Equipped with a large-capacity smart battery, the built-in smart sensor returns the battery status in real time, and comprehensively improves flight safety",
+    "i18n.water_Based_details42": "The UAV adopts industry flight control, RTK high-precision positioning, three-redundant IMU, and more stable flight",
+    "i18n.water_Based_details44": "10km image transmission, MIPI high-definition camera, equipped with LED highlight night lights, electric switch design, remote and accurate execution of fire fighting",
+    "i18n.water_Based_details46": "The UAV is equipped with a precision electronic control system and a three-body high-definition MIPI camera, which can remotely control the fire-extinguishing bomb launch switch in a complex fire environment",
+    "i18n.water_Based_details47": "Replace the fire bomb quickly",
+    "i18n.water_Based_details48": "The UAV load adopts a quick disassembly structure design, which realizes the rapid installation and disassembly of fire extinguishing bombs and greatly improves operation efficiency"
 }
