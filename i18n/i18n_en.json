@@ -210,8 +210,8 @@
     "i18n.fireBomb_details6": " mapping survey ",
     "i18n.fireBomb_details7": " Schema customization ",
     "i18n.fireBomb_details8": " Fire Drone Customizer ",
-    "i18n.fireBomb_details9": "5G control at top speed safe ",
-    "i18n.fireBomb_details10": " High rates, low latency, and large connections for higher job efficiency ",
+    "i18n.fireBomb_details9": " 5g efficient operation ",
+    "i18n.fireBomb_details10": " realize remote operation through 5g network big data platform, high efficiency, low delay and large connection, and improve operation efficiency ",
     "i18n.fireBomb_details11": " Full feature coverage ",
     "i18n.fireBomb_details12": " Strong performance, multiple application scenarios ",
     "i18n.fireBomb_details13": " four axes and eight wings ",
@@ -315,5 +315,11 @@
     "i18n.water_Based_details44": "10km image transmission, MIPI high-definition camera, equipped with LED highlight night lights, electric switch design, remote and accurate execution of fire fighting",
     "i18n.water_Based_details46": "The UAV is equipped with a precision electronic control system and a three-body high-definition MIPI camera, which can remotely control the fire-extinguishing bomb launch switch in a complex fire environment",
     "i18n.water_Based_details47": "Replace the fire bomb quickly",
-    "i18n.water_Based_details48": "The UAV load adopts a quick disassembly structure design, which realizes the rapid installation and disassembly of fire extinguishing bombs and greatly improves operation efficiency"
+    "i18n.water_Based_details48": "The UAV load adopts a quick disassembly structure design, which realizes the rapid installation and disassembly of fire extinguishing bombs and greatly improves operation efficiency",
+    "i18n.fireBallUAV0": "throwing dry powder fire ball UAV",
+    "i18n.fireBallUAV1": "large capacity fire extinguishing and explosion in case of fire",
+    "i18n.fireBallUAV2": "carrying 6 automatic fire extinguishing balls at a time, with an effective fire extinguishing volume of 54 m3 at a time",
+    "i18n.fireBallUAV3": "UAV equipped with precise electronic control system and three body HD Mipi camera can remotely control the fire ball launch switch in complex fire environment",
+    "i18n.fireBallUAV4": "quick replacement of fireball",
+    "i18n.fireBallUAV5": "the UAV load adopts the quick disassembly structure design to realize the rapid installation and disassembly of the fireball and greatly improve the operation efficiency"
 }

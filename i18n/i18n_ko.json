@@ -210,8 +210,8 @@
     "i18n.fireBomb_details6": "측량 측량",
     "i18n.fireBomb_details7": "솔루션 사용자 정의",
     "i18n.fireBomb_details8": "소방 무인기 사용자 정의 사업자",
-    "i18n.firebomb_detail9": "5g 속도 제어 보안",
-    "i18n.fireBomb_details10": "생산성 향상을 위한 고속, 저지연, 대규모 연결",
+    "i18n.firebomb_detail9": "5G 조작 효율 적 인 작업",
+    "i18n.fireBomb_details10": "5G 네트워크 빅 데이터 플랫폼 을 통 해 타지 역 작업,고 효율,낮은 지연 과 큰 연결 을 실현 하여 작업 효율 을 높 인 다",
     "i18n.fireBomb_details11": "전체 범위 오버커버리",
     "i18n.fireBomb_details12": "강력한 성능, 다양한 응용 시나리오",
     "i18n.fireBomb_details13": "4개의 날개",
@@ -315,5 +315,11 @@
     "i18n.water_Based_details44": "10km 이미지 전송, MIPI 고화질 카메라, LED 하이라이트 야간 조명 장착, 전기 스위치 설계, 원격 및 정확한 소방 실행",
     "i18n.water_Based_details46": "UAV에는 정밀 전자 제어 시스템과 복잡한 화재 환경에서 소화 폭탄 발사 스위치를 원격으로 제어할 수 있는 3체 고화질 MIPI 카메라가 장착되어 있습니다.",
     "i18n.water_Based_details47": "화재 폭탄을 빨리 교체하십시오",
-    "i18n.water_Based_details48": "UAV 로드는 신속한 분해 구조 설계를 채택하여 소화 폭탄의 신속한 설치 및 분해를 실현하고 작업 효율성을 크게 향상시킵니다."
+    "i18n.water_Based_details48": "UAV 로드는 신속한 분해 구조 설계를 채택하여 소화 폭탄의 신속한 설치 및 분해를 실현하고 작업 효율성을 크게 향상시킵니다.",
+    "i18n.fireBallUAV0": "투하 식 마른 가루 소화 구 무인 기",
+    "i18n.fireBallUAV1": "대 용량 소화 불 이 나 면 터 집 니 다",
+    "i18n.fireBallUAV2": "한 번 에 6 개의 자동 소화 구 를 탑재 하고 한 번 에 효과 적 인 소화 부 피 는 54 세제곱미터 입 니 다",
+    "i18n.fireBallUAV3": "무인 기 는 정확 한 전기 제어 시스템 을 탑재 하고 세 개의 고 화질 MIPI 카메라 와 결합 하여 복잡 한 화재 환경 에서 원 격 으로 소화 구 발사 스위치 를 제어 할 수 있다",
+    "i18n.fireBallUAV4": "소화 구 를 빨리 교체 하 세 요",
+    "i18n.fireBallUAV5": "무인 기 하 재 는 빠 른 철거 구조 로 디자인 되 어 소화 구 의 빠 른 설치 와 탈 부착 을 실현 하여 작업 효율 을 크게 향상 시 킵 니 다"
 }
