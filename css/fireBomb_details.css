@@ -665,6 +665,7 @@
     background-color: black!important;
 }
 .section12_txt{
+    width: 1200px;
     position: absolute;
     left:50%;
     margin-top: -396px;
