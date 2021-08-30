@@ -55,10 +55,11 @@
         slidesPerView: 'auto',
         on: {
             slideChangeTransitionEnd: function(swipe) {
-                console.log(swipe.realIndex)
+               
                 this.slides.transition(this.params.autoplay.delay + this.params.speed).transform('translate3d(-60px, 0, 0)');
             },
             slideChangeTransitionStart: function() {
+				
                 this.slides.transition(this.params.speed).transform('translate3d(0, 0, 0)');
             },
         },
