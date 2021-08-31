@@ -46,8 +46,7 @@
             </div>
         </div>
         <div class="fvh section3">23132</div>
-        <div class="fvh section4">226
-        </div>
+        <div class="fvh section4">226</div>
     </div>
     <script>
         var controller = new ScrollMagic.Controller();
@@ -82,13 +81,13 @@
                         autoAlpha: 1,
                         ease: Power4.easeOut
                     })
-                    .to(v, 1.1, {})
+                    .to(v, 1, {})
 
                 if (i !== items.length - 1) {
                     itemsTimeline.to(v, 1 / 2, {
-                        yPercent: '0%',
-                        autoAlpha: 0,
-                        // ease: Power2.easeInOut 
+                        yPercent: 1,
+                        autoAlpha: 1,
+                        ease: Power2.easeInOut 
                     })
                 }
 
