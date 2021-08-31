@@ -1,7 +1,19 @@
-
+.hh{
+    position: relative;
+}
+/* .market{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 100%;
+    background: #000;
+    z-index: 99;
+} */
   .fvh {
     position: relative;
     height: 100vh;
+    /* z-index: 88; */
   }
   .section2 {
     /* border: 2px solid red; */
@@ -13,15 +25,12 @@
     text-shadow: 0 0 10px #000;
     background: #000;
   }
-  .section2 h1 {
-    margin: 0;
-    font-size: 80px;
-  }
   .section2 .texts-wrap {
     width: 1000px;
     height: 800px;
     position: relative;
     text-align: center;
+    /* z-index: 88; */
   }
   .section2 .texts-wrap div{
     /* margin: 0; */
