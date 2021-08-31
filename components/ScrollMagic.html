@@ -28,10 +28,6 @@
         <div class="fvh section7"></div>
         <div class="fvh section8"></div>
         <div class="fvh section9"></div>
-        <div class="fvh section10"></div>
-        <div class="fvh section11"></div>
-        <div class="fvh section12"></div>
-        <div class="fvh section13"></div>
     </div>
     <script>
         let Box = document.getElementsByClassName('texts-wrap')[0];
@@ -40,12 +36,12 @@
             Box.innerHTML += `<div><img src="../images/${i}.jpg" alt=""></div>`
         }
         var controller = new ScrollMagic.Controller();
-        var sense1Duration = 1200
+        var sense1Duration = 800
         var sense2 = new ScrollMagic.Scene({
                 triggerElement: '.section2',
                 triggerHook: 0,
                 offset: 0,
-                reverse: true,
+
                 duration: (sense1Duration - 100) + '%'
             })
             .setPin('.section2', {
@@ -71,7 +67,8 @@
                     .to(v, 0.9, {
                         yPercent: 1,
                         autoAlpha: 1,
-                        ease: Power4.easeOut
+                        ease: Power4.easeOut,
+                        delay: 500,
                     })
                     .to(v, 1, {})
 
@@ -79,7 +76,8 @@
                     itemsTimeline.to(v, 1 / 2, {
                         yPercent: 1,
                         autoAlpha: 1,
-                        ease: Power2.easeInOut
+                        ease: Power2.easeInOut,
+                        delay: 500,
                     })
                 }
 
@@ -88,7 +86,6 @@
                         triggerElement: '.section2',
                         triggerHook: 0,
                         offset: 0,
-                        reverse: true,
                         duration: (sense1Duration - 100) + '%'
                     })
                     .setTween(itemsTimeline)
