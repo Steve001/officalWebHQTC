@@ -587,6 +587,7 @@
     left: 49.6%;
     transform: translate(-49.6%);
     top: 37%;
+    overflow: hidden;
 }
 
 .swiper-container {
