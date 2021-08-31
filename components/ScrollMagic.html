@@ -50,10 +50,12 @@
         <div class="fvh section6"></div>
         <div class="fvh section7"></div>
         <div class="fvh section8"></div>
+        <div class="fvh section9"></div>
+        <div class="fvh section10"></div>
     </div>
     <script>
         var controller = new ScrollMagic.Controller();
-        var sense1Duration = 700
+        var sense1Duration = 900
         var sense2 = new ScrollMagic.Scene({
                 triggerElement: '.section2',
                 triggerHook: 0,
@@ -84,13 +86,13 @@
                         autoAlpha: 1,
                         ease: Power4.easeOut
                     })
-                    .to(v, 1.1, {})
+                    .to(v, 1, {})
 
                 if (i !== items.length - 1) {
                     itemsTimeline.to(v, 1 / 2, {
-                        yPercent: '0%',
-                        autoAlpha: 0,
-                        // ease: Power2.easeInOut 
+                        yPercent: 1,
+                        autoAlpha: 1,
+                        ease: Power2.easeInOut
                     })
                 }
 
