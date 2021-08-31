@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/vivify.min.css" />
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/ScrollMagic.css">
+    <script src="lib/gsap/TweenMax.min.js"></script>
+    <script src="lib/gsap/TimelineMax.min.js"></script>
+    <script src="lib/scrollmagic/ScrollMagic.min.js"></script>
+    <script src="lib/scrollmagic/plugins/animation.gsap.min.js"></script>
+    <!-- <script src="lib/scrollmagic/plugins/debug.addIndicators.min.js"></script> -->
+    
+</head>
+<body>
+    <div class="main">
+        <div class="banner">
+            <div class="aa">
+                <video src="../images/160370350226b2f371015e5758.mp4_last.mp4" controls="controls" autoplay loop></video>
+            </div>
+            
+        </div>
+        <div class="section">
+            <div class="side-bar">side-bar
+
+                
+            </div>
+            <div class="content">content</div>
+        </div>
+    </div>
+    
+    <script src="../js/ScrollMagic.js"></script>
+    <script>
+        var controller = new ScrollMagic.Controller();
+        var scene = new ScrollMagic.Scene({
+            triggerElement: '.section',//触发元素
+            triggerHook: "onLeave",//触发元素开始离开视口时触发
+            offset: 0,//从开始点滚动多少px触发（施法前摇）
+            duration: 1500//效果持续的距离（法术持续时间/距离）
+
+        }).setPin(".side-bar");//固定需要固定的元素
+
+        controller.addScene(scene);
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
