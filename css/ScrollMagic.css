@@ -1,56 +1,8 @@
-<<<<<<< HEAD
-body{
-  padding: 0;
-  margin: 0;
-}
-.fvh {
-  position: relative;
-  height: 100vh;
-}
-.section2 {
-  /* border: 2px solid red; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: #fff;
-  text-shadow: 0 0 10px #000;
-  background: #000;
-}
-.section2 h1 {
-  margin: 0;
-  font-size: 80px;
-}
-.section2 .texts-wrap {
-  width: 500px;
-  height: 400px;
-  position: relative;
-  text-align: center;
-}
-.section2 .texts-wrap div{
-  /* margin: 0; */
-  font-size: 50px;
-  font-weight: lighter;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 100%;
-}
-.section2 .texts-wrap img{
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-
-
-=======
-.hh{
+.hh {
     position: relative;
 }
+
+
 /* .market{
     position: absolute;
     top: 0;
@@ -60,12 +12,14 @@ body{
     background: #000;
     z-index: 99;
 } */
-  .fvh {
+
+.fvh {
     position: relative;
     height: 100vh;
     /* z-index: 88; */
-  }
-  .section2 {
+}
+
+.section2 {
     /* border: 2px solid red; */
     display: flex;
     align-items: center;
@@ -74,15 +28,17 @@ body{
     color: #fff;
     text-shadow: 0 0 10px #000;
     background: #000;
-  }
-  .section2 .texts-wrap {
+}
+
+.section2 .texts-wrap {
     width: 1000px;
-    height: 800px;
+    height: 600px;
     position: relative;
     text-align: center;
     /* z-index: 88; */
-  }
-  .section2 .texts-wrap div{
+}
+
+.section2 .texts-wrap div {
     /* margin: 0; */
     font-size: 50px;
     font-weight: lighter;
@@ -93,14 +49,10 @@ body{
     bottom: 0;
     margin: auto;
     width: 100%;
-  }
-  .section2 .texts-wrap img{
+}
+
+.section2 .texts-wrap img {
     width: 100%;
     height: 100%;
     display: block;
-  }
-  
-  
-  
-  
->>>>>>> a866b315e1dae79c772386794940d0682ec49793
+}
