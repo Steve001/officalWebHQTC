@@ -8,96 +8,56 @@
     <title>加载中</title>
 </head>
 <style>
-    .loading p {
-        color:#fff;
-        /* opacity: 0.8; */
-        font-size: 24px;
-        text-align: center;
-        font-family: 'Courier New', Courier, monospace;
-        margin-top: 80px;
-        padding-bottom: 800px;
-
+    .loading {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        filter: contrast(30);
+        z-index: 9999;
+        top: 0;
+        background: rgba(0, 0, 0, 0.7);
+        filter: blur(5px) opacity(0.8) brightness(0.8);
     }
-    .loading{
-        margin-top: 56px;
+    
+    .circle {
+        border-radius: 50%;
+        position: absolute;
+        filter: blur(10px);
     }
-
-    .load_more_box {
-        height: 80px;
-        line-height: 80px;
-        position: relative;
-        text-align: center;
-        /* height: 800px; */
-        padding-top: 200px;
-        margin: 0 auto;
-        
+    
+    .circle-1 {
+        height: 90px;
+        width: 90px;
+        background: #03a9f4;
+        transform: translate(-50px);
+        animation: 2s moving linear infinite alternate-reverse;
     }
-
-    .load_more_box span {
-        width: 5px;
-        height: 100px;
-        margin: 0 1px;
-        display: inline-block;
-        vertical-align: middle;
-        background: #9b59b6;
-        animation: load_more_box 1.5s infinite ease-in-out;
+    
+    .circle-2 {
+        height: 60px;
+        width: 60px;
+        background: #5b5beb;
+        transform: translate(50px);
+        animation: 2s moving linear infinite alternate;
     }
-
-    .load_more_box span:nth-child(2) {
-        animation-delay: .2s;
-    }
-
-    .load_more_box span:nth-child(3) {
-        animation-delay: .4s;
-    }
-
-    .load_more_box span:nth-child(4) {
-        animation-delay: .6s;
-    }
-
-    .load_more_box span:nth-child(5) {
-        animation-delay: .8s;
-    }
-
-    @keyframes load_more_box {
+    
+    @keyframes moving {
         0% {
-            height: 50px;
-            background: #9b59b6;
+            transform: translate(50px)
         }
-
-        25% {
-            height: 80px;
-            background: #0081ff;
-        }
-
-        50% {
-            height: 100px;
-            background: #9b59b6;
-        }
-
         100% {
-            height: 50px;
-            background: #9b59b6;
+            transform: translate(-50px)
         }
-    }
-    .loading{
-        /* background: #cbcbcb; */
-        background: black;
-        /* opacity: 0.2; */
     }
 </style>
 
 <body>
     <section class="loading">
-        <div class="load_more_box">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            
-        </div>
-        <p>加载中。。。</p>
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
     </section>
 </body>
 

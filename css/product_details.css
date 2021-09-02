@@ -122,7 +122,7 @@
     flex-direction: column;
     background-position: center center;
     /* background-size: 100% 100%; */
-    background-color: #131313!important;
+    background-color: #131313 !important;
 }
 
 .section11_txt {
@@ -151,7 +151,7 @@
     flex-direction: column;
     background-position: center center;
     /* background-size: 100% 100%; */
-    background-color: #030400!important;
+    background-color: #030400 !important;
 }
 
 .section12_txt {
@@ -191,7 +191,7 @@
     flex-direction: column;
     background-position: center center;
     background-size: 100% 100%;
-    background-color: #131313!important;
+    background-color: #131313 !important;
     z-index: 1;
 }
 
@@ -377,16 +377,15 @@
 
 .section1 h1 {
     margin-top: -5rem;
-    color: #222222!important;
+    color: #222222 !important;
     font-size: 1.5rem;
     font-family: 'NeuzeitGro-Bold';
 }
 
 .section1 p {
-    color: #3a3633!important;
+    color: #3a3633 !important;
     font-size: .6rem;
     font-weight: 200;
-    /* font-family: 'KaiTi'; */
     font-family: 'alibaba-light';
 }
 
@@ -404,7 +403,7 @@
 }
 
 .selection2-text {
-    color: #18181a!important;
+    color: #18181a !important;
     font-size: .5rem;
 }
 
@@ -469,7 +468,7 @@
     background-size: contain;
     display: flex;
     flex-direction: column;
-    background-color: #f9f9f9!important;
+    background-color: #f9f9f9 !important;
 }
 
 .section3_txt {
@@ -483,7 +482,7 @@
 }
 
 .section3 h3 {
-    color: black!important;
+    color: black !important;
     font-size: 45px;
     font-weight: 500;
     font-family: 'alibaba-regular';
@@ -491,7 +490,7 @@
 }
 
 .section3 p {
-    color: #000!important;
+    color: #000 !important;
     /* margin-top:8px; */
     font-size: 24px;
     font-weight: 200;
@@ -540,7 +539,7 @@
     background-position: center center;
     /* background-size: 100% 100%; */
     /* background-size: cover; */
-    background-color: black!important;
+    background-color: black !important;
 }
 
 .section4_txt {
@@ -555,7 +554,7 @@
 
 .section4 h3 {
     /* margin-top: -5rem */
-    color: #fff!important;
+    color: #fff !important;
     font-size: 45px;
     font-weight: 500;
     font-family: 'alibaba-regular';
@@ -563,7 +562,7 @@
 }
 
 .section4 p {
-    color: #ffff!important;
+    color: #ffff !important;
     font-size: .35rem;
     margin-top: 8px;
     font-weight: 200;
@@ -591,7 +590,7 @@
 }
 
 .swiper-container {
-    border-radius: 30px!important;
+    border-radius: 30px !important;
 }
 
 .swiper-slide>img {
@@ -601,27 +600,27 @@
 }
 
 .swiper-button-prev {
-    top: 36%!important;
-    left: 5rem!important;
+    top: 36% !important;
+    left: 5rem !important;
     font-size: .1rem;
-    height: 3rem!important;
-    width: 5rem!important;
+    height: 3rem !important;
+    width: 5rem !important;
     /* background-color: red; */
     opacity: 0;
 }
 
 .swiper-button-next {
-    top: 36%!important;
-    right: 5rem!important;
+    top: 36% !important;
+    right: 5rem !important;
     font-size: .1rem;
-    height: 3rem!important;
-    width: 5rem!important;
+    height: 3rem !important;
+    width: 5rem !important;
     /* background-color: red; */
     opacity: 0;
 }
 
 .swiper-slide {
-    width: 100%!important;
+    width: 100% !important;
     margin: 0 auto;
 }
 
@@ -629,7 +628,7 @@
 /* 第五屏 */
 
 .section5 {
-    background: #fff!important;
+    background: #fff !important;
     padding-top: .8rem;
 }
 
@@ -644,7 +643,7 @@
 }
 
 .section5 h3 {
-    color: black!important;
+    color: black !important;
     font-size: 45px;
     font-weight: 500;
     margin-bottom: -24px;
@@ -653,7 +652,7 @@
 }
 
 .section5 span {
-    color: black!important;
+    color: black !important;
     font-size: .35rem;
     font-weight: 200;
     opacity: 0.8;
@@ -662,7 +661,7 @@
 }
 
 .section5 p {
-    color: black!important;
+    color: black !important;
     font-size: 16px;
     opacity: 0.5;
 }
@@ -721,7 +720,7 @@
 }
 
 .section5_contain_1>p:nth-child(2) {
-    color: red!important;
+    color: red !important;
 }
 
 
@@ -733,12 +732,12 @@
     background-size: 100% 100%;
     background-size: contain;
     display: flex;
-    background-color: black!important;
+    background-color: black !important;
 }
 
 .section6 h3 {
     margin-top: -5rem;
-    color: #fff!important;
+    color: #fff !important;
     font-size: 45px;
     padding-top: 3rem;
     font-weight: 500;
@@ -747,7 +746,7 @@
 }
 
 .section6 p {
-    color: #ffff!important;
+    color: #ffff !important;
     font-size: 20px;
     opacity: 0.5;
     font-weight: 200;
@@ -860,7 +859,7 @@
 }
 
 .section7 h3 {
-    color: #030400!important;
+    color: #030400 !important;
     font-size: 45px;
     font-weight: 500;
     font-family: 'alibaba-regular';
@@ -868,7 +867,7 @@
 }
 
 .section7 p {
-    color: #030400!important;
+    color: #030400 !important;
     font-size: .35rem;
     font-weight: 200;
     opacity: 0.4;
@@ -915,7 +914,7 @@
 }
 
 .section8 h3 {
-    color: #fff!important;
+    color: #fff !important;
     font-size: 45px;
     font-weight: 500;
     font-family: 'alibaba-regular';
@@ -923,7 +922,7 @@
 }
 
 .section8 p {
-    color: #ffff!important;
+    color: #ffff !important;
     font-size: 22px;
     margin-top: 10px;
     font-weight: 200;
@@ -947,7 +946,7 @@
 /* 第十五屏 */
 
 .section15 {
-    background: #fff!important;
+    background: #fff !important;
 }
 
 .section15_txt {
@@ -961,7 +960,7 @@
 }
 
 .section15 h3 {
-    color: black!important;
+    color: black !important;
     font-size: 45px;
     font-weight: 500;
     font-family: 'alibaba-regular';
@@ -969,7 +968,7 @@
 }
 
 .section15 p {
-    color: black!important;
+    color: black !important;
     opacity: 0.9;
     margin-bottom: 30px;
     font-weight: 200;
@@ -982,11 +981,11 @@
     width: 7rem;
     border-bottom: black solid .02rem;
     position: relative;
-    text-align: left!important;
+    text-align: left !important;
 }
 
 .section15_select>span {
-    color: black!important;
+    color: black !important;
     font-size: .3rem;
 }
 
