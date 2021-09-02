@@ -29,9 +29,10 @@
 /* 第一屏 */
 
 .section1 {
-    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/bck_image1.jpg)no-repeat;
-    background-size: 100%;
-    min-width: 1600px;
+    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/bck_image1.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
     /* display: flex;
     flex-direction: column; */
 }

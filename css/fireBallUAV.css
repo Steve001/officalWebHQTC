@@ -30,8 +30,8 @@
 
 .section1 {
     background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/bac_img_1.jpg)no-repeat;
-    background-size: 100%;
-    min-width: 1600px;
+    background-size: auto 100%;
+    background-position: center center;
     /* display: flex;
     flex-direction: column; */
 }
