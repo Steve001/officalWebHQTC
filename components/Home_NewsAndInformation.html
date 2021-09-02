@@ -35,47 +35,51 @@
         <div class="swiper-button-next"></div>
     </div>
 </div>
-
+<script type="text/javascript" src="https://vncdn.mobi88.cn/public/jquery-2.1.3.min.js"></script>
 <script>
-    var swiper = new Swiper('.newsAndInformation-swiper', {
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        speed: 700,
-        allowTouchMove: false,
-        lazy: {
-            loadPrevNext: true,
-            loadPrevNextAmount: 3,
-        },
-        centeredSlides: true,
-        spaceBetween: 50,
-        slidesOffsetBefore: 40,
-        loop: true,
-        slidesPerView: 'auto',
-        on: {
-            slideChangeTransitionEnd: function(swipe) {
+    $(function() {
+        var swiper = new Swiper('.newsAndInformation-swiper', {
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: false,
+            },
+            speed: 700,
+            allowTouchMove: false,
+            lazy: {
+                loadPrevNext: true,
+                loadPrevNextAmount: 3,
+            },
+            centeredSlides: true,
+            spaceBetween: 50,
+            slidesOffsetBefore: 40,
+            loop: true,
+            slidesPerView: 'auto',
+            on: {
+                click(e) {
+                    console.log(e)
+                },
+                slideChangeTransitionEnd: function(swipe) {
 
-                this.slides.transition(this.params.autoplay.delay + this.params.speed).transform('translate3d(-60px, 0, 0)');
+                    this.slides.transition(this.params.autoplay.delay + this.params.speed).transform('translate3d(-60px, 0, 0)');
+                },
+                slideChangeTransitionStart: function() {
+                    this.slides.transition(this.params.speed).transform('translate3d(0, 0, 0)');
+                },
             },
-            slideChangeTransitionStart: function() {
-
-                this.slides.transition(this.params.speed).transform('translate3d(0, 0, 0)');
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function(index, className) {
+                    return '<div class="' + className + '"><span></span><i></i></div>';
+                },
             },
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            renderBullet: function(index, className) {
-                return '<div class="' + className + '"><span></span><i></i></div>';
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-    window.onresize = function() {
-        swiper.update();
-    }
+        });
+        window.onresize = function() {
+            swiper.update();
+        }
+    })
 </script>

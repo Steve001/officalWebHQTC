@@ -30,75 +30,72 @@
         <div class="fvh section9"></div>
     </div>
     <script>
-        let Box = document.getElementsByClassName('texts-wrap')[0];
-        console.log(Box)
-        for (let i = 0; i < 70; i++) {
-            Box.innerHTML += `<div><img src="../images/${i}.jpg" alt=""></div>`
-        }
-        var controller = new ScrollMagic.Controller();
-        var sense1Duration = 800
-        var sense2 = new ScrollMagic.Scene({
-                triggerElement: '.section2',
-                triggerHook: 0,
-                offset: 0,
+        $(function() {
+            var controller = new ScrollMagic.Controller();
+            var sense1Duration = 800
+            var sense2 = new ScrollMagic.Scene({
+                    triggerElement: '.section2',
+                    triggerHook: 0,
+                    offset: 0,
 
-                duration: (sense1Duration - 100) + '%'
-            })
-            .setPin('.section2', {
-                pushFollowers: false
-            })
+                    duration: (sense1Duration - 100) + '%'
+                })
+                .setPin('.section2', {
+                    pushFollowers: false
+                })
 
-        .addTo(controller)
-
-        ! function() {
-            var items = document.querySelector('.section2 .texts-wrap').children;
-            items = Array.from(items)
-
-            new TimelineMax().set(items.slice(1), {
-                yPercent: 1,
-                autoAlpha: 0
-            })
-
-            var itemsTimeline = new TimelineMax()
-
-            items.forEach((v, i) => {
-                console.log(i)
-                itemsTimeline
-                    .to(v, 0.9, {
-                        yPercent: 1,
-                        autoAlpha: 1,
-                        ease: Power4.easeOut,
-                        delay: 500,
-                        repeatDelay: 2,
-                        /*每次重复间隔的时间*/
-
-                    })
-                    .to(v, 1, {})
-
-                if (i !== items.length - 1) {
-                    itemsTimeline.to(v, 1 / 2, {
-                        yPercent: 1,
-                        autoAlpha: 1,
-                        ease: Power2.easeInOut,
-                        delay: 500,
-                        repeatDelay: 2,
-                        /*每次重复间隔的时间*/
-
-                    })
-                }
+            .addTo(controller)
 
 
-                var sense2Content = new ScrollMagic.Scene({
-                        triggerElement: '.section2',
-                        triggerHook: 0,
-                        offset: 0,
-                        duration: (sense1Duration - 100) + '%'
-                    })
-                    .setTween(itemsTimeline)
+            let Box = document.getElementsByClassName('texts-wrap')[0];
+            console.log(Box)
+            for (let i = 0; i < 70; i++) {
+                Box.innerHTML += `<div><img src="../images/${i}.jpg" alt=""></div>`
+            }
 
-                .addTo(controller)
-            })
-        }()
+            ! function() {
+                var items = document.querySelector('.section2 .texts-wrap').children;
+                items = Array.from(items)
+
+                new TimelineMax().set(items.slice(1), {
+                    yPercent: 1,
+                    autoAlpha: 0
+                })
+
+                var itemsTimeline = new TimelineMax()
+
+                items.forEach((v, i) => {
+                    itemsTimeline
+                        .to(v, 0.9, {
+                            yPercent: 1,
+                            autoAlpha: 1,
+                            ease: Power4.easeOut,
+                            delay: 1000, //延迟1秒，接续前一个动画
+                        })
+                        .to(v, 1, {})
+
+                    if (i !== items.length - 1) {
+                        itemsTimeline.to(v, 1 / 2, {
+                            yPercent: 1,
+                            autoAlpha: 1,
+                            ease: Power2.easeInOut,
+                            delay: 1000, //延迟1秒，接续前一个动画
+                        })
+                    }
+
+
+                    var sense2Content = new ScrollMagic.Scene({
+                            triggerElement: '.section2',
+                            triggerHook: 0,
+                            offset: 0,
+                            duration: (sense1Duration - 100) + '%'
+                        })
+                        .setTween(itemsTimeline)
+
+                    .addTo(controller)
+                })
+            }()
+        })
     </script>
 
 </body>
