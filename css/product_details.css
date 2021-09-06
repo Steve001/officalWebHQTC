@@ -534,14 +534,27 @@
 /* 第四屏 */
 
 .section4 {
-    background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img4.jpg) no-repeat;
-    /* background: url(../img/b63824d5abd469fe0328202a3e3e958.jpg) no-repeat; */
+    /* background: url(https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_img4.jpg) no-repeat; */
+    background: url(../images/product/back_img4.jpg) no-repeat;
     background-position: center center;
     /* background-size: 100% 100%; */
     /* background-size: cover; */
     background-color: black !important;
+    position: relative;
 }
+.po-l{
+    position: absolute;
+    left: 21%;
+    top:43%;
+    font-size: 16px;
+}
+.po-r{
+position: absolute;
+right: 22%;
+top: 43%;
+font-size: 16px;
 
+}
 .section4_txt {
     position: absolute;
     left: 50%;
@@ -569,8 +582,6 @@
     font-family: 'alibaba-light';
     display: none;
 }
-
-
 /* @media screen and (max-width:1480px){
     .box{
         top: 41%!important;
