@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-top: .575rem;
+    padding-top: .8rem;
 }
 
 .homeVideo {
@@ -71,7 +71,7 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: #fff!important;
+    color: #fff !important;
 }
 
 .swiper-button-prev {
@@ -91,7 +91,7 @@
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 70px!important;
+    margin-top: 70px !important;
 }
 
 .homeVideoBox .swiper-slide>span {
@@ -279,7 +279,7 @@
 .partnersBox {
     width: 100%;
     position: relative;
-    margin-bottom: .5rem;
+    /* margin-bottom: .5rem; */
 }
 
 .box1 {
