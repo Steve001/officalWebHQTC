@@ -115,23 +115,30 @@
     width: 12rem;
     margin: 0 auto;
 }
-.Box{
-    display: block!important;
+
+.Box {
+    display: block !important;
 }
-.BoxStyle1{
-    color: white!important;
-    background-color:red!important
+
+.BoxStyle1 {
+    color: white !important;
+    background-color: red !important
 }
-.BoxStyle2{
-    color: black!important;
-    background-color:white!important
+
+.BoxStyle2 {
+    color: black !important;
+    background-color: white !important
 }
+
+
 /* 11111 */
-.section_2_img_children1{
+
+.section_2_img_children1 {
     position: relative;
     display: none;
 }
-.section_2_img_childrenp1{
+
+.section_2_img_childrenp1 {
     position: absolute;
     top: 162px;
     left: 62px;
@@ -139,15 +146,16 @@
     display: flex;
     justify-content: space-between;
 }
-.section_2_img_childrenp1 .pp{
+
+.section_2_img_childrenp1 .pp {
     font-size: 16px;
     /* padding-left: 40px; */
     padding: 0 20px;
-
     line-height: 16px;
     text-align: center;
 }
-.section_2_img_childrenp2{
+
+.section_2_img_childrenp2 {
     position: absolute;
     top: 344px;
     left: 62px;
@@ -155,20 +163,24 @@
     display: flex;
     justify-content: space-between;
 }
-.section_2_img_childrenp2 .pp{
+
+.section_2_img_childrenp2 .pp {
     font-size: 16px;
     /* padding-left: 40px; */
     padding: 0 20px;
-
     line-height: 16px;
     text-align: center;
 }
+
+
 /* 222222222 */
-.section_2_img_children2{
+
+.section_2_img_children2 {
     position: relative;
     display: none;
 }
-.section_2_img_childrenp3{
+
+.section_2_img_childrenp3 {
     position: absolute;
     top: 162px;
     left: 94px;
@@ -176,27 +188,27 @@
     display: flex;
     justify-content: space-between;
 }
-.section_2_img_childrenp3 .pp{
+
+.section_2_img_childrenp3 .pp {
     font-size: 16px;
     /* padding-left: 40px; */
     padding: 0 20px;
-
     line-height: 16px;
     text-align: center;
 }
-.section_2_img_childrenp4{
+
+.section_2_img_childrenp4 {
     position: absolute;
     top: 344px;
     left: 94px;
     width: 270px;
-
     display: flex;
     justify-content: space-between;
 }
-.section_2_img_childrenp4 .pp{
+
+.section_2_img_childrenp4 .pp {
     font-size: 16px;
     padding: 0 20px;
-
     line-height: 24px;
     text-align: center;
 }
@@ -204,12 +216,12 @@
 
 /* 33333333 */
 
-.section_2_img_children3{
+.section_2_img_children3 {
     position: relative;
     display: none;
 }
 
-.section_2_img_childrenp5{
+.section_2_img_childrenp5 {
     position: absolute;
     top: 162px;
     left: 36px;
@@ -217,31 +229,32 @@
     display: flex;
     justify-content: space-between;
 }
-.section_2_img_childrenp5 .pp{
+
+.section_2_img_childrenp5 .pp {
     font-size: 16px;
     /* padding-left: 40px; */
     padding: 0 20px;
-
     line-height: 16px;
     text-align: center;
 }
-.section_2_img_childrenp6{
+
+.section_2_img_childrenp6 {
     position: absolute;
     top: 344px;
     left: 36px;
     width: 510px;
-
     display: flex;
     justify-content: space-between;
 }
-.section_2_img_childrenp6 .pp{
+
+.section_2_img_childrenp6 .pp {
     font-size: 16px;
     /* padding-left: 40px; */
     padding: 0 20px;
-
     line-height: 16px;
     text-align: center;
 }
+
 .section_2_img>img {
     display: block;
     width: 100%;
@@ -305,44 +318,51 @@
     height: 100%;
 }
 
-.section3_contain_1{
+.section3_contain_1 {
     position: relative;
-}
-.firebpom_p1{
-    position: absolute;
-    left: 50px;
-    top: 296px;
-    font-size: 24px;
-
 }
 
-.section3_contain_2{
-    position: relative;
-}
-.firebpom_p2{
+.firebpom_p1 {
     position: absolute;
     left: 50px;
     top: 296px;
     font-size: 24px;
 }
-.section3_contain_3{
+
+.section3_contain_2 {
     position: relative;
 }
-.firebpom_p3{
+
+.firebpom_p2 {
     position: absolute;
     left: 50px;
     top: 296px;
     font-size: 24px;
 }
-.section3_contain_4{
+
+.section3_contain_3 {
     position: relative;
 }
-.firebpom_p4{
+
+.firebpom_p3 {
     position: absolute;
     left: 50px;
     top: 296px;
     font-size: 24px;
 }
+
+.section3_contain_4 {
+    position: relative;
+}
+
+.firebpom_p4 {
+    position: absolute;
+    left: 50px;
+    top: 296px;
+    font-size: 24px;
+}
+
+
 /* 第四屏 */
 
 .section4 {
@@ -447,8 +467,6 @@
 }
 
 
-
-
 /* 第六屏 */
 
 .section6 {
@@ -498,16 +516,19 @@
     width: 4rem;
     position: relative;
 }
-.section6_img img{
+
+.section6_img img {
     z-index: 88;
 }
-.firebpom_p5{
+
+.firebpom_p5 {
     position: absolute;
     left: 90px;
     top: 414px;
     font-size: 24px;
     z-index: 99;
 }
+
 
 /* 第七屏 */
 
