@@ -389,3 +389,13 @@ p.right {
     /* filter: sepia(30%) saturate(40%) hue-rotate(5deg); */
     transition: transform .5s;
 }
+
+
+/* 首页智慧产品线 */
+.inactive-text{
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
