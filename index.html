@@ -49,12 +49,12 @@
         <!-- <section class="Home_VideoAlert"></section> -->
 
         <!-- 首页智慧产品线模块 -->
-        <section class="Home_Theproductline"></section>
-
-        <!-- 首页新闻资讯模块 -->
         <section class="Home_NewsAndInformation"></section>
 
-        <!-- 首页合作伙伴模块 -->
+        <!-- 行业定制 -->
+        <section class="Home_Theproductline"></section>
+
+        <!-- 专业的无人机系统方案供应商模块 -->
         <section class="Home_Partners"></section>
 
 
@@ -124,6 +124,13 @@
             }
             twoIndex++;
             $('.Home_Theproductline').addClass('vivify popIn')
+        }
+        if (isElementInViewport($('.Home_NewsAndInformation')[0])) {
+            if (twoIndex != 0) {
+                return false;
+            }
+            twoIndex++;
+            $('.Home_NewsAndInformation').addClass('vivify popInLeft')
         }
     })
 
