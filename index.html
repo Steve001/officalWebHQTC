@@ -35,8 +35,11 @@
 
     <!-- 主体内容 -->
     <section class="page" id="app">
-        <!-- 首页视频模块 -->
-        <section class="Home_VideoBox"></section>
+        <!-- 首页开场动画模块 -->
+        <section class="Home_OpeningAnimation"></section>
+
+        <!-- 首页顶部轮播图模块 -->
+        <section class="Home_SwiperBox"></section>
 
         <!-- 滚动分解动画模块 -->
         <!-- <section class="ScrollMagic"></section> -->
@@ -67,15 +70,17 @@
 <script type="text/javascript">
     // 引入头部尾部
     $(function() {
+        $(".Home_OpeningAnimation").load("./components/Home_OpeningAnimation.html");
+        $(".ScrollMagic").load("./components/ScrollMagic.html");
         $(".header").load("./common/header.html");
         $(".footer").load("./common/fooder.html");
-        $(".ScrollMagic").load("./components/ScrollMagic.html");
         $(".Home_Theproductline").load("./components/Home_Theproductline.html");
-        $(".Home_VideoBox").load("./components/Home_VideoBox.html");
+        $(".Home_SwiperBox").load("./components/Home_VideoBox.html");
         $(".Home_Partners").load("./components/Home_Partners.html");
+        $(".Home_NewsAndInformation").load("./components/Home_NewsAndInformation.html");
         $(".Home_RelatedServices").load("./components/Home_RelatedServices.html");
         // $(".Home_VideoAlert").load("./components/Home_VideoAlert.html");
-        $(".Home_NewsAndInformation").load("./components/Home_NewsAndInformation.html");
+
     });
 
 
