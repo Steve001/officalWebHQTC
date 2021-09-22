@@ -7,6 +7,8 @@
     -webkit-user-select: disabled;
     padding: 0;
     margin: 0;
+    /* position: fixed;
+z-index: 9999; */
 }
 
 .out_OpeningAnimation {
@@ -134,12 +136,40 @@
     width: 100%;
     text-align: center;
     margin-top: -6%;
+    -webkit-animation: bounce-down 1.6s linear infinite;
+    animation: bounce-down 1.6s linear infinite
 }
 
 #hero_OpeningAnimation img {
-    width: 82%;
+    width: 100;
     max-width: 1133px;
     margin-top: 100px;
+}
+
+@-webkit-keyframes bounce-down {
+    25% {
+        -webkit-transform: translateY(-6px);
+    }
+    50%,
+    100% {
+        -webkit-transform: translateY(0);
+    }
+    75% {
+        -webkit-transform: translateY(6px);
+    }
+}
+
+@keyframes bounce-down {
+    25% {
+        transform: translateY(-6px);
+    }
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(6px);
+    }
 }
 
 #title_OpeningAnimation {
@@ -149,6 +179,23 @@
     top: 14%;
     text-align: center;
     -webkit-transition: All 1.6s ease-out;
+    color: #fff;
+}
+
+#title_OpeningAnimation>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title_OpeningAnimation>div>span:nth-child(1) {
+    font-size: 30px;
+}
+
+#title_OpeningAnimation>div>span:nth-child(2) {
+    font-size: 120px;
+    display: inline-block;
+    margin-top: 80px;
 }
 
 #title_OpeningAnimation img {

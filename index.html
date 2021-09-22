@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <meta charset="UTF-8" />
@@ -123,6 +124,13 @@
             }
             twoIndex++;
             $('.Home_Theproductline').addClass('vivify popIn')
+        }
+        if (isElementInViewport($('.Home_NewsAndInformation')[0])) {
+            if (twoIndex != 0) {
+                return false;
+            }
+            twoIndex++;
+            $('.Home_NewsAndInformation').addClass('vivify popInLeft')
         }
     })
 
