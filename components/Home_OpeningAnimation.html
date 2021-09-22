@@ -28,15 +28,36 @@
 <script type="text/javascript" src="https://vncdn.mobi88.cn/public/jquery-2.1.3.min.js"></script>
 <script src="../js/retina.min.js"></script>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
 
         startdelay = 300; //全局动画开始时间
         coredelay = 400; //炫光消失时间
         maindelay = 1300; //主体内容出现时间
-        setTimeout("$('#ringgroup_OpeningAnimation').addClass('pass');$('#light_OpeningAnimation').addClass('pass');$('#core_OpeningAnimation').addClass('pass');", startdelay);
-        setTimeout("$('#light_OpeningAnimation').addClass('passed');$('#wave_OpeningAnimation').addClass('pass');", startdelay + coredelay);
+        let a = setTimeout("$('#ringgroup_OpeningAnimation').addClass('pass');$('#light_OpeningAnimation').addClass('pass');$('#core_OpeningAnimation').addClass('pass');", startdelay);
+        let b = setTimeout("$('#light_OpeningAnimation').addClass('passed');$('#wave_OpeningAnimation').addClass('pass');", startdelay + coredelay);
         // setTimeout("$('body').removeClass('out').addClass('in')", startdelay + coredelay + maindelay);
-        setTimeout("$('#stage_OpeningAnimation,#additional_OpeningAnimation,#title_OpeningAnimation').css('cssText','opacity: 1 !important;-webkit-transform: translateZ(0px) rotateY(0) rotateX(0) !important;');", startdelay + coredelay + maindelay);
+        let c = setTimeout("$('#stage_OpeningAnimation,#additional_OpeningAnimation,#title_OpeningAnimation').css('cssText','opacity: 1 !important;-webkit-transform: translateZ(0px) rotateY(0) rotateX(0) !important;');", startdelay + coredelay + maindelay);
         // setTimeout("$('#additional_OpeningAnimation').css('cssText','opacity: 1 !important;-webkit-transform: translateZ(0px) rotateY(0) rotateX(0) !important;');", startdelay + coredelay + maindelay);
+
+        function getScrollTop() {
+            var scrollTop = 0;
+            if (document.documentElement && document.documentElement.scrollTop) {
+                scrollTop = document.documentElement.scrollTop;
+            } else if (document.body) {
+                scrollTop = document.body.scrollTop;
+            }
+            return scrollTop;
+        }
+        let ret = getScrollTop();
+        console.log(ret);
+        if (ret > 937) {
+            
+            clearTimeout(a)
+            clearTimeout(b)
+            clearTimeout(c)
+            console.log('yes');
+        }
     });
+
+
 </script>
