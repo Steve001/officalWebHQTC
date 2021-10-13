@@ -82,6 +82,31 @@
         $(".Home_RelatedServices").load("./components/Home_RelatedServices.html");
         // $(".Home_VideoAlert").load("./components/Home_VideoAlert.html");
 
+
+        function IsPC() {
+            var userAgentInfo = navigator.userAgent;
+            var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"
+            ];
+            var flag = true;
+            for (var v = 0; v < Agents.length; v++) {
+                if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                    flag = false;
+                    break;
+                }
+            }
+            return flag;
+        }
+
+        var flag = IsPC();
+        if (flag === true) {
+            console.log("pc端");
+            //写pc端js代码
+        } else {
+            console.log("移动端");
+            //写移动端js代码
+        }
     });
 
 
@@ -125,13 +150,13 @@
             twoIndex++;
             $('.Home_Theproductline').addClass('vivify popIn')
         }
-        if (isElementInViewport($('.Home_NewsAndInformation')[0])) {
-            if (twoIndex != 0) {
-                return false;
-            }
-            twoIndex++;
-            $('.Home_NewsAndInformation').addClass('vivify popInLeft')
-        }
+        // if (isElementInViewport($('.Home_NewsAndInformation')[0])) {
+        //     if (twoIndex != 0) {
+        //         return false;
+        //     }
+        //     twoIndex++;
+        //     $('.Home_NewsAndInformation').addClass('vivify popInLeft')
+        // }
     })
 
     function isElementInViewport(el) {
