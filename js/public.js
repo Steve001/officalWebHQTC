@@ -136,9 +136,7 @@ suchenFn.prototype = {
             return val;
         }
     },
-    /**
-     * 	閽堝瀹夊崜鐢ㄦ埛鐢ㄦ埛淇敼鎵嬫満绯荤粺瀛椾綋澶у皬闂澶勭悊
-     */
+    
     adminFont: function() {
         var win = window;
         var lib = window['lib'] || (window['lib'] = {})
@@ -158,11 +156,35 @@ suchenFn.prototype = {
             flexible.rem = win.rem = showREM;
         }
     },
+	IsPC:function() {
+	    var userAgentInfo = navigator.userAgent;
+	    var Agents = ["Android", "iPhone",
+	        "SymbianOS", "Windows Phone",
+	        "iPad", "iPod"
+	    ];
+	    var flag = true;
+	    for (var v = 0; v < Agents.length; v++) {
+	        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+	            flag = false;
+	            break;
+	        }
+	    }
+	    return flag;
+	},
+	resizeISMobile:function () {
+	    var flag = publicFn.IsPC();
+	    if (flag === true) {
+	        console.log("pc端");
+	    } else {
+	        console.log("移动端");
+			window.location.href = 'https://www.hqtcsz.cn/mobile';
+	    }
+	}
 }
 
 
-//浠ヤ笂鎻掍欢椤哄簭涓嶈兘涔�
-//榛樿寮曠敤璧勬簮
+
 var publicFn = new suchenFn();
 publicFn.rem();
 publicFn.adminFont();
+publicFn.resizeISMobile();

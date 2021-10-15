@@ -43,7 +43,7 @@
         <section class="Home_SwiperBox"></section>
 
         <!-- 滚动分解动画模块 -->
-        <section class="ScrollMagic"></section>
+        <!-- <section class="ScrollMagic"></section> -->
 
         <!-- 首页视频弹出播放模块 -->
         <!-- <section class="Home_VideoAlert"></section> -->
@@ -78,35 +78,10 @@
         $(".Home_Theproductline").load("./components/Home_Theproductline.html");
         $(".Home_SwiperBox").load("./components/Home_VideoBox.html");
         $(".Home_Partners").load("./components/Home_Partners.html");
-        $(".Home_NewsAndInformation").load("./components/Home_NewsAndInformation.html");
+        // $(".Home_NewsAndInformation").load("./components/Home_NewsAndInformation.html");
         $(".Home_RelatedServices").load("./components/Home_RelatedServices.html");
         // $(".Home_VideoAlert").load("./components/Home_VideoAlert.html");
 
-
-        function IsPC() {
-            var userAgentInfo = navigator.userAgent;
-            var Agents = ["Android", "iPhone",
-                "SymbianOS", "Windows Phone",
-                "iPad", "iPod"
-            ];
-            var flag = true;
-            for (var v = 0; v < Agents.length; v++) {
-                if (userAgentInfo.indexOf(Agents[v]) > 0) {
-                    flag = false;
-                    break;
-                }
-            }
-            return flag;
-        }
-
-        var flag = IsPC();
-        if (flag === true) {
-            console.log("pc端");
-            //写pc端js代码
-        } else {
-            console.log("移动端");
-            //写移动端js代码
-        }
     });
 
 

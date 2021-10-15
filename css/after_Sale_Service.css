@@ -2,7 +2,7 @@
 .banner{
     height: 2rem;
 background-color: #333333;
-padding-top: 2rem;
+padding-top: 1rem;
 text-align: center;
 }
 .banner>h1{
