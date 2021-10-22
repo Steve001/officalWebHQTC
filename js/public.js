@@ -177,7 +177,7 @@ suchenFn.prototype = {
 	        console.log("pc端");
 	    } else {
 	        console.log("移动端");
-			window.location.href = 'https://www.hqtcsz.cn/mobile';
+			window.location.href = 'https://www.hqtcsz.cn/hqtcsz_mobile/';
 	    }
 	}
 }
