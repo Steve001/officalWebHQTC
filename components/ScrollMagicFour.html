@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>4</title>
     <link rel="stylesheet" href="../css/reset.css">
@@ -29,34 +28,30 @@
             <div class="fvhdd dd4"></div>
             <div class="fvhdd dd5"></div>
             <div class="fvhdd dd6"></div>
-            <div class="fvhdd dd7"></div>
-            <div class="fvhdd dd8"></div>
-            <div class="fvhdd dd9"></div>
-            <div class="fvhdd dd10"></div>
 
         </div>
-        <div class="box2"></div>
+        <!-- <div class="box2"></div> -->
     </div>
     <script src="/js/lazy.js"></script>
     <script>
-        $(function () {
+        $(function() {
             let Box = document.getElementsByClassName('dd-wrap')[0];
             var controllerdd = new ScrollMagic.Controller();
 
             // var sense1Duration = 950
-            var sense1Duration = 900
+            var sense1Duration = 500
             var sense2 = new ScrollMagic.Scene({
-                triggerElement: '.dd2',
-                triggerHook: 0,
-                offset: 0,
+                    triggerElement: '.dd2',
+                    triggerHook: 0,
+                    offset: 0,
 
-                duration: (sense1Duration - 100) + '%'
-            })
+                    duration: (sense1Duration - 100) + '%'
+                })
                 .setPin('.dd2', {
                     pushFollowers: false
                 })
 
-                .addTo(controllerdd)
+            .addTo(controllerdd)
             for (let i = 212; i < 220; i++) {
 
                 Box.innerHTML += `<div><img src="./images/${i}.jpg" alt=""></div>`
@@ -64,8 +59,7 @@
 
             for (let i = 221; i < 250; i++) {
                 Box.innerHTML += `<div><img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_mobile/img_loading.gif" data-src="./images/${i}.jpg" alt=""></div>`
-            }
-            ! function () {
+            }! function() {
                 var items = document.querySelector('.dd2 .dd-wrap').children;
                 items = Array.from(items)
                 new TimelineMax().set(items.slice(1), {
@@ -94,11 +88,11 @@
 
 
                     var sense2Content = new ScrollMagic.Scene({
-                        triggerElement: '.dd2',
-                        triggerHook: 0,
-                        offset: 0,
-                        duration: (sense1Duration - 100) + '%'
-                    })
+                            triggerElement: '.dd2',
+                            triggerHook: 0,
+                            offset: 0,
+                            duration: (sense1Duration - 100) + '%'
+                        })
                         .setTween(itemsTimeline)
                         .addTo(controllerdd)
                 })

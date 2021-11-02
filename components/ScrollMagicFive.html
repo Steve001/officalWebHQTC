@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>5</title>
     <link rel="stylesheet" href="../css/reset.css">
@@ -29,34 +28,30 @@
             <div class="fvhee ee4"></div>
             <div class="fvhee ee5"></div>
             <div class="fvhee ee6"></div>
-            <div class="fvhee ee7"></div>
-            <div class="fvhee ee8"></div>
-            <div class="fvhee ee9"></div>
-            <div class="fvhee ee10"></div>
 
         </div>
-        <div class="box2"></div>
+        <!-- <div class="box2"></div> -->
     </div>
     <script src="/js/lazy.js"></script>
     <script>
-        $(function () {
+        $(function() {
             let Box = document.getElementsByClassName('ee-wrap')[0];
             var controlleree = new ScrollMagic.Controller();
 
             // var sense1Duration = 950
-            var sense1Duration = 900
+            var sense1Duration = 500
             var sense2 = new ScrollMagic.Scene({
-                triggerElement: '.ee2',
-                triggerHook: 0,
-                offset: 0,
+                    triggerElement: '.ee2',
+                    triggerHook: 0,
+                    offset: 0,
 
-                duration: (sense1Duration - 100) + '%'
-            })
+                    duration: (sense1Duration - 100) + '%'
+                })
                 .setPin('.ee2', {
                     pushFollowers: false
                 })
 
-                .addTo(controlleree)
+            .addTo(controlleree)
             for (let i = 251; i < 259; i++) {
 
                 Box.innerHTML += `<div><img src="./images/${i}.jpg" alt=""></div>`
@@ -64,8 +59,7 @@
 
             for (let i = 260; i < 280; i++) {
                 Box.innerHTML += `<div><img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_mobile/img_loading.gif" data-src="./images/${i}.jpg" alt=""></div>`
-            }
-            ! function () {
+            }! function() {
                 var items = document.querySelector('.ee2 .ee-wrap').children;
                 items = Array.from(items)
                 new TimelineMax().set(items.slice(1), {
@@ -94,11 +88,11 @@
 
 
                     var sense2Content = new ScrollMagic.Scene({
-                        triggerElement: '.ee2',
-                        triggerHook: 0,
-                        offset: 0,
-                        duration: (sense1Duration - 100) + '%'
-                    })
+                            triggerElement: '.ee2',
+                            triggerHook: 0,
+                            offset: 0,
+                            duration: (sense1Duration - 100) + '%'
+                        })
                         .setTween(itemsTimeline)
                         .addTo(controlleree)
                 })

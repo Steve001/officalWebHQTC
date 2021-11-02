@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>1</title>
     <link rel="stylesheet" href="../css/reset.css">
@@ -19,7 +18,7 @@
 
 <body>
     <div class="box">
-        <div class="box3"></div>
+        <!-- <div class="box3"></div> -->
         <div class="hh">
             <div class="market"></div>
             <div class="fvh section2">
@@ -30,33 +29,29 @@
             <div class="fvh section4"></div>
             <div class="fvh section5"></div>
             <div class="fvh section6"></div>
-            <div class="fvh section7"></div>
-            <div class="fvh section8"></div>
-            <div class="fvh section9"></div>
-            <div class="fvh section10"></div>
         </div>
-        <div class="box2"></div>
+        <!-- <div class="box2"></div> -->
     </div>
     <script src="/js/lazy.js"></script>
     <script>
-        $(function () {
+        $(function() {
             let Box = document.getElementsByClassName('texts-wrap')[0];
             var controller = new ScrollMagic.Controller();
 
             // var sense1Duration = 950
-            var sense1Duration = 900
+            var sense1Duration = 500
             var sense2 = new ScrollMagic.Scene({
-                triggerElement: '.section2',
-                triggerHook: 0,
-                offset: 0,
+                    triggerElement: '.section2',
+                    triggerHook: 0,
+                    offset: 0,
 
-                duration: (sense1Duration - 100) + '%'
-            })
+                    duration: (sense1Duration - 100) + '%'
+                })
                 .setPin('.section2', {
                     pushFollowers: false
                 })
 
-                .addTo(controller)
+            .addTo(controller)
             for (let i = 1; i < 8; i++) {
 
                 Box.innerHTML += `<div><img src="./images/${i}.jpg" alt=""></div>`
@@ -64,8 +59,7 @@
 
             for (let i = 9; i < 39; i++) {
                 Box.innerHTML += `<div><img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_mobile/img_loading.gif" data-src="./images/${i}.jpg" alt=""></div>`
-            }
-            ! function () {
+            }! function() {
                 var items = document.querySelector('.section2 .texts-wrap').children;
                 items = Array.from(items)
                 new TimelineMax().set(items.slice(1), {
@@ -96,11 +90,11 @@
 
 
                     var sense2Content = new ScrollMagic.Scene({
-                        triggerElement: '.section2',
-                        triggerHook: 0,
-                        offset: 0,
-                        duration: (sense1Duration - 100) + '%'
-                    })
+                            triggerElement: '.section2',
+                            triggerHook: 0,
+                            offset: 0,
+                            duration: (sense1Duration - 100) + '%'
+                        })
                         .setTween(itemsTimeline)
                         .addTo(controller)
                 })
