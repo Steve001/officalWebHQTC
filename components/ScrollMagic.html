@@ -72,10 +72,11 @@
             })
                 .setPin('.section2', {
                     pushFollowers: false
+                    // pushFollowers: true
                 })
 
                 .addTo(controller)
-            for (let i = 1; i < 8; i++) {
+            for (let i = 1; i < 10; i++) {
                 // Box.innerHTML += `<div><img src="./images/${i}.jpg" alt=""></div>`
                 // src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_mobile/img_loading.gif"
                 // data-src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge8_liner.jpg"
@@ -83,7 +84,7 @@
 
             }
 
-            for (let i = 8; i < 440; i++) {
+            for (let i = 11; i < 440; i++) {
                 // for (let i = 8; i < 80; i++) {
                 // Box.innerHTML += `<div><img src="./images/${i}.jpg" alt=""></div>`
                 // src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_mobile/img_loading.gif"
@@ -104,7 +105,7 @@
                     itemsTimeline
                         .to(v, 0.9, {
                             yPercent: 1,
-                            autoAlpha: 1,
+                            autoAlpha: 0,
                             ease: Power4.easeOut,
                             delay: 1000, //延迟1秒，接续前一个动画
                         })
@@ -113,7 +114,7 @@
                     if (i !== items.length - 1) {
                         itemsTimeline.to(v, 1 / 2, {
                             yPercent: 1,
-                            autoAlpha: 0.9,
+                            autoAlpha: 1,
                             ease: Power2.easeInOut,
                             delay: 1000, //延迟1秒，接续前一个动画
                         })
@@ -122,8 +123,8 @@
 
                     var sense2Content = new ScrollMagic.Scene({
                         triggerElement: '.section2',
-                        triggerHook: 0,
-                        offset: 0,
+                        triggerHook: 1,
+                        offset: 1,
                         duration: (sense1Duration - 100) + '%'
                     })
                         .setTween(itemsTimeline)
