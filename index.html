@@ -53,7 +53,7 @@
         <!-- <section class="Home_NewsAndInformation"></section> -->
 
         <!-- 行业定制 -->
-        <section class="Home_Theproductline"></section>
+        <!-- <section class="Home_Theproductline"></section> -->
 
         <!-- 专业的无人机系统方案供应商模块 -->
         <section class="Home_Partners"></section>
@@ -76,12 +76,12 @@
         $(".ScrollMagic").load("./components/ScrollMagic.html");
         $(".header").load("./common/header.html");
         $(".footer").load("./common/fooder.html");
-        $(".Home_Theproductline").load("./components/Home_Theproductline.html");
+        // $(".Home_Theproductline").load("./components/Home_Theproductline.html");
         $(".Home_SwiperBox").load("./components/Home_VideoBox.html");
-        $(".Home_Partners").load("./components/Home_Partners.html");
+        // $(".Home_Partners").load("./components/Home_Partners.html");
         // $(".Home_NewsAndInformation").load("./components/Home_NewsAndInformation.html");
-        $(".Home_RelatedServices").load("./components/Home_RelatedServices.html");
-        $(".Home_VideoAlert").load("./components/Home_VideoAlert.html");
+        // $(".Home_RelatedServices").load("./components/Home_RelatedServices.html");
+        // $(".Home_VideoAlert").load("./components/Home_VideoAlert.html");
 
     });
 
@@ -97,35 +97,35 @@
 
 
     // 视频显示隐藏弹窗事件
-    function showVideo() {
-        $('.Home_VideoAlert').fadeIn()
-    }
+    // function showVideo() {
+    //     $('.Home_VideoAlert').fadeIn()
+    // }
 
-    function hideVideo() {
-        $('.Home_VideoAlert').fadeOut()
-    }
-    let oneIndex = 0;
-    let twoIndex = 0;
-    let threeIndex = 0;
-    $(window).on('scroll', function () {
-        let DomeOne = $('.Home_Partners')[0];
-        let DomeTwo = $('.Home_Theproductline')[0];
-        if (isElementInViewport(DomeOne)) {
-            if (oneIndex != 0) {
-                return false;
-            }
-            oneIndex++;
-            $('#partnersTitle').addClass('vivify popIn')
-            $('.partnersChildren').addClass('vivify popInLeft')
-            $('.partnersChildrenTwo').addClass('vivify popInRight')
-        }
-        if (isElementInViewport(DomeTwo)) {
-            if (twoIndex != 0) {
-                return false;
-            }
-            twoIndex++;
-            $('.Home_Theproductline').addClass('vivify popIn')
-        }
+    // function hideVideo() {
+    //     $('.Home_VideoAlert').fadeOut()
+    // }
+    // let oneIndex = 0;
+    // let twoIndex = 0;
+    // let threeIndex = 0;
+    // $(window).on('scroll', function () {
+    //     let DomeOne = $('.Home_Partners')[0];
+    //     let DomeTwo = $('.Home_Theproductline')[0];
+    //     if (isElementInViewport(DomeOne)) {
+    //         if (oneIndex != 0) {
+    //             return false;
+    //         }
+    //         oneIndex++;
+    //         $('#partnersTitle').addClass('vivify popIn')
+    //         $('.partnersChildren').addClass('vivify popInLeft')
+    //         $('.partnersChildrenTwo').addClass('vivify popInRight')
+    //     }
+    //     if (isElementInViewport(DomeTwo)) {
+    //         if (twoIndex != 0) {
+    //             return false;
+    //         }
+    //         twoIndex++;
+    //         $('.Home_Theproductline').addClass('vivify popIn')
+    //     }
         // if (isElementInViewport($('.Home_NewsAndInformation')[0])) {
         //     if (twoIndex != 0) {
         //         return false;
@@ -133,16 +133,16 @@
         //     twoIndex++;
         //     $('.Home_NewsAndInformation').addClass('vivify popInLeft')
         // }
-    })
+    // })
 
-    function isElementInViewport(el) {
-        //获取元素是否在可视区域
-        var clientHeight = window.innerHeight;
-        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        var offsetTop = el.offsetTop;
-        var objHeight = el.offsetHeight;
-        if (offsetTop < scrollTop + clientHeight && offsetTop + objHeight > scrollTop) {
-            return true;
-        }
-    }
+    // function isElementInViewport(el) {
+    //     //获取元素是否在可视区域
+    //     var clientHeight = window.innerHeight;
+    //     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    //     var offsetTop = el.offsetTop;
+    //     var objHeight = el.offsetHeight;
+    //     if (offsetTop < scrollTop + clientHeight && offsetTop + objHeight > scrollTop) {
+    //         return true;
+    //     }
+    // }
 </script>

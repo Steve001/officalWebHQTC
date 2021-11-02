@@ -1,13 +1,11 @@
 body,html{
     margin: 0;
+    -webkit-overflow-scrolling: touch;
 }
-/* body::-webkit-scrollbar{
-    display: none;
-} */
 .box{
     overflow: hidden;
 }
-.box1{
+.box3{
     background-color: red;
     height: 400px;
 }
