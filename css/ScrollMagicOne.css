@@ -2,7 +2,7 @@ body,html{
     margin: 0;
     -webkit-overflow-scrolling: touch;
 }
-.boxaa,.boxbb,.boxcc,.boxdd,.boxee{
+.boxaa,.boxbb,.boxcc,.boxdd,.boxee,.boxff{
     overflow: hidden;
 }
 .box3{
@@ -29,13 +29,13 @@ body,html{
     z-index: 99;
 } */
 
-.fvhaa,.fvhbb,.fvhcc,.fvhdd,.fvhee {
+.fvhaa,.fvhbb,.fvhcc,.fvhdd,.fvhee,.fvhff {
     position: relative;
     height: 100vh;
     /* z-index: 88; */
 }
 
-.aa2,.bb2,.cc2,.dd2,.ee2 {
+.aa2,.bb2,.cc2,.dd2,.ee2,.ff2 {
     /* border: 2px solid red; */
     display: flex;
     align-items: center;
@@ -47,7 +47,7 @@ body,html{
     /* padding-left: 384px; */
 }
 
-.aa2 .aa-wrap,.bb2 .bb-wrap,.cc2 .cc-wrap,.dd2 .dd-wrap,.ee2 .ee-wrap{
+.aa2 .aa-wrap,.bb2 .bb-wrap,.cc2 .cc-wrap,.dd2 .dd-wrap,.ee2 .ee-wrap,.ff2 .ff-wrap{
     /* width: 1000px; */
     /* height: 600px; */
     /* height: 900px; */
@@ -57,7 +57,7 @@ body,html{
     text-align: center;
     /* z-index: 88; */
 }
-.aa2 .aa-wrap div,.bb2 .bb-wrap div,.cc2 .cc-wrap div,.dd2 .dd-wrap div,.ee2 .ee-wrap div{
+.aa2 .aa-wrap div,.bb2 .bb-wrap div,.cc2 .cc-wrap div,.dd2 .dd-wrap div,.ee2 .ee-wrap div,.ff2 .ff-wrap div{
     /* margin: 0; */
     font-size: 50px;
     font-weight: lighter;

@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/vivify.min.css" />
-    <link rel="stylesheet" href="css/Home_OpeningAnimation.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
     <link rel="stylesheet" href="css/style.css">
@@ -38,21 +37,23 @@
 
     <!-- 主体内容 -->
     <section class="page" id="app">
-        <!-- 首页开场动画模块 -->
-        <!-- <section class="Home_OpeningAnimation"></section> -->
+
+        <!-- 滚动分解动画模块 -->
+        <section class="Home_TopBox"></section>
 
         <!-- 首页视频弹出播放模块 -->
         <!-- <section class="Home_VideoAlert"></section> -->
         <!-- 首页顶部轮播图模块 -->
-        <section class="Home_SwiperBox"></section>
+        <!-- <section class="Home_SwiperBox"></section> -->
 
         <!-- 滚动分解动画模块 -->
         <!-- <section class="ScrollMagic"></section> -->
-        <!-- <section class="ScrollMagicOne"></section>
+        <section class="ScrollMagicOne"></section>
         <section class="ScrollMagicTwo"></section>
         <section class="ScrollMagicThree"></section>
         <section class="ScrollMagicFour"></section>
-        <section class="ScrollMagicFive"></section> -->
+        <section class="ScrollMagicFive"></section>
+        <section class="ScrollMagicSix"></section>
         <!-- 首页智慧产品线模块 -->
         <!-- <section class="Home_NewsAndInformation"></section> -->
 
@@ -76,13 +77,14 @@
 <script type="text/javascript">
     // 引入头部尾部
     $(function () {
-        $(".Home_OpeningAnimation").load("./components/Home_OpeningAnimation.html");
+        $(".Home_TopBox").load("./components/topBox.html");
         $(".ScrollMagic").load("./components/ScrollMagic.html");
         $(".ScrollMagicOne").load("./components/ScrollMagicOne.html");
         $(".ScrollMagicTwo").load("./components/ScrollMagicTwo.html");
         $(".ScrollMagicThree").load("./components/ScrollMagicThree.html");
         $(".ScrollMagicFour").load("./components/ScrollMagicFour.html");
         $(".ScrollMagicFive").load("./components/ScrollMagicFive.html");
+        $(".ScrollMagicSix").load("./components/ScrollMagicSix.html");
         $(".header").load("./common/header.html");
         $(".footer").load("./common/fooder.html");
         // $(".Home_Theproductline").load("./components/Home_Theproductline.html");
@@ -91,6 +93,8 @@
         // $(".Home_NewsAndInformation").load("./components/Home_NewsAndInformation.html");
         // $(".Home_RelatedServices").load("./components/Home_RelatedServices.html");
         // $(".Home_VideoAlert").load("./components/Home_VideoAlert.html");
+        $(".Home_Theproductline").load("./components/Home_Theproductline.html");
+        $(".Home_VideoAlert").load("./components/Home_VideoAlert.html");
 
     });
 
@@ -106,42 +110,49 @@
 
 
     // 视频显示隐藏弹窗事件
-    // function showVideo() {
-    //     $('.Home_VideoAlert').fadeIn()
-    // }
+    function showVideo() {
+        $('.Home_VideoAlert').fadeIn()
+    }
 
-    // function hideVideo() {
-    //     $('.Home_VideoAlert').fadeOut()
+    function hideVideo() {
+        $('.Home_VideoAlert').fadeOut()
+    }
+    setTimeout(() => {
+        $('.title_Name')[0].style.transition = "all 3s";
+        $('.title_Name')[0].style.opacity = 1;
+        $('.clickViedo_Box')[0].style.transition = "all 3s";
+        $('.clickViedo_Box')[0].style.opacity = 1;
+    }, 3500)
+
+    let oneIndex = 0;
+    let twoIndex = 0;
+    let threeIndex = 0;
+    // $(window).on('scroll', function() {
+    // let DomeOne = $('.Home_Partners')[0];
+    // let DomeTwo = $('.Home_Theproductline')[0];
+    // if (isElementInViewport(DomeOne)) {
+    //     if (oneIndex != 0) {
+    //         return false;
+    //     }
+    //     oneIndex++;
+    //     $('#partnersTitle').addClass('vivify popIn')
+    //     $('.partnersChildren').addClass('vivify popInLeft')
+    //     $('.partnersChildrenTwo').addClass('vivify popInRight')
     // }
-    // let oneIndex = 0;
-    // let twoIndex = 0;
-    // let threeIndex = 0;
-    // $(window).on('scroll', function () {
-    //     let DomeOne = $('.Home_Partners')[0];
-    //     let DomeTwo = $('.Home_Theproductline')[0];
-    //     if (isElementInViewport(DomeOne)) {
-    //         if (oneIndex != 0) {
-    //             return false;
-    //         }
-    //         oneIndex++;
-    //         $('#partnersTitle').addClass('vivify popIn')
-    //         $('.partnersChildren').addClass('vivify popInLeft')
-    //         $('.partnersChildrenTwo').addClass('vivify popInRight')
+    // if (isElementInViewport(DomeTwo)) {
+    //     if (twoIndex != 0) {
+    //         return false;
     //     }
-    //     if (isElementInViewport(DomeTwo)) {
-    //         if (twoIndex != 0) {
-    //             return false;
-    //         }
-    //         twoIndex++;
-    //         $('.Home_Theproductline').addClass('vivify popIn')
+    //     twoIndex++;
+    //     $('.Home_Theproductline').addClass('vivify popIn')
+    // }
+    // if (isElementInViewport($('.Home_NewsAndInformation')[0])) {
+    //     if (twoIndex != 0) {
+    //         return false;
     //     }
-        // if (isElementInViewport($('.Home_NewsAndInformation')[0])) {
-        //     if (twoIndex != 0) {
-        //         return false;
-        //     }
-        //     twoIndex++;
-        //     $('.Home_NewsAndInformation').addClass('vivify popInLeft')
-        // }
+    //     twoIndex++;
+    //     $('.Home_NewsAndInformation').addClass('vivify popInLeft')
+    // }
     // })
 
     // function isElementInViewport(el) {
