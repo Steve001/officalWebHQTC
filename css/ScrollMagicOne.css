@@ -2,7 +2,7 @@ body,html{
     margin: 0;
     -webkit-overflow-scrolling: touch;
 }
-.box{
+.boxaa,.boxbb,.boxcc,.boxdd,.boxee{
     overflow: hidden;
 }
 .box3{
@@ -29,13 +29,13 @@ body,html{
     z-index: 99;
 } */
 
-.fvh {
+.fvhaa,.fvhbb,.fvhcc,.fvhdd,.fvhee {
     position: relative;
     height: 100vh;
     /* z-index: 88; */
 }
 
-.section2 {
+.aa2,.bb2,.cc2,.dd2,.ee2 {
     /* border: 2px solid red; */
     display: flex;
     align-items: center;
@@ -47,7 +47,7 @@ body,html{
     /* padding-left: 384px; */
 }
 
-.section2 .texts-wrap{
+.aa2 .aa-wrap,.bb2 .bb-wrap,.cc2 .cc-wrap,.dd2 .dd-wrap,.ee2 .ee-wrap{
     /* width: 1000px; */
     /* height: 600px; */
     /* height: 900px; */
@@ -57,7 +57,7 @@ body,html{
     text-align: center;
     /* z-index: 88; */
 }
-.section2 .texts-wrap div{
+.aa2 .aa-wrap div,.bb2 .bb-wrap div,.cc2 .cc-wrap div,.dd2 .dd-wrap div,.ee2 .ee-wrap div{
     /* margin: 0; */
     font-size: 50px;
     font-weight: lighter;
@@ -73,7 +73,7 @@ body,html{
 
 
 
-.section2 .texts-wrap img{
+.aa2 .aa-wrap img{
     width: 100%;
     height: 100%;
     display: block;
