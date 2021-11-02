@@ -3,27 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Demo1</title>
-    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
-    <!-- <link rel="stylesheet" href="../css/public.css"> -->
-    <script src="js/TweenMax.min.js"></script>
-    <script src="js/TimelineMax.min.js"></script>
-    <script src="js/ScrollMagic.min.js"></script>
-    <script src="js/animation.gsap.min.js"></script>
+    <title>ScrollMagic</title>
+
     <link rel="stylesheet" href="css/ScrollMagic.css">
-    <script type="text/javascript" src="https://vncdn.mobi88.cn/public/jquery-2.1.3.min.js"></script>
+
 </head>
 
 <body>
     <div class="box">
-        <!-- <div class="box1"></div> -->
         <div class="hh">
             <div class="market"></div>
             <div class="fvh section2">
-                <div class="texts-wrap"></div>
+                <div class="texts-wrap" id="texts-wrap"></div>
                 <span class="textwrap_info"></span>
             </div>
             <div class="fvh section3"></div>
@@ -45,55 +38,44 @@
             <div class="fvh section19"></div>
             <div class="fvh section20"></div>
             <div class="fvh section21"></div>
-            <!-- <div class="title-1">
-                <h2>哈哈</h2>
-                <p>假如爱有天意，何事秋风悲画扇</p>
-            </div>
-            <div class="title-2">
-                <h2>hello world</h2>
-                <p>众里寻他千百度，慕然回首，那人却在灯火阑珊处</p>
-            </div> -->
+            <div class="fvh section22"></div>
+            <div class="fvh section23"></div>
         </div>
-        <div class="box2"></div>
     </div>
-    <script src="/js/lazy.js"></script>
+    <script type="text/javascript" src="https://vncdn.mobi88.cn/public/jquery-2.1.3.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/TimelineMax.min.js"></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <script src="js/animation.gsap.min.js"></script>
+    <script src="/js/jquery.ImgLazyLoad.min.js"></script>
     <script>
-        $(function () {
+        $(function() {
             let Box = document.getElementsByClassName('texts-wrap')[0];
             var controller = new ScrollMagic.Controller();
 
-            // var sense1Duration = 950
-            var sense1Duration = 2000
+            var sense1Duration = 2200
             var sense2 = new ScrollMagic.Scene({
-                triggerElement: '.section2',
-                triggerHook: 0,
-                offset: 0,
-
-                duration: (sense1Duration - 100) + '%'
-            })
+                    triggerElement: '.section2',
+                    triggerHook: 0,
+                    offset: 0,
+                    duration: (sense1Duration - 100) + '%'
+                })
                 .setPin('.section2', {
                     pushFollowers: false
                 })
 
-                .addTo(controller)
-            for (let i = 1; i < 8; i++) {
-                // Box.innerHTML += `<div><img src="./images/${i}.jpg" alt=""></div>`
-                // src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_mobile/img_loading.gif"
-                // data-src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge8_liner.jpg"
-                Box.innerHTML += `<div><img src="./images/${i}.jpg" alt=""></div>`
+            .addTo(controller)
 
+            for (let i = 1; i < 440; i++) {
+                Box.innerHTML += `<div><img data-src="./images/${i}.jpg" class="loading" alt=""></div>`
             }
 
-            for (let i = 8; i < 440; i++) {
-                // Box.innerHTML += `<div><img src="./images/${i}.jpg" alt=""></div>`
-                // src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_mobile/img_loading.gif"
-                // data-src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge8_liner.jpg"
-                Box.innerHTML += `<div><img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_mobile/img_loading.gif" data-src="./images/${i}.jpg" alt=""></div>`
-            }
-            ! function () {
+            ! function() {
                 var items = document.querySelector('.section2 .texts-wrap').children;
                 items = Array.from(items)
-                new TimelineMax().set(items.slice(1), {
+
+                new TimelineMax().set(items.slice(2), {
                     yPercent: 1,
                     autoAlpha: 0
                 })
@@ -102,11 +84,11 @@
 
                 items.forEach((v, i) => {
                     itemsTimeline
-                        .to(v, 0.9, {
+                        .to(v, 1, {
                             yPercent: 1,
                             autoAlpha: 1,
                             ease: Power4.easeOut,
-                            delay: 5000, //延迟1秒，接续前一个动画
+                            delay: 1000, //延迟1秒，接续前一个动画
                         })
                         .to(v, 1, {})
 
@@ -115,36 +97,51 @@
                             yPercent: 1,
                             autoAlpha: 1,
                             ease: Power2.easeInOut,
-                            delay: 5000, //延迟1秒，接续前一个动画
+                            delay: 1000, //延迟1秒，接续前一个动画
                         })
                     }
 
 
                     var sense2Content = new ScrollMagic.Scene({
-                        triggerElement: '.section2',
-                        triggerHook: 0,
-                        offset: 0,
-                        duration: (sense1Duration - 100) + '%'
-                    })
+                            triggerElement: '.section2',
+                            triggerHook: 0,
+                            offset: 0,
+                            duration: (sense1Duration - 100) + '%'
+                        })
                         .setTween(itemsTimeline)
 
-                        .addTo(controller)
+                    .addTo(controller)
                 })
             }()
-
             window.addEventListener('scroll', (e) => {
-                console.log(document.documentElement.scrollTop)
+                // console.log(document.documentElement.scrollTop)
                 if (document.documentElement.scrollTop > 2000 && document.documentElement.scrollTop < 3000) {
                     $('.textwrap_info')[0].innerText = '德玛西亚万岁';
                     $('.textwrap_info')[0].style.opacity = '1';
-                } else if (document.documentElement.scrollTop > 5000 && document.documentElement.scrollTop < 6000) {
+                } else if (document.documentElement.scrollTop > 4000 && document.documentElement.scrollTop <
+                    5000) {
                     $('.textwrap_info')[0].innerText = '断剑重铸之日，骑士归来之时';
+                    $('.textwrap_info')[0].style.opacity = '1';
+                } else if (document.documentElement.scrollTop > 6000 && document.documentElement.scrollTop <
+                    7000) {
+                    $('.textwrap_info')[0].innerText = '我的大刀早已饥渴难耐了';
                     $('.textwrap_info')[0].style.opacity = '1';
                 } else {
                     $('.textwrap_info')[0].style.opacity = '0'
                 }
-
             })
+
+            var imgLazyLoad = $('#texts-wrap').imgLazyLoad({
+                width: 1920,
+                height: 1080,
+                imgCallback: function() {
+                    // console.log(this);
+                },
+                callback: function() {
+                    // console.log(this)
+                },
+                // scrollTrigger: false
+            });
         })
     </script>
 
