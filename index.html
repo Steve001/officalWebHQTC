@@ -2,13 +2,11 @@
 <html>
 
 <head>
-    <meta name="viewport"
-        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <meta charset="UTF-8" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta name="keywords" content="无人机,植保,植保无人机,农业,农业无人机,消防,消防无人机,华启,华启天成,天成,华启无人机,华启消防无人机,华启植保无人机,华启天成智能科技" />
-    <meta name="description"
-        content="华启天成（深圳）智能科技有限公司，主要从事行业级无人机和无人机相关产品的研发和制造，公司产品覆盖各行业各领域，是一家专业的无人机解决方案提供商，公司致力于在5G大数据时代，结合AR大数据等技术，针对不同行业的痛点，提供智能专业的无人机产品。" />
+    <meta name="description" content="华启天成（深圳）智能科技有限公司，主要从事行业级无人机和无人机相关产品的研发和制造，公司产品覆盖各行业各领域，是一家专业的无人机解决方案提供商，公司致力于在5G大数据时代，结合AR大数据等技术，针对不同行业的痛点，提供智能专业的无人机产品。" />
     <meta name="author" content="华启天成(深圳)智能科技有限公司 www.hqtcsz.cn" />
     <meta name="baidu-site-verification" content="code-Gf9Y57Bsr7" />
     <meta name="robots" content="none,noindex,nofollow,all,index,follow" />
@@ -38,27 +36,24 @@
     <!-- 主体内容 -->
     <section class="page" id="app">
 
-        <!-- 滚动分解动画模块 -->
+        <!-- 出场动画模块 -->
         <section class="Home_TopBox"></section>
 
         <!-- 首页视频弹出播放模块 -->
         <!-- <section class="Home_VideoAlert"></section> -->
+
+
         <!-- 首页顶部轮播图模块 -->
         <!-- <section class="Home_SwiperBox"></section> -->
 
         <!-- 滚动分解动画模块 -->
-        <!-- <section class="ScrollMagic"></section> -->
-        <section class="ScrollMagicOne"></section>
-        <section class="ScrollMagicTwo"></section>
-        <section class="ScrollMagicThree"></section>
-        <section class="ScrollMagicFour"></section>
-        <section class="ScrollMagicFive"></section>
-        <section class="ScrollMagicSix"></section>
+        <section class="ScrollMagic"></section>
+
         <!-- 首页智慧产品线模块 -->
         <!-- <section class="Home_NewsAndInformation"></section> -->
 
         <!-- 行业定制 -->
-        <!-- <section class="Home_Theproductline"></section> -->
+        <section class="Home_Theproductline"></section>
 
         <!-- 专业的无人机系统方案供应商模块 -->
         <section class="Home_Partners"></section>
@@ -76,18 +71,15 @@
 
 <script type="text/javascript">
     // 引入头部尾部
-    $(function () {
+    $(function() {
         $(".Home_TopBox").load("./components/topBox.html");
         $(".ScrollMagic").load("./components/ScrollMagic.html");
-        $(".ScrollMagicOne").load("./components/ScrollMagicOne.html");
-        $(".ScrollMagicTwo").load("./components/ScrollMagicTwo.html");
-        $(".ScrollMagicThree").load("./components/ScrollMagicThree.html");
-        $(".ScrollMagicFour").load("./components/ScrollMagicFour.html");
-        $(".ScrollMagicFive").load("./components/ScrollMagicFive.html");
-        $(".ScrollMagicFive").load("./components/ScrollMagicSix.html");
         $(".header").load("./common/header.html");
         $(".footer").load("./common/fooder.html");
         $(".Home_Theproductline").load("./components/Home_Theproductline.html");
+        // $(".Home_SwiperBox").load("./components/Home_VideoBox.html");
+        $(".Home_Partners").load("./components/Home_Partners.html");
+        // $(".Home_NewsAndInformation").load("./components/Home_NewsAndInformation.html");
         $(".Home_VideoAlert").load("./components/Home_VideoAlert.html");
 
     });
@@ -111,12 +103,14 @@
     function hideVideo() {
         $('.Home_VideoAlert').fadeOut()
     }
+
     setTimeout(() => {
         $('.title_Name')[0].style.transition = "all 3s";
         $('.title_Name')[0].style.opacity = 1;
         $('.clickViedo_Box')[0].style.transition = "all 3s";
         $('.clickViedo_Box')[0].style.opacity = 1;
     }, 3500)
+
 
     let oneIndex = 0;
     let twoIndex = 0;

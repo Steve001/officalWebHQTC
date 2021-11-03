@@ -1,7 +1,3 @@
-body,html{
-    margin: 0;
-    -webkit-overflow-scrolling: touch;
-}
 .boxaa,.boxbb,.boxcc,.boxdd,.boxee,.boxff{
     overflow: hidden;
 }
