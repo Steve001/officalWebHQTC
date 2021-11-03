@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-16 10:46:30
- * @LastEditTime: 2021-07-13 14:52:25
+ * @LastEditTime: 2021-11-03 18:06:33
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \hqtc_pc\common\header.html
@@ -21,11 +21,12 @@
                     <span onclick="navBarClick(0)" class="navBar-Active" i18n="i18n.alltheproducts">全部产品</span>
                     <span onclick="navBarClick(1)" i18n="i18n.plantProtectionUAV">植保无人机</span>
                     <span onclick="navBarClick(2)" i18n="i18n.firefightingdrone">消防无人机</span>
+                    <span onclick="navBarClick(3)">行业应用无人机</span>
                 </div>
                 <div class="navbar-Product-Bottom">
-                    <div onclick="window.location.href = '/components/product_details.html'">
-                        <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/YK6-301.png" alt="">
-                        <span>YK6-30</span>
+                    <div onclick="window.location.href = '/components/rtk_Info.html'">
+                        <img src="../images/wrj.png" alt="" style="width:2rem;height:.7rem;">
+                        <span style="margin-top: 25px;">RT1</span>
                     </div>
                     <div onclick="window.location.href = '/components/fireBomb_details.html'">
                         <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/pochuan1.png" alt="">
@@ -40,8 +41,12 @@
                         <span i18n="i18n.dry_Powder_Uav0">水基灭火弹无人机</span>
                     </div>
                     <div onclick="window.location.href = '/components/fireBallUAV.html'">
-                        <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/miehuoqiu.png" alt="" title="暂未推出，敬请期待">
+                        <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/miehuoqiu.png" alt="">
                         <span i18n="i18n.dry_Powder_Uav0">抛投式干粉灭火球无人机</span>
+                    </div>
+                    <div onclick="window.location.href = '/components/product_details.html'">
+                        <img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/YK6-301.png" alt="">
+                        <span>YK6-30</span>
                     </div>
                 </div>
             </div>
@@ -80,23 +85,6 @@
         left: defLeftW
     });
 
-    //hover事件
-    // $nav.find("li").hover(function() {
-    //     var index = $(this).index(); //获取滑过元素索引值
-    //     var leftW = $(this).position().left; //获取滑过元素Left值
-    //     var currentW = $nav.find("li").eq(index).innerWidth(); //获取滑过元素Width值
-    //     $navcur.stop().animate({
-    //         left: leftW,
-    //         width: currentW
-    //     }, 300);
-
-    // }, function() {
-    //     $navcur.stop().animate({
-    //         left: defLeftW,
-    //         width: itemW
-    //     }, 300)
-    // })
-
     function navBarClick(index) {
         let dome = $('.navbar-Product-Top').children();
         let childrenDome = $('.navbar-Product-Bottom').children();
@@ -107,25 +95,28 @@
                 $(dome[i]).removeClass('navBar-Active')
             }
         }
-        console.log(index)
-        console.log($('.navbar-Product-Bottom div'))
+
         if (index == 0) {
             $('.navbar-Product-Bottom div').show()
             return false;
         }
         if (index == 1) {
             $('.navbar-Product-Bottom div').hide()
-            $(childrenDome[0]).show()
+            $(childrenDome[5]).show()
             return false;
         }
         if (index == 2) {
             $('.navbar-Product-Bottom div').hide()
-            $(childrenDome[1]).show()
             $(childrenDome[2]).show()
             $(childrenDome[3]).show()
             $(childrenDome[4]).show()
+            $(childrenDome[5]).show()
             return false;
         }
-
+        if (index == 3) {
+            $('.navbar-Product-Bottom div').hide()
+            $(childrenDome[0]).show()
+            return false;
+        }
     }
 </script>

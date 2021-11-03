@@ -54,11 +54,11 @@
     height: auto;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 30px;
     display: flex;
     flex-wrap: wrap;
     clear: both;
-	font-size: .2rem;
+    font-size: .2rem;
 }
 
 .nongye-drone>ul>li {
@@ -70,6 +70,8 @@
     justify-content: space-around;
     clear: both;
     cursor: pointer;
+    padding-bottom: 60px;
+    box-sizing: border-box;
 }
 
 .nongye-drone>ul>li>img {
