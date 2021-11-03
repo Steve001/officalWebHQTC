@@ -32,6 +32,10 @@
 </head>
 
 <body>
+
+    <!-- loadding -->
+    <section class="loading"></section>
+
     <!-- 顶部navbar -->
     <section class="header"></section>
 
@@ -42,8 +46,7 @@
         <section class="Home_TopBox"></section>
 
         <!-- 首页视频弹出播放模块 -->
-        <!-- <section class="Home_VideoAlert"></section> -->
-
+        <section class="Home_VideoAlert"></section>
 
         <!-- 首页顶部轮播图模块 -->
         <!-- <section class="Home_SwiperBox"></section> -->
@@ -82,7 +85,12 @@
         // $(".Home_SwiperBox").load("./components/Home_VideoBox.html");
         $(".Home_Partners").load("./components/Home_Partners.html");
         // $(".Home_NewsAndInformation").load("./components/Home_NewsAndInformation.html");
+        $(".loading").load("../components/loading.html");
         $(".Home_VideoAlert").load("./components/Home_VideoAlert.html");
+        $(window).load(function() {
+            //适当延迟隐藏，提高loading效果
+            $('.loading').hide(0);
+        });
 
     });
 

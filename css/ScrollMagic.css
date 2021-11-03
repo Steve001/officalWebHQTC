@@ -10,6 +10,7 @@ html {
 
 .box {
     overflow: hidden;
+    text-align: center;
 }
 
 .box1 {
@@ -111,13 +112,23 @@ html {
 
 .textwrap_info {
     position: absolute;
-    left: 45%;
     bottom: 10%;
     color: #fff;
     font-size: 30px;
     text-align: center;
     opacity: 0;
-    /* visibility: hidden; */
-    /* animation-fill-mode: forwards; */
     transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textwrap_info>span {
+    width: 70%;
+}
+
+.textwrap_info>span:nth-child(2) {
+    font-weight: 100;
+    font-size: 25px;
+    margin-top: 30px;
 }

@@ -158,7 +158,7 @@ body::-webkit-scrollbar {
 .Home_VideoAlert {
     width: 100%;
     height: 100%;
-    /* display: none; */
+    display: none;
 }
 
 .videoAlert {
