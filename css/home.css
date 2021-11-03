@@ -1,3 +1,7 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .homeVideoBox {
     width: 100%;
     height: auto;
@@ -6,7 +10,7 @@
     justify-content: center;
     align-items: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* padding-top: .8rem; */
+    padding-top: .8rem;
 }
 
 .homeVideo {
