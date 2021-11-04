@@ -248,8 +248,6 @@
     margin-top: 200px;
 }
 
-.section-6-box img {}
-
 .section-6-box-button {
     width: 622px;
     display: flex;
@@ -336,8 +334,8 @@
 }
 
 .nowSticky {
-    width: 1000px;
-    height: 480px;
+    width: 11rem;
+    height: 5rem;
     position: absolute;
     right: 100px;
     top: 0;

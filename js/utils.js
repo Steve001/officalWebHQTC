@@ -37,3 +37,16 @@ function parseTime(time, cFormat) {
     })
     return time_str;
 }
+
+
+function getOffsetTop(el, parent) {
+    let offsetTop = 0;
+    while (el && el.tagName !== "BODY") {
+        if (parent && el === parent) {
+            break;
+        }
+        offsetTop += el.offsetTop;
+        el = el.offsetParent;
+    }
+    return offsetTop;
+}
