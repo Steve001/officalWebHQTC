@@ -9,6 +9,7 @@ html {
 } */
 
 .box {
+    width: 100%;
     overflow: hidden;
     text-align: center;
 }
@@ -79,6 +80,9 @@ html {
     bottom: 0;
     margin: auto;
     width: 100%;
+    background-color: #000 !important;
+    display: flex;
+    justify-content: center;
     /* transition: all 5S; */
 }
 

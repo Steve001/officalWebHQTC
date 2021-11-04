@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="css/vivify.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
-    <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="https://vncdn.mobi88.cn/public/jquery-2.1.3.min.js"></script>
     <!-- <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script> -->
     <script src="js/language.js"></script>
@@ -30,9 +29,6 @@
 </head>
 
 <body>
-
-    <!-- loadding -->
-    <section class="loading"></section>
 
     <!-- 顶部navbar -->
     <section class="header"></section>
@@ -46,19 +42,14 @@
         <!-- 首页视频弹出播放模块 -->
         <section class="Home_VideoAlert"></section>
 
-        <!-- 首页顶部轮播图模块 -->
-        <!-- <section class="Home_SwiperBox"></section> -->
-
         <!-- 滚动分解动画模块 -->
         <section class="ScrollMagic"></section>
 
-        <!-- 行业定制 -->
-        <section class="Home_Theproductline"></section>
+        <!-- 轮播图模块 -->
+        <section class="HomeSwiper"></section>
 
-        <!-- 专业的无人机系统方案供应商模块 -->
-        <section class="Home_Partners"></section>
-
-
+        <!-- 行业应用模块 -->
+        <section class="IndustryApplications"></section>
     </section>
 
     <!-- 底部介绍 -->
@@ -72,19 +63,13 @@
 <script type="text/javascript">
     // 引入头部尾部
     $(function() {
-        $(".Home_TopBox").load("./components/topBox.html");
-        $(".ScrollMagic").load("./components/ScrollMagic.html");
         $(".header").load("./common/header.html");
         $(".footer").load("./common/fooder.html");
-        $(".Home_Theproductline").load("./components/Home_Theproductline.html");
-        $(".Home_Partners").load("./components/Home_Partners.html");
-        $(".loading").load("../components/loading.html");
+        $(".Home_TopBox").load("./components/topBox.html");
+        $(".ScrollMagic").load("./components/ScrollMagic.html");
         $(".Home_VideoAlert").load("./components/Home_VideoAlert.html");
-        $(window).load(function() {
-            //适当延迟隐藏，提高loading效果
-            $('.loading').hide(0);
-        });
-
+        $(".HomeSwiper").load("./components/Home_Swiper.html");
+        $(".IndustryApplications").load("./components/IndustryApplications.html");
     });
 
 
@@ -113,47 +98,4 @@
         $('.clickViedo_Box')[0].style.transition = "all 3s";
         $('.clickViedo_Box')[0].style.opacity = 1;
     }, 3500)
-
-
-    let oneIndex = 0;
-    let twoIndex = 0;
-    let threeIndex = 0;
-    // $(window).on('scroll', function() {
-    // let DomeOne = $('.Home_Partners')[0];
-    // let DomeTwo = $('.Home_Theproductline')[0];
-    // if (isElementInViewport(DomeOne)) {
-    //     if (oneIndex != 0) {
-    //         return false;
-    //     }
-    //     oneIndex++;
-    //     $('#partnersTitle').addClass('vivify popIn')
-    //     $('.partnersChildren').addClass('vivify popInLeft')
-    //     $('.partnersChildrenTwo').addClass('vivify popInRight')
-    // }
-    // if (isElementInViewport(DomeTwo)) {
-    //     if (twoIndex != 0) {
-    //         return false;
-    //     }
-    //     twoIndex++;
-    //     $('.Home_Theproductline').addClass('vivify popIn')
-    // }
-    // if (isElementInViewport($('.Home_NewsAndInformation')[0])) {
-    //     if (twoIndex != 0) {
-    //         return false;
-    //     }
-    //     twoIndex++;
-    //     $('.Home_NewsAndInformation').addClass('vivify popInLeft')
-    // }
-    // })
-
-    // function isElementInViewport(el) {
-    //     //获取元素是否在可视区域
-    //     var clientHeight = window.innerHeight;
-    //     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    //     var offsetTop = el.offsetTop;
-    //     var objHeight = el.offsetHeight;
-    //     if (offsetTop < scrollTop + clientHeight && offsetTop + objHeight > scrollTop) {
-    //         return true;
-    //     }
-    // }
 </script>
