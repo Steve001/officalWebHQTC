@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-16 10:46:30
- * @LastEditTime: 2021-11-03 18:06:33
+ * @LastEditTime: 2021-11-04 17:36:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \hqtc_pc\common\header.html
@@ -19,9 +19,9 @@
             <div class="navbarAlert_Product">
                 <div class="navbar-Product-Top">
                     <span onclick="navBarClick(0)" class="navBar-Active" i18n="i18n.alltheproducts">全部产品</span>
-                    <span onclick="navBarClick(1)" i18n="i18n.plantProtectionUAV">植保无人机</span>
+                    <span onclick="navBarClick(1)">行业应用无人机</span>
                     <span onclick="navBarClick(2)" i18n="i18n.firefightingdrone">消防无人机</span>
-                    <span onclick="navBarClick(3)">行业应用无人机</span>
+                    <span onclick="navBarClick(3)" i18n="i18n.plantProtectionUAV">植保无人机</span>
                 </div>
                 <div class="navbar-Product-Bottom">
                     <div onclick="window.location.href = '/components/rtk_Info.html'">
@@ -100,7 +100,7 @@
             $('.navbar-Product-Bottom div').show()
             return false;
         }
-        if (index == 1) {
+        if (index == 3) {
             $('.navbar-Product-Bottom div').hide()
             $(childrenDome[5]).show()
             return false;
@@ -113,7 +113,7 @@
             $(childrenDome[5]).show()
             return false;
         }
-        if (index == 3) {
+        if (index == 1) {
             $('.navbar-Product-Bottom div').hide()
             $(childrenDome[0]).show()
             return false;
