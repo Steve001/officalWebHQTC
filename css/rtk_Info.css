@@ -4,7 +4,7 @@
     background: url('../images/rtk1Top.jpg') no-repeat;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size:100% 100%;
     text-align: center;
 }
 
@@ -49,15 +49,15 @@
 
 .section-2-main div img {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 
 .section-2-main div p {
     color: #fff;
     text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 14px;
+    font-size: 14px;
 }
 
 .section-3 {
