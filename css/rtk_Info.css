@@ -406,6 +406,10 @@
     background: #0D0D0D;
 }
 
+.section-10>ul {
+    height: 300px;
+}
+
 .section-10>ul li {
     width: 250px;
     height: 250px;
