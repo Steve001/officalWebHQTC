@@ -40,11 +40,11 @@ body {
 }
 
 .swiper-button-prev {
-    left: 0;
+    left: 100px;
 }
 
 .swiper-button-next {
-    right: 0;
+    right: 100px;
 }
 
 .swiper-button-prev span,
@@ -58,7 +58,7 @@ body {
     margin-top: -32px;
     border-radius: 100%;
     background: rgba(180, 180, 180, 0.25) url(../images/arrows.png) no-repeat center 17px;
-    opacity: 0;
+    /* opacity: 0; */
     -webkit-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
 }
