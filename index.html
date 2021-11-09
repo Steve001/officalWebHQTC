@@ -29,6 +29,8 @@
 
 <body>
 
+    <section class="loading"></section>
+
     <!-- 顶部navbar -->
     <section class="header"></section>
 
@@ -64,11 +66,16 @@
     $(function() {
         $(".header").load("./common/header.html");
         $(".footer").load("./common/fooder.html");
+        $(".loading").load("../components/loading.html");
         $(".Home_TopBox").load("./components/topBox.html");
         $(".ScrollMagic").load("./components/ScrollMagic.html");
         $(".Home_VideoAlert").load("./components/Home_VideoAlert.html");
         $(".HomeSwiper").load("./components/Home_Swiper.html");
         $(".IndustryApplications").load("./components/IndustryApplications.html");
+        $(window).load(function() {
+            //适当延迟隐藏，提高loading效果
+            $('.loading').hide(300);
+        });
     });
 
 
