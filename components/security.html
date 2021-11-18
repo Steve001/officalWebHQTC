@@ -249,7 +249,6 @@
         $(window).load(function() {
             //适当延迟隐藏，提高loading效果
             $('.loading').hide(0);
-
         });
         const marks = document.getElementsByClassName('characteristic_main')[0];
         console.log(marks);
@@ -259,11 +258,8 @@
             }
 
             marks.children[i].onmouseout = function() {
-                    marks.children[i].children[0].style.opacity = '0'
-                }
-                // marks.children[i].addEventListener("mouseover", function () {
-                //   marks.children[i].children[0].style.opacity = '0.8'
-                // });
+                marks.children[i].children[0].style.opacity = '0'
+            }
         }
     })
 </script>
