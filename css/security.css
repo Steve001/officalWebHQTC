@@ -1,7 +1,160 @@
 .banner{
   width: 100%;
   min-width: 1600px;
-  height: 800px;
+  height: 524px;
   background: url(../images/security/security_baner.jpg)no-repeat;
   background-size: cover;
 }
+.banner .banner_box{
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  width: 500px;
+}
+.banner .banner_box h2{
+  font-size: 36px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.banner .banner_box p{
+  font-size: 18px;
+  color: #fff;
+}
+.banner .banner_box .btn{
+  width: 80px;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0091eb;
+  border-radius: 6px;
+  margin-top: 40px;
+}
+.problem{
+  width: 100%;
+  min-width: 1600px;
+}
+.problem .problem_box h2{
+  color: #000;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 40px;
+
+}
+.problem .problem_box span{
+  display: block;
+  width: 56px;
+  height: 10px;
+  background-color: #0091eb;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.problem i{
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #0091eb;
+  margin: 10px 0;
+}
+.problem .problem_main{
+  margin: 40px auto  50px;
+  padding:0  228px;
+  display: flex;
+  justify-content: space-between;
+}
+.problem .problem_main div{
+  width: 23%;
+}
+.problem .problem_main div img{
+  width: 100%;
+  height: 172px;
+  display: block;
+}
+.problem .problem_main div p{
+  line-height: 24px;
+  font-size: 12px;
+}
+
+.price{
+  width: 100%;
+  min-width: 1600px;
+  background-color: #f5f6fa;
+}
+.price .price_box h2{
+  color: #000;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 40px;
+
+}
+.price .price_box i{
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.price .price_box .price_main{
+  padding: 0 22px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.price .price_box .price_main div{
+  width: 20%;
+}
+.price .price_box .price_main div img{
+  width: 178px;
+  height: 162px;
+  display: block;
+  margin: 0 auto;
+  }
+.price .price_box .price_main div p{
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+    opacity: 0.6;
+  }
+.characteristic{
+    width: 100%;
+    min-width: 1600px;
+  }
+.characteristic .characteristic_box h2{
+    color: #000;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 40px;
+  
+  }
+.characteristic .characteristic_box i{
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+.characteristic .characteristic_box .characteristic_main{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 120px;
+  }
+.characteristic .characteristic_box .characteristic_main div{
+    position: relative;  
+  }
+.characteristic .characteristic_box .characteristic_main div img{
+    width: 300px;
+    height: 400px;
+    display: block;
+      
+    }
+.characteristic .characteristic_box .characteristic_main div p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+    line-height: 58px;
+    text-align: center;
+    background-color: black;
+    opacity: 0.8;
+    color: #fff;
+    }
