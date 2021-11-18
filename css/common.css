@@ -261,7 +261,7 @@ p.right {
 }
 
 .footerTop_left {
-    flex: 3;
+    flex: 2;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -297,7 +297,7 @@ p.right {
     font-size: .15rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     margin-top: 1rem;
 }
 
