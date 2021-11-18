@@ -1,7 +1,239 @@
-.banner{
-  width: 100%;
-  min-width: 1600px;
-  height: 800px;
-  background: url(../images/security/security_baner.jpg)no-repeat;
-  background-size: cover;
+.banner {
+    width: 100%;
+    min-width: 1600px;
+    height: 800px;
+    background: url(../images/security/security_baner.jpg)no-repeat;
+    background-size: cover;
+}
+
+.Scenario {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+    background: #303638;
+    display: flex;
+    justify-content: center;
+    font-style: Helvetica Neue, Helvetica, PingFang SC, Tahoma, Arial, sans-serif;
+}
+
+.Scenario_content {
+    width: 68%;
+    min-width: 1250px;
+}
+
+.Scenario_title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: .8rem 0;
+}
+
+.Scenario_title>span:nth-child(1) {
+    font-size: .5rem;
+    color: #fff;
+    margin-bottom: .2rem;
+}
+
+.Scenario_title>span:nth-child(2) {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: .2rem;
+}
+
+.Scenario_NameBox {
+    width: 100%;
+    height: .55rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.Scenario_NameBox span {
+    display: block;
+    color: #0091eb;
+    border-bottom: 1px solid #0091eb;
+    font-size: .25rem;
+    width: 3rem;
+    height: .55rem;
+}
+
+.Scenario_SceneDescription {
+    width: 100%;
+    height: auto;
+    padding: .5rem 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.SceneDescription_left {
+    width: auto;
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+.SceneDescription_left>span {
+    color: #fff;
+    font-size: .35rem;
+    font-weight: bold;
+}
+
+.SceneDescription_left>ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.SceneDescription_left>ul>li {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: .2rem;
+    margin-top: .3rem;
+    line-height: .4rem;
+}
+
+.SceneDescription_left>ul>li::before {
+    display: inline-block;
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: #0587d8;
+    margin-right: 10px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.SceneDescription_right {
+    width: auto;
+    display: flex;
+    flex: 2;
+    margin-left: 1.3rem;
+}
+
+.SceneDescription_right img {
+    width: 100%;
+}
+
+.Scenario_Useproducts {
+    margin-top: -1rem;
+}
+
+.Scenario_Useproducts ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.Scenario_Useproducts ul li {
+    width: 2.5rem;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    color: #fff;
+}
+
+.Scenario_Useproducts ul li::before {
+    content: '';
+    width: auto;
+}
+
+.Scenario_Useproducts ul li img {
+    width: .7rem;
+    height: .7rem;
+    margin-bottom: .3rem;
+}
+
+.Scenario_Useproducts ul li strong {
+    line-height: .3rem;
+    text-align: center;
+    font-weight: 100;
+}
+
+.Scenario_Useproducts ul span {
+    margin-top: .4rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: normal;
+    font-size: .25rem;
+    margin: .5rem .1rem;
+    font-weight: 100;
+}
+
+.Scenario_Solution,
+.Scenario_ProgrammeValue {
+    margin-top: 1rem;
+}
+
+.Scenario_ProgrammeValue ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.Scenario_ProgrammeValue ul li::before {
+    content: '';
+    width: auto;
+}
+
+.Scenario_ProgrammeValue ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: 1rem;
+}
+
+.Scenario_ProgrammeValue ul li img {
+    width: .5rem;
+    height: .53rem;
+    margin-right: .3rem;
+}
+
+.Scenario_ProgrammeValue ul li>div {
+    display: flex;
+    flex-direction: column;
+    width: 4rem;
+}
+
+.Scenario_ProgrammeValue ul li>div>span:nth-child(1) {
+    color: #fff;
+    font-size: .3rem;
+}
+
+.Scenario_ProgrammeValue ul li>div>span:nth-child(2) {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: .3rem;
+}
+
+.Consult_immediately {
+    width: 100%;
+    height: 3rem;
+    background: url('../images/security/Consult_immediately_bg01.png') no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.Consult_immediately>div {
+    min-width: 1250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Consult_immediately>div>span {
+    font-size: .5rem;
+}
+
+.Consult_immediately>div>div {
+    width: 2rem;
+    height: .6rem;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .3rem;
+    cursor: pointer;
+    margin-left: 8rem;
 }
