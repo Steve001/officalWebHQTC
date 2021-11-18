@@ -1,0 +1,7 @@
+.banner{
+  width: 100%;
+  min-width: 1600px;
+  height: 800px;
+  background: url(../images/security/security_baner.jpg)no-repeat;
+  background-size: cover;
+}
