@@ -237,3 +237,236 @@
     cursor: pointer;
     margin-left: 8rem;
 }
+
+.banner {
+    width: 100%;
+    min-width: 1600px;
+    height: 524px;
+    background: url(../images/security/security_baner.jpg)no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 100%;
+}
+
+.banner .banner_box {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 500px;
+}
+
+.banner .banner_box h2 {
+    font-size: 36px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.banner .banner_box p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.banner .banner_box .btn {
+    width: 80px;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0091eb;
+    border-radius: 6px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.problem {
+    width: 100%;
+    /* min-width: 1600px; */
+}
+
+.problem .problem_box {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.problem .problem_box h2 {
+    color: #000;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 400;
+}
+
+.problem .problem_box span {
+    display: block;
+    width: 34px;
+    height: 6px;
+    background-color: #0091eb;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.problem i {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #0091eb;
+    margin: 16px 0;
+}
+
+.problem .problem_main {
+    margin: 70px auto 84px;
+    padding: 0 228px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.problem .problem_main div {
+    width: 23%;
+}
+
+.problem .problem_main div img {
+    width: 100%;
+    height: 172px;
+    display: block;
+}
+
+.problem .problem_main div p {
+    line-height: 24px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.price {
+    width: 100%;
+    min-width: 1600px;
+    background-color: #f5f6fa;
+}
+
+.price .price_box {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.price .price_box h2 {
+    color: #000;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: 400;
+}
+
+.price .price_box i {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+.price .price_box .price_main {
+    padding: 32px 22px 84px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price .price_box .price_main div {
+    width: 20%;
+}
+
+.price .price_box .price_main div img {
+    width: 178px;
+    height: 162px;
+    display: block;
+    margin: 0 auto;
+}
+
+.price .price_box .price_main div p {
+    font-size: 18px;
+    text-align: center;
+    margin: 14px 0;
+    opacity: 0.6;
+}
+
+.characteristic {
+    width: 100%;
+    min-width: 1600px;
+}
+
+.characteristic .characteristic_box h2 {
+    color: #000;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: 400;
+}
+
+.characteristic .characteristic_box i {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    opacity: 0.6;
+}
+
+.characteristic .characteristic_box .characteristic_main {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 120px;
+}
+
+.characteristic .characteristic_box .characteristic_main .smallbox {
+    position: relative;
+}
+
+.mark {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #098be1;
+    /* opacity: 0.8; */
+    opacity: 0;
+    z-index: 99;
+    transition: all .5s;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.mark strong {
+    width: 80%;
+    font-size: 14px;
+    color: azure;
+    margin-bottom: 1rem;
+    font-weight: 100;
+    line-height: .4rem;
+}
+
+.characteristic .characteristic_box .characteristic_main .smallbox img {
+    width: 300px;
+    height: 400px;
+    display: block;
+    /* position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 22; */
+}
+
+.characteristic .characteristic_box .characteristic_main .smallbox p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 98;
+    width: 100%;
+    font-size: 16px;
+    line-height: 58px;
+    text-align: center;
+    background-color: black;
+    opacity: 0.8;
+    color: #fff;
+}
