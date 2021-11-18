@@ -39,12 +39,12 @@
   font-size: 36px;
   text-align: center;
   margin-top: 40px;
-
+  font-weight: 400;
 }
 .problem .problem_box span{
   display: block;
-  width: 56px;
-  height: 10px;
+  width: 34px;
+  height: 6px;
   background-color: #0091eb;
   margin: 0 auto;
   margin-top: 10px;
@@ -54,10 +54,10 @@
   width: 25px;
   height: 2px;
   background-color: #0091eb;
-  margin: 10px 0;
+  margin: 16px 0;
 }
 .problem .problem_main{
-  margin: 40px auto  50px;
+  margin: 70px auto  84px;
   padding:0  228px;
   display: flex;
   justify-content: space-between;
@@ -72,7 +72,8 @@
 }
 .problem .problem_main div p{
   line-height: 24px;
-  font-size: 12px;
+  font-size: 14px;
+  opacity: 0.6;
 }
 
 .price{
@@ -85,7 +86,7 @@
   font-size: 36px;
   text-align: center;
   padding-top: 40px;
-
+  font-weight: 400;
 }
 .price .price_box i{
   display: block;
@@ -93,9 +94,10 @@
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
+  opacity: 0.8;
 }
 .price .price_box .price_main{
-  padding: 0 22px 40px;
+  padding: 32px 22px 84px;
   display: flex;
   justify-content: space-between;
 }
@@ -109,10 +111,10 @@
   margin: 0 auto;
   }
 .price .price_box .price_main div p{
-    font-size: 24px;
-    text-align: center;
-    margin: 20px 0;
-    opacity: 0.6;
+  font-size: 18px;
+  text-align: center;
+  margin: 14px 0;
+  opacity: 0.6;
   }
 .characteristic{
     width: 100%;
@@ -123,6 +125,7 @@
     font-size: 36px;
     text-align: center;
     padding-top: 40px;
+    font-weight: 400;
   
   }
 .characteristic .characteristic_box i{
@@ -131,6 +134,7 @@
     text-align: center;
     margin-top: 20px;
     margin-bottom: 40px;
+    opacity: 0.6;
   }
 .characteristic .characteristic_box .characteristic_main{
     display: flex;
