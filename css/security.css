@@ -3,7 +3,8 @@
   min-width: 1600px;
   height: 524px;
   background: url(../images/security/security_baner.jpg)no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
+  background-size: 100% 100%;
 }
 .banner .banner_box{
   position: absolute;
@@ -29,10 +30,15 @@
   background-color: #0091eb;
   border-radius: 6px;
   margin-top: 40px;
+  cursor: pointer;
 }
 .problem{
   width: 100%;
-  min-width: 1600px;
+  /* min-width: 1600px; */
+}
+.problem .problem_box{
+  width: 1600px;
+  margin: 0 auto;
 }
 .problem .problem_box h2{
   color: #000;
@@ -80,6 +86,10 @@
   width: 100%;
   min-width: 1600px;
   background-color: #f5f6fa;
+}
+.price .price_box{
+  width: 1200px;
+  margin: 0 auto;
 }
 .price .price_box h2{
   color: #000;
