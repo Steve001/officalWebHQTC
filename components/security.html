@@ -96,19 +96,31 @@
         <h2>方案特点</h2>
         <i>警用安防巡逻系统可实现无人值守，实时发现异常场景，突发事件迅速应急处理</i>
         <div class="characteristic_main">
-          <div>
+          <div class="smallbox">
+            <div class="mark">
+              <em>触发事件展示1</em>
+            </div>
             <img src="../images/security/security_10.png" alt="">
             <p>3D-GIS规划航迹</p>
           </div>
-          <div>
+          <div class="smallbox">
+            <div class="mark">
+              <em>触发事件展示2</em>
+            </div>
             <img src="../images/security/security_11.png" alt="">
             <p>自动起降换电</p>
           </div>
-          <div>
+          <div class="smallbox">
+            <div class="mark">
+              <em>触发事件展示3</em>
+            </div>
             <img src="../images/security/security_12.png" alt="">
             <p>变更临时航线</p>
           </div>
-          <div>
+          <div class="smallbox">
+            <div class="mark">
+              <em>触发事件展示4</em>
+            </div>
             <img src="../images/security/security_13.png" alt="">
             <p>Al实时处理</p>
           </div>
@@ -131,6 +143,19 @@
       $('.loading').hide(0);
 
     });
+    const marks = document.getElementsByClassName('characteristic_main')[0];
+    console.log(marks);
+    for (let i = 0; i < 4; i++) {
+      marks.children[i].onmouseover = function () {
+        marks.children[i].children[0].style.opacity = '0.8'
+      }
+      marks.children[i].onmouseout = function () {
+        marks.children[i].children[0].style.opacity = '0'
+      }
+      // marks.children[i].addEventListener("mouseover", function () {
+      //   marks.children[i].children[0].style.opacity = '0.8'
+      // });
+    }
   })
 
 </script>

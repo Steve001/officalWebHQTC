@@ -151,19 +151,41 @@
     justify-content: center;
     padding-bottom: 120px;
   }
-.characteristic .characteristic_box .characteristic_main div{
+.characteristic .characteristic_box .characteristic_main .smallbox{
     position: relative;  
   }
-.characteristic .characteristic_box .characteristic_main div img{
+  .mark{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #098be1;
+    /* opacity: 0.8; */
+    opacity: 0;
+    z-index: 99;
+  }
+  .mark em{
+    text-align: center;
+    font-size: 36px;
+    color: azure;
+  }
+.characteristic .characteristic_box .characteristic_main .smallbox img{
     width: 300px;
     height: 400px;
     display: block;
-      
+  /* position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 22; */
     }
-.characteristic .characteristic_box .characteristic_main div p{
+.characteristic .characteristic_box .characteristic_main .smallbox p{
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 98;
     width: 100%;
     font-size: 16px;
     line-height: 58px;
@@ -172,3 +194,4 @@
     opacity: 0.8;
     color: #fff;
     }
+    
