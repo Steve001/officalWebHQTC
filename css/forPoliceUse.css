@@ -1,0 +1,10 @@
+.banner {
+  width: 100%;
+  min-width: 1600px;
+  height: 524px;
+  background: url(../images/forPoliceUse/forPoliceUse_banner.jpg)no-repeat;
+  background-size: cover;
+}
+.Scenario_Useproducts{
+  margin-top: 0;
+}
