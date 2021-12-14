@@ -1,50 +1,60 @@
 /* 售后服务 */
-.banner{
+
+.banner {
     height: 2rem;
-background-color: #333333;
-padding-top: 1rem;
-text-align: center;
+    background-color: #333333;
+    padding-top: 1.5rem;
+    text-align: center;
 }
-.banner>h1{
+
+.banner>h1 {
     color: #fff;
     font-size: .8rem;
 }
-.main{
+
+.main {
     padding-left: 6rem;
     position: relative;
 }
-.nav{
+
+.nav {
     position: absolute;
     left: 0%;
     top: 0%;
     height: 100%;
-    width: 6rem!important;
-    background-color: #dddddd;width: 3rem;
+    width: 6rem !important;
+    background-color: #dddddd;
+    width: 3rem;
     padding-left: 3.4rem;
     padding-top: 1.3rem;
     box-sizing: border-box;
 }
-.nav_list{
+
+.nav_list {
     padding: .2rem 0;
     font-size: .2rem;
     color: #999999;
     /* border-left: gold solid .02rem; */
     padding-left: .1rem;
 }
-.contain{
- padding-left: 1.2rem;
- padding-bottom: 2rem;
- padding-right: 4rem;
+
+.contain {
+    padding-left: 1.2rem;
+    padding-bottom: 2rem;
+    padding-right: 4rem;
 }
-.contain h1{
- font-size: .3rem;
- padding-top: .5rem;
-} 
-.contain p{
+
+.contain h1 {
+    font-size: .3rem;
+    padding-top: .5rem;
+}
+
+.contain p {
     font-size: .2rem;
     padding: .2rem 0;
-   }
-.text-a{
+}
+
+.text-a {
     border-bottom: solid #dddddd .06rem;
     padding-bottom: .3rem;
 }

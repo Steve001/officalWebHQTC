@@ -560,19 +560,16 @@
 
         // 第二屏
         $(".section2_contain_1").on('click', function() {
-            // $(".section_2_img img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge2_11.png");
             $(".section2_contain_1 p").css("cssText", "color: white !important;background-color:red!important");
             $(" .section2_contain_2 p").css("cssText", "color: black!important;background-color:white!important");
             $(" .section2_contain_3 p").css("cssText", "color: black!important;background-color:white!important");
         });
         $(".section2_contain_2").on('click', function() {
-            // $(".section_2_img img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge2_21.png");
             $(".section2_contain_2 p").css("cssText", "color: white !important;background-color:red!important");
             $(" .section2_contain_1 p").css("cssText", "color: black!important;background-color:white!important");
             $(" .section2_contain_3 p").css("cssText", "color: black!important;background-color:white!important");
         });
         $(".section2_contain_3").on('click', function() {
-            // $(".section_2_img img").attr("src", "https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/back_imge2_31.png");
             $(".section2_contain_3 p").css("cssText", "color: white !important;background-color:red!important");
             $(" .section2_contain_1 p").css("cssText", "color: black!important;background-color:white!important");
             $(" .section2_contain_2 p").css("cssText", "color: black!important;background-color:white!important");
@@ -581,25 +578,17 @@
 
     let Box = document.getElementsByClassName('section2_contain')[0];
     let BoxIn = document.getElementsByClassName('section_2_img')[0];
-    console.log(BoxIn.children, '222222');
-    // console.log(BoxIn,'1111111');
-    // console.log(Box,'44444444444444');
-    console.log(Box.children, '55555');
     BoxIn.children[0].classList.add('Box');
-    // Box.children[0].classList.add('BoxStyle1')
     for (let i = 0; i < Box.children.length; i++) {
         Box.children[i].onclick = function() {
             selectChildren();
             BoxIn.children[i].classList.add('Box');
-            // Box.children[0].classList.add('BoxStyle1');
         }
     }
 
     function selectChildren() {
         for (let j = 0; j < BoxIn.children.length; j++) {
-            // console.log(j)
             BoxIn.children[j].classList.remove('Box');
-            // Box.children[0].classList.remove('BoxStyle1');
         }
     }
     //  轮播图

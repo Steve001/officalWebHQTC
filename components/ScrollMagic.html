@@ -64,14 +64,12 @@
                 .setPin('.section2', {
                     pushFollowers: false
                 })
-
-            .addTo(controller)
+                .addTo(controller)
 
             for (let i = 1; i < 440; i++) {
                 Box.innerHTML += `<div class="ZClass"><img src="https://hqtcsz-oss.oss-cn-shenzhen.aliyuncs.com/hqtcsz_pc/ScrollMagic/${i}.jpg" alt=""></div>`
-                    // Box.innerHTML += `<div class="ZClass"><img src="../images/${i}.jpg"  alt=""></div>`
             }
-            //*/
+
             let beforeScrollTop = document.documentElement.scrollTop // 记录开始滚动条高度
             const reserved = 2
             const addVisibilityCount = 20
@@ -85,7 +83,6 @@
             })
 
             function start(delta) {
-
                 if (delta == 'down') { // 向上滚动
                     for (let i = inheritIndex; i < ZBoxs.length; i++) {
                         if (ZBoxs[i].style.visibility == 'inherit') {
