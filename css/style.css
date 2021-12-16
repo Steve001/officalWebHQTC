@@ -881,10 +881,10 @@ section.section {
  * ========================================
  */
 .semi-dark-background {
-  background-color: #202020;
+  background-color: #000000;
 }
 .dark-background {
-  background-color: #171717;
+  background-color: #000000;
 }
 /**
  * =======================
@@ -1213,6 +1213,30 @@ section.section {
  */
 .bg-image-1 {
   background: url('../images/background-1.jpg');
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: initial;
+  background-repeat: no-repeat;
+  background-color: #171717;
+}
+.bg-image-miehuodan {
+  background: url('../images/miehuodan_full.jpg');
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: initial;
+  background-repeat: no-repeat;
+  background-color: #171717;
+}
+.bg-image-guazai {
+  background: url('../images/fengfuguazai1.png');
   -o-background-size: cover;
   -ms-background-size: cover;
   -moz-background-size: cover;
@@ -1770,7 +1794,7 @@ section.section {
 }
 .heading-text {
   position: absolute;
-  top: 0;
+  top: -200px;
   left: 0;
 }
 .heading-text .text {
